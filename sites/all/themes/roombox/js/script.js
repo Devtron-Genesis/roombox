@@ -9,8 +9,17 @@
     console.log('Load Completed');
   });
   $(document).ready(function() {
-    var img = $(".views-field.views-field-field-module-image img").attr('src');
-    if (img)$('')
+
+    $('section#block-views-modules-block .view-id-modules td').each(function() {
+      var bg_img = $(this).find('img').attr('src');
+      $(this).css("background-image", 'url("' + bg_img + '")').css('background-size', 'cover').css('height', '317px');;
+    });
+
+    $('section#block-views-blog-view-block .view-id-blog_view td').each(function() {
+      var bg_img = $(this).find('img').attr('src');
+      $(this).css("background-image", 'url("' + bg_img + '")').css('background-size', 'contain').css('height', '215px');;
+    });
+
 
     console.log('Document Ready');
   });

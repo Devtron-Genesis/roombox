@@ -188,6 +188,8 @@
 
 
 
+/*        HEADER*/
+
 
 header#navbar {
     position: relative;
@@ -217,11 +219,17 @@ header#navbar {
     width: 30%;
     clear: both;
 }
-.view.view-main-slider .views-field.views-field-field-slide-link a {
+.btn-style a {
     color: #739D5E;
-    font-size: 18px;
+    font-size: 16px;
     border: solid 2px #739D5E;
     padding: 8px 15px;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+.btn-style a:hover {
+    color: #ffffff;
+    background-color: #739D5E;
 }
 
 
@@ -237,6 +245,31 @@ header#navbar {
   background: none;
   border: none;
 }
+
+/*          MODULES */
+
+.page-home section#block-views-modules-block .view.view-modules.view-id-modules .views-field.views-field-field-module-image img.img-responsive {
+  display: none;
+}
+.page-home section#block-views-modules-block .view.view-modules.view-id-modules {
+  color: #ffffff;
+}
+.page_home section#block-views-modules-block .view.view-modules.view-id-modules table.views-view-grid tr td {
+  padding: 20px;
+}
+.page-home section#block-views-modules-block .views-field.views-field-title {
+    padding: 0 15px;
+}
+.page-home section#block-views-modules-block .views-field.views-field-body {
+    padding: 10px 17px;
+    line-height: 25px;
+}
+.page-home section#block-views-modules-block .views-field.views-field-field-call-to-action {
+    padding: 10px 20px;
+    float: right;
+}
+
+
 
 /*          USAGE */
 
@@ -261,11 +294,6 @@ header#navbar {
 
 /*          BLOG */
 
-.views-field.views-field-field-blog-image {
-    position: relative;
-    top: -173px;
-    z-index: -1;
-}
 .page-home section#block-views-blog-view-block .views-field.views-field-title {
     margin: 0px 10px;
     color: #ffffff;
@@ -277,9 +305,6 @@ header#navbar {
 .page-home section#block-views-blog-view-block .views-field.views-field-field-blog-link {
     margin: 20px 10px;
 }
-.page-home section#block-views-blog-view-block ul.pager.pager-load-more {
-    margin-top: -204px;
-}
 .page-home section#block-views-blog-view-block .pager li > a {
     border: none; 
     border-radius: 0px;
@@ -290,9 +315,12 @@ header#navbar {
 .page-home section#block-views-blog-view-block .pager li > a: hover {
     color: #ffffff;
 }
-table.views-view-grid:not(:first-child) {
-    margin-top: -174px;  
+.page-home section#block-views-blog-view-block img.img-responsive {
+    display: none !important;
 }
+
+
+
 
 /*          CTA */
 
@@ -309,6 +337,9 @@ table.views-view-grid:not(:first-child) {
     padding: 15px 30px;
     text-align: center;
     margin-top: 25px;
+}
+.page-home section#block-block-17 input[type="email"]::placeholder{
+  color: #ffffff;
 }
 .page-home section#block-block-17 input[type="submit"] {
     background-color: #668B50;
