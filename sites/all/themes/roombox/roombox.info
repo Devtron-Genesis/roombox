@@ -1,0 +1,39 @@
+name = Roombox
+description = A bootstrap roombox theme
+core = 7.x
+base theme = bootstrap
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Main Footer'
+regions[footer_bottom]         = 'Botton Footer'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets & Scripts
+;;;;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/rwd.css
+
+scripts[] = js/jquery.matchHeight-min.js
+scripts[] = js/jquery.event.move.js
+scripts[] = js/protip.min.js
+scripts[] = js/jquery.scrollTo.min.js
+scripts[] = js/jquery.flipster.js
+scripts[] = js/jquery.viewportchecker.js
+scripts[] = js/attrchange.js
+scripts[] = js/jquery.mobile-events.js
+scripts[] = js/script.js
