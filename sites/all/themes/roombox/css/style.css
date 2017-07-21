@@ -12,9 +12,18 @@
     margin:0;
     padding: 0;
   }
+  .region.region-content {
+    margin-top: 40px;
+  }
 /* Header CSS */
+  a.logo.navbar-btn.pull-left img {
+    width: 100px;
+  }
  .header-top-links {
     background-color: #212121;
+  }
+  section#block-system-main-menu {
+    margin: 35px 0px;
   }
   ul.social-links {
     float: right;
@@ -40,8 +49,8 @@
     color: #000;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 5px 15px;
-    margin: 0 5px;
+    padding: 5px 20px;
+    margin: 0 15px;
   }
   .region.region-header section#block-system-main-menu ul.menu.nav li a:hover,  .region.region-header section#block-system-main-menu ul.menu.nav li.active a {
   	color: #fff;
@@ -213,14 +222,19 @@ header#navbar {
 .field.field-name-field-slider-heading.field-type-text.field-label-hidden {
     font-size: 63px;
     font-weight: bold;
-    padding: 25px 20px 0px 20px;
+    padding: 30px 0 0px;
+    width: 320px;
+    line-height: 1.3em;
 }
 .field.field-name-field-half-third-description.field-type-text-long.field-label-hidden {
-    padding: 0px 0px 0px 25px;
     line-height: 2em;
+    width: 329px;
 }
 .field.field-name-field-half-third-link.field-type-link-field.field-label-hidden {
-    margin: 25px 0px 0px 25px;
+    margin-top: 25px;
+}
+.field.field-name-field-main-slider-image.field-type-image.field-label-hidden div#flexslider-1 {
+  padding: 0 30px;
 }
 /*.view.view-main-slider .views-field.views-field-field-slide-image {
     height: 400px;
