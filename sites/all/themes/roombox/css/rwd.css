@@ -17,6 +17,9 @@
   body {
     /*background-color: purple;/*Breakpoint-colour*/
   }
+  .mod-layer {
+    top: -184px;
+  }
 }
 @media only screen and (min-device-width: 990px) and (max-device-width: 1023px) {  /** Green **/
   body {
@@ -27,10 +30,26 @@
   body {
     /*background-color: orange;/*Breakpoint-colour*/
   }
+  .mod-layer {
+    top: -209px;
+  }
 }
 @media only screen and (min-device-width: 480px) and (max-device-width:768px) {  /** Grey **/
   body {
     /*background-color: grey;/*Breakpoint-colour*/
+  }
+  .view.view-main-slider .views-field.views-field-title {
+    float: none;
+    width: 100%;
+  }
+  .view.view-main-slider .views-field.views-field-body {
+    float: none;
+    width: 100%;
+    margin-top: 260px; 
+  }
+  .view.view-main-slider .views-field.views-field-field-slide-link {
+    float: none;
+    width: 100%;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 479px) {  /** Yellow **/

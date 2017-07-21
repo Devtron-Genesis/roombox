@@ -114,8 +114,18 @@ function ace_editor_form_alter(&$form, &$form_state, $form_id) {
   elseif ($form_id == 'views_ui_config_item_form' && strpos($form['#title'], 'Global: Text area') !== FALSE) {
     $form_ident = $form_id;
   }
-  // Views PHP:
-  // @TODO: work in progress.
+  // i18n translation forms
+  elseif ($form_id == 'i18n_string_translate_page_form') {
+    $form_ident = $form_id;
+  }
+  // Webform configuration form (confirmation message)
+  elseif ($form_id == 'webform_configure_form') {
+    $form_ident = $form_id;
+  }
+  // Taxonomy terms edit forms
+  elseif ($form_id == 'taxonomy_form_term') {
+    $form_ident = $form_id;
+  }
   else {
     return;
   }
@@ -561,7 +571,6 @@ function ace_editor_libraries_info() {
     'version arguments' => array(
       'file' => 'package.json',
       'pattern' => '/"version": "(\d+\.+\d+.+\d+)"/',
-      'lines' => 3,
     ),
     'files' => array(
       'js' => array(

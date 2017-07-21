@@ -2,6 +2,16 @@
   ul li.collapsed, ul li.expanded, ul li.leaf {
     list-style: none;
   }
+  .container-fluid {
+    padding: 0px;
+  }
+  .row {
+    margin: 0;
+  }
+  section.col-sm-12 {
+    margin:0;
+    padding: 0;
+  }
 /* Header CSS */
  .header-top-links {
     background-color: #212121;
@@ -31,6 +41,7 @@
     font-weight: bold;
     text-transform: uppercase;
     padding: 5px 15px;
+    margin: 0 5px;
   }
   .region.region-header section#block-system-main-menu ul.menu.nav li a:hover,  .region.region-header section#block-system-main-menu ul.menu.nav li.active a {
   	color: #fff;
@@ -190,12 +201,28 @@
 
 /*        HEADER*/
 
+.header-wrapper .header-top-links section#block-block-1 {
+    padding: 0 15px;
+}
+
 
 header#navbar {
     position: relative;
     z-index: 3;
 }
-.view.view-main-slider .views-field.views-field-field-slide-image {
+.field.field-name-field-slider-heading.field-type-text.field-label-hidden {
+    font-size: 63px;
+    font-weight: bold;
+    padding: 25px 20px 0px 20px;
+}
+.field.field-name-field-half-third-description.field-type-text-long.field-label-hidden {
+    padding: 0px 0px 0px 25px;
+    line-height: 2em;
+}
+.field.field-name-field-half-third-link.field-type-link-field.field-label-hidden {
+    margin: 25px 0px 0px 25px;
+}
+/*.view.view-main-slider .views-field.views-field-field-slide-image {
     height: 400px;
 }
 .view.view-main-slider img.img-responsive {
@@ -218,7 +245,7 @@ header#navbar {
     float: right;
     width: 30%;
     clear: both;
-}
+}*/
 .btn-style a {
     color: #739D5E;
     font-size: 16px;
@@ -231,6 +258,18 @@ header#navbar {
     color: #ffffff;
     background-color: #739D5E;
 }
+a.btn-style {
+    color: #739D5E;
+    font-size: 16px;
+    border: solid 2px #739D5E;
+    padding: 8px 15px;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+a.btn-style:hover {
+    color: #ffffff;
+    background-color: #739D5E;
+}
 
 
 /* HOME --> 
@@ -239,7 +278,7 @@ header#navbar {
 .page-home section#block-views-benefits-block {
     background-color: #739D5E;
     color: #ffffff;
-    padding: 25px 20px 0px;
+    padding: 30px 20px 50px;
 }
 .page-home section#block-views-benefits-block .flexslider {
   background: none;
@@ -274,7 +313,7 @@ header#navbar {
 /*          USAGE */
 
 .page-home section#block-views-uses-block {
-    padding: 25px 20px 0px;
+    padding: 30px 20px 50px;
 }
 
 /*          ABOUT US */
@@ -290,6 +329,9 @@ header#navbar {
 .page-home section#block-bean-about-us-heading .field.field-name-field-description.field-type-text.field-label-hidden {
     line-height: 25px;
     margin: 20px 0px;
+}
+.owl-theme .owl-controls {
+    display: none !important;
 }
 
 /*          BLOG */
@@ -312,12 +354,22 @@ header#navbar {
     color: #81B169;
     background-color: #212121;
 }
+section#block-views-blog-view-block ul.pager.pager-load-more {
+    margin-top: 0px;
+}
 .page-home section#block-views-blog-view-block .pager li > a: hover {
     color: #ffffff;
 }
 .page-home section#block-views-blog-view-block img.img-responsive {
     display: none !important;
 }
+/*section#block-views-blog-view-block .view.view-blog-view.view-id-blog_view .views-field.views-field-nothing .blog-layer {
+    height: 36px;
+    background: #000;
+    opacity: 0.6;
+    position: relative;
+    top: -175px;
+}*/
 
 
 
@@ -341,9 +393,47 @@ header#navbar {
 .page-home section#block-block-17 input[type="email"]::placeholder{
   color: #ffffff;
 }
-.page-home section#block-block-17 input[type="submit"] {
+.page-home section#block-block-17 a {
     background-color: #668B50;
     border: none;
+    color: #ffffff;
     padding: 15px 20px;
     margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+.mod-layer {
+    background: #000 none repeat scroll 0 0;
+    opacity: 0.4; 
+    height: 159px;
+    position: relative;
+    top: -159px;
+    z-index: 0;
+}
+.mod-content {
+    z-index: 1;
+    position: relative;
+    margin: 0px 30px;
+    top: 100px;
+}
+.view.view-modules.view-id-modules .views-field.views-field-nothing {
+    height: 297px;
+    visibility: hidden;
+    margin-top: -38px;
+}
+body.page-home section#block-views-modules-block .view.view-modules.view-id-modules tr td:hover .views-field.views-field-nothing {
+  visibility: inherit !important;
+}
+.mod-body {
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+.mod-link.btn-style {
+    float: right;
 }
