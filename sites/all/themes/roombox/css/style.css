@@ -405,10 +405,12 @@ section#block-views-blog-view-block ul.pager.pager-load-more {
     background-color: #7AA65F;
     border: none;
     padding: 15px 30px;
-    text-align: center;
+    text-align: left;
     margin-top: 25px;
+    padding-left: 2px;
+
 }
-.page-home section#block-block-17 input[type="email"]::placeholder{
+.page-home section#block-block-17 input[type="email"]::placeholder {
   color: #ffffff;
 }
 .page-home section#block-block-17 a {
