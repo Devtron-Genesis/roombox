@@ -1,4 +1,8 @@
 /* General CSS */
+  .no-gutter {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   ul li.collapsed, ul li.expanded, ul li.leaf {
     list-style: none;
   }
@@ -286,7 +290,7 @@ a.btn-style:hover {
 }
 
 
-/* HOME --> 
+/* HOME -->
             BENEFITS */
 
 .page-home section#block-views-benefits-block {
@@ -362,7 +366,7 @@ a.btn-style:hover {
     margin: 20px 10px;
 }
 .page-home section#block-views-blog-view-block .pager li > a {
-    border: none; 
+    border: none;
     border-radius: 0px;
     width: 100%;
     color: #81B169;
@@ -424,7 +428,7 @@ section#block-views-blog-view-block ul.pager.pager-load-more {
 
 .mod-layer {
     background: #000 none repeat scroll 0 0;
-    opacity: 0.4; 
+    opacity: 0.4;
     height: 159px;
     position: relative;
     top: -159px;
