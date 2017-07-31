@@ -86,7 +86,7 @@
       </div>
       <div class="header-top-menu">
         <div class="container">
-          <div class="nav-left col-lg-4 col-md-3 col-sm-4 col-xs-8">
+          <div class="nav-left col-lg-2 col-md-3 col-sm-4 col-xs-8">
             <?php if ($logo): ?>
               <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
                 <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
@@ -97,7 +97,7 @@
             <?php endif; ?>
           </div>
 
-          <div class="nav-right col-lg-8 col-md-9 col-sm-8 col-xs-4">
+          <div class="nav-right col-lg-10 col-md-9 col-sm-8 col-xs-4">
             <?php if (!empty($page['header'])): ?>
               <?php print render($page['header']); ?>
             <?php endif; ?>
