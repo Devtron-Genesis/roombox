@@ -1,8 +1,9 @@
 /* General CSS */
   body {
-    font-family: 'AvenirLT';
+    font-family: 'AvenirLTStd-Black';
     padding-top: 0;
   }
+
   .no-gutter {
     padding-left: 0px;
     padding-right: 0px;
@@ -31,18 +32,42 @@
     width: 73px;
     margin-top: 10px;
   }
+  .logo-shrink {
+    width: 30px !important;
+    margin-top: 0px !important;
+    position: fixed;
+    transition: all 0.4s ease-in-out;
+  }
  .header-top-links {
     background-color: #212121;
   }
+.header-top-menu {
+    height: 100px;
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    top: 25;
+    transition: all 0.4s ease-in-out;
+}
+.head-shrink {
+  top: 0;
+  height: 50px;
+ }
   section#block-system-main-menu {
-    margin: 31px 0px;
+    padding: 32px 0px;
+    position: fixed;
+    transition: all 0.4s ease-in-out;
+    right: 0;
   }
+ .nav-shrink {
+  padding: 0 !important;
+
+ }
   ul.social-links {
     float: right;
     margin-bottom: 0px;
   }
 ul.social-links li:first-child {
-    font-weight: bold;
     padding: 4px 10px 1px;
     font-size: 13.5px;
     letter-spacing: 1px;
@@ -66,7 +91,7 @@ ul.social-links li {
   }
   .region.region-header section#block-system-main-menu ul.menu.nav li {
     float: left;
-    margin: 0px 10.5px;
+    margin: 0px 13px;
   }
   .region.region-header section#block-system-main-menu ul.menu.nav li:hover {
     background-color: #000;
@@ -77,22 +102,21 @@ ul.social-links li {
     color: #fff;
   }
   .region.region-header section#block-system-main-menu ul.menu.nav li a {
-    color: #000;
-    font-weight: bold;
+    color: #212121;
     text-transform: uppercase;
     font-size: 14px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     padding: 4px 20px 2px;
-    font-family: 'AvenirLT';
+    font-family: 'AvenirLTStd-Black';
   }
   .region.region-header section#block-system-main-menu ul.menu.nav li:nth-child(4) a {
-    padding: 7px 20px 5px;
+    padding: 6px 25px 5px 20px;
   }
   .region.region-header section#block-system-main-menu ul.menu.nav li a:hover,
   .region.region-header section#block-system-main-menu ul.menu.nav li a:focus, 
   .region.region-header section#block-system-main-menu ul.menu.nav li.active a {
     color: #fff;
-    background-color: #000;
+    background-color: #212121;
   }
   .fa-angle-down:before {
     float: right;
@@ -111,7 +135,6 @@ ul.social-links li {
     .footer-main .region.region-footer h2.block-title {
     color: #FFFFFF;
     text-transform: uppercase;
-    font-weight: bold;
     font-size: 22px;
     letter-spacing: 2px;
   }
@@ -168,7 +191,6 @@ ul.social-links li {
   }
   .tweets-pulled-listing .tweets-pulled-listing .tweet-text a {
     color: #739959;
-    font-weight: bold;
   }
   .tweet-divider {
     display: none;
@@ -222,8 +244,6 @@ ul.social-links li {
 .header-wrapper .header-top-links section#block-block-1 {
     padding: 0 30px;
 }
-
-
 header#navbar {
     position: relative;
     z-index: 3;
@@ -242,10 +262,9 @@ section#block-bean-main-slider-0 div#flexslider-1 {
   margin: 0;
 }
 .field.field-name-field-slider-heading.field-type-text.field-label-hidden {
-    font-size: 50px;
-    font-weight: bold;
+    font-size: 54px;
     width: 250px;
-    line-height: 1.4em;
+    line-height: 1.3em;
     position: relative;
     text-transform: uppercase;
     margin-top: 97px;
@@ -273,7 +292,7 @@ section#block-bean-main-slider-0 {
   background: #ffffff;
   z-index: 1; 
   position: relative;
-  margin: 20px 35px;
+  padding: 140px 35px 0px;
 }
 /*.view.view-main-slider .views-field.views-field-field-slide-image {
     height: 400px;
@@ -300,52 +319,89 @@ section#block-bean-main-slider-0 {
     clear: both;
 }*/
 .btn-style a {
-    color: #739D5E;
-    font-size: 16px;
-    border: solid 2px #739D5E;
-    padding: 10px 17px 6px;
+    color: #78a952;
+    font-size: 14px;
+    border: solid 2px #78a952;
+    padding: 11px 23px 7px;
     text-decoration: none;
     background-color: #ffffff;
-    font-weight: bold;
 }
 .btn-style a:hover {
     color: #ffffff;
-    background-color: #739D5E;
+    background-color: #78a952;
     text-transform: uppercase;
 }
 a.btn-style {
-    color: #739D5E;
-    font-size: 16px;
-    border: solid 2px #739D5E;
-    padding: 10px 17px 6px;
+    color: #78a952;
+    font-size: 14px;
+    border: solid 2px #78a952;
+    padding: 11px 18px 7px;
     text-decoration: none;
     background-color: #ffffff;
     text-transform: uppercase;
-    font-weight: bold;
+    letter-spacing: 0.7px;
 }
 .field.field-name-field-about-link.field-type-link-field.field-label-hidden a.btn-style {
      background: #ECECEC;
 }
 a.btn-style:hover {
     color: #ffffff;
-    background-color: #739D5E !important;
+    background-color: #78a952 !important;
 }
-
-
-
+.arrow-down {
+    text-align: center;
+    position: relative;
+    top: -45px;
+    z-index: 1;
+}
+.arrow-down a {
+  color: #212121;
+}
+.cntct-btn {
+    float: right;
+    margin-right: 20px;
+}
+.cntct-btn a {
+    border: solid 2px #212121;
+    padding: 8px 12px 5px;
+    font-size: 15px;
+    color: #fff;
+    background: #212121;
+    position: fixed;
+    top: 610px;
+    z-index: 5;
+    right: 30px;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+}
+@-webkit-keyframes arrow-jump {
+  0%   { opacity: 1;}
+  100% { opacity: 1; 
+        transform: translateY(10px);
+    }
+  
+}
+.arrow-down {
+  animation:         arrow-jump 1s infinite; /* IE 10+, Fx 29+ */
+}
+.fa-lg {
+    font-size: 25px;
+}
 /* HOME -->
             BENEFITS */
 
 section#block-bean-uses h2.block-title {
   text-transform: uppercase;
-  font-weight: bold;
+  font-size: 23px;
+  letter-spacing: 3px;
 }
 section#block-bean-benefits-0 h2.block-title {
-  text-transform: uppercase;
+    text-transform: uppercase;
+    font-size: 23px;
+    letter-spacing: 3px;
 }
-
 .page-home section#block-views-benefits-block {
-    background-color: #739D5E;
+    background-color: #78a952;
     color: #ffffff;
     padding: 30px 20px 50px;
 }
@@ -356,14 +412,14 @@ section#block-bean-benefits-0 h2.block-title {
 section#block-bean-benefits-0, section#block-bean-uses {
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding: 70px 30px;
+  padding: 61px 33px 75px;
   z-index: 1;
   position: relative;
+  color: #fff;
 }
 .field.field-name-field-benifit-description.field-type-text-long.field-label-hidden {
     font-size: 15px;
-    line-height: 30px;
-    font-weight: bold;
+    line-height: 29px;
 }
 section#block-bean-benefits-0 .field.field-name-field-benifit-image.field-type-image.field-label-hidden, section#block-bean-uses .field.field-name-field-benifit-image.field-type-image.field-label-hidden {
     display: none;
@@ -402,36 +458,47 @@ section#block-bean-uses .field.field-name-field-benifit-image.field-type-image.f
 }
 .da-thumbs li div {
   position: absolute;
-  background: #333;
-  background: rgba(0,0,0,0.5);
+  background: rgba(33,33,33,0.6);
   width: 100%;
   height: 100%;
 }
 .da-thumbs li div h2 {
-  margin: 115px 20px 10px 20px;
-  font-weight: bold;
-  text-transform: uppercase;
+    margin: 120px 20px 10px 30px;
+    text-transform: uppercase;
+    font-size: 27px;
+    letter-spacing: 3px;
 }
 .da-thumbs li div p {
-  margin: 10px 20px 10px 20px;
-  line-height: 28px;
+    margin: -5px 20px 10px 30px;
+    line-height: 28px;
 }
 .da-thumbs li div a:nth-child(2) {
-    color: #739D5E;
+    color: #78a952;
     font-size: 14px;
-    border: solid 2px #739D5E;
+    border: solid 2px #78a952;
     padding: 8px 0px 4px 20px;
     text-decoration: none;
     background-color: #ffffff;
     width: 166px;
     float: right;
     margin: 30px 20px 10px;
-    font-weight: bold;
 }
 .da-thumbs li div a:nth-child(2):hover {
     color: #ffffff;
-    background-color: #739D5E;
+    background-color: #78a952;
     text-transform: uppercase;
+}
+.view.view-modules.view-id-modules.view-display-id-block .views-field.views-field-field-call-to-action {
+    position: absolute;
+    margin: 305px 0px 0px 449px;
+}
+.view.view-modules.view-id-modules.view-display-id-block td.col-1:hover .btn-style a {
+  color: #fff;
+  background: #78a952;
+}
+.view.view-modules.view-id-modules.view-display-id-block td.col-2:hover .btn-style a {
+  color: #fff;
+  background: #78a952;
 }
 /*.page-home section#block-views-modules-block .view.view-modules.view-id-modules .views-field.views-field-field-module-image img.img-responsive {
   display: none;
@@ -465,16 +532,15 @@ section#block-bean-uses .field.field-name-field-benifit-image.field-type-image.f
 }
 section#block-bean-about-us-heading .field.field-name-field-about-heading.field-type-text.field-label-hidden {
     font-size: 25px;
-    font-weight: bold;
-    margin: 85px 0px 0px 15px;
+    margin: 90px 0px 0px 15px;
+    letter-spacing: 3px;
 }
 section#block-bean-about-us-heading .field.field-name-field-description.field-type-text.field-label-hidden {
-    line-height: 30px;
-    margin: 10px 0px 0px 15px;
-    font-weight: bold;
+    line-height: 28px;
+    margin: 11px 0px 0px 15px;
 }
 .field.field-name-field-about-link.field-type-link-field.field-label-hidden {
-    margin: 20px 0px 0px 15px;
+    margin: 24px 0px 0px 15px;
 }
 .owl-theme .owl-controls {
     display: none !important;
@@ -498,6 +564,7 @@ section#block-bean-about-us-heading .field.field-name-field-description.field-ty
     color: #81B169;
     background-color: #212121;
     padding: 9px 14px 6px;
+    letter-spacing: 1px;
 }
 section#block-views-blog-view-block ul.pager.pager-load-more {
     margin-top: 0px;
@@ -532,28 +599,28 @@ section#block-views-blog-view-block .views-field.views-field-nothing {
     opacity: 0.4;
     height: 120px;
     position: relative;
-    top: -137px;
+    top: -133px;
     z-index: 0;
 }
 .blog-link.btn-style {
-    margin-top: 20px;
+    margin-top: 22px;
 }
 .page-home section#block-bean-about-us-heading img.img-responsive {
     height: 360px;
 }
 .blog-body p {
     line-height: 27px;
-    font-weight: bold;
 }
 .blog-heading h2 {
-    margin: 0px 0px 6px;
+    margin: 5px 0px 3px;
     text-transform: uppercase;
+    font-size: 27px;
+    letter-spacing: 2px;
 }
 /*          CTA */
 .page-home section#block-block-17 {
-    background-color: #739D5E;
+    background-color: #212121;
     margin-top: -20px;
-    padding: 80px 0px 100px;
     color: #ffffff;
     position: relative;
     z-index: 2;
@@ -561,11 +628,11 @@ section#block-views-blog-view-block .views-field.views-field-nothing {
 .page-home section#block-block-17 input[type="email"] {
     background-color: #7AA65F;
     border: none;
-    padding: 17px 20px 17px 10px;
+    padding: 18px 20px 18px 10px;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 20px;
     text-align: center;
-    width: 230px;
+    width: 232px;
 }
 .page-home section#block-block-17 input[type="email"]::placeholder {
   color: #ffffff;
@@ -574,26 +641,43 @@ section#block-views-blog-view-block .views-field.views-field-nothing {
     background-color: #668B50;
     border: none;
     color: #ffffff;
-    padding: 16px 15px 18px 15px;
+    padding: 17px 15px 18px 15px;
     text-transform: uppercase;
     font-size: 20px;
 }
 section#block-block-17 h2 {
-  text-transform: uppercase;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-size: 32px;
 }
 section#block-block-17 {
     top: 0px;
+    overflow: hidden;
 }
+section#block-block-17 .cta {
+  width: 100%;
+  margin: 0 auto;
+  height: 342px;
+  padding: 90px 0px;
+} 
+
 .dct-bg {
     background-image: url(http://roombox.local.com/sites/default/files/op_0.jpg);
     position: absolute;
     opacity: 0.6;
     z-index: -1;
     width: 100%;
-    height: 342px;
+    height: 525px;
     top: inherit;
     background-attachment: fixed;
+-webkit-backface-visibility:hidden; 
+-webkit-transform: translateZ(0);
 }
+  section#block-block-17 .xtranslate{
+    position: relative;
+    bottom: 0;   
+  }
+
 /*
 .mod-content {
     z-index: 1;
@@ -622,7 +706,6 @@ body.page-home section#block-views-modules-block .view.view-modules.view-id-modu
 
 section#block-bean-headline-text .field.field-name-field-about-heading.field-type-text.field-label-hidden {
     font-size: 30px;
-    font-weight: bold;
     margin: 80px 0px 0px 0px;
 }
 section#block-bean-headline-text .field.field-name-field-description.field-type-text.field-label-hidden {
@@ -631,10 +714,11 @@ section#block-bean-headline-text .field.field-name-field-description.field-type-
 }
 section#block-bean-headline-text-0 .field.field-name-field-about-heading.field-type-text.field-label-hidden {
     font-size: 30px;
-    font-weight: bold;
     margin: 80px 0px 0px 0px;
 }
 section#block-bean-headline-text-0 .field.field-name-field-description.field-type-text.field-label-hidden {
     line-height: 30px;
     margin: 30px 0px;
 }
+
+
