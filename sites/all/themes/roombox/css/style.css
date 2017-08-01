@@ -21,9 +21,6 @@
     margin:0;
     padding: 0;
   }
-/*  .region.region-content {
-    margin-top: 40px;
-  }*/
 /* Header CSS */
 .header-top-menu.blockFloat-processed.blockFloat-0.floating-block-active {
   background-color: #fff;
@@ -125,9 +122,7 @@ ul.social-links li {
     position: relative;
     padding-right: 10px;
   }
-
  /*Footer Main CSS */
-
   .footer-main {
     background-color: #212121;
     padding: 50px 0px 30px 0px;
@@ -158,15 +153,7 @@ ul.social-links li {
     background-color: none;
     background: none;
   }
-/*  .footer-main .assistance .region.region-footer ul.menu.nav li a:hover {
-    padding: 5px 0px;
-    background-color: none;
-    background: none;
-  }
-  /*    .assistance.region.region-footer ul li:first-child {
-    padding-top: 5px;
-  }*/
-    .footer-main ul {
+  .footer-main ul {
     padding-left: 0px;
   }
     .social .footer-main ul.botom-social-links {
@@ -226,10 +213,6 @@ ul.social-links li {
   #block-menu-menu-bottom-footer-menu ul li.last {
     border-right: none;
   }
-/*  .footer-bottom .block.block-menu.contextual-links-region.clearfix .menu.nav {
-    margin: 0 auto;
-    width: 653px;
-  }*/
   .region.region-footer-bottom {
     display: table;
     margin: 0 auto;
@@ -240,7 +223,6 @@ ul.social-links li {
     display: block;
   }
 /*        HEADER*/
-
 .header-wrapper .header-top-links section#block-block-1 {
     padding: 0 30px;
 }
@@ -248,9 +230,6 @@ header#navbar {
     position: relative;
     z-index: 3;
 }
-/*.flexslider .slides img {
-  display: none;
-}*/
 section#block-bean-main-slider-0 li {
   height: 500px;
   background-repeat: no-repeat;
@@ -294,30 +273,6 @@ section#block-bean-main-slider-0 {
   position: relative;
   padding: 140px 35px 0px;
 }
-/*.view.view-main-slider .views-field.views-field-field-slide-image {
-    height: 400px;
-}
-.view.view-main-slider img.img-responsive {
-    position: relative;
-    top: -398px;
-    z-index: -3;
-}
-.view.view-main-slider .views-field.views-field-title {
-    float: right;
-    width: 30%;
-}
-.view.view-main-slider .views-field.views-field-body {
-    float: right;
-    width: 30%;
-    clear: both;
-    margin: 0px 0px 20px 0px;
-    line-height: 30px;
-}
-.view.view-main-slider .views-field.views-field-field-slide-link {
-    float: right;
-    width: 30%;
-    clear: both;
-}*/
 .btn-style a {
     color: #78a952;
     font-size: 14px;
@@ -379,17 +334,15 @@ a.btn-style:hover {
   100% { opacity: 1; 
         transform: translateY(10px);
     }
-  
 }
 .arrow-down {
-  animation:         arrow-jump 1s infinite; /* IE 10+, Fx 29+ */
+  animation: arrow-jump 1s infinite;
 }
 .fa-lg {
     font-size: 25px;
 }
 /* HOME -->
             BENEFITS */
-
 section#block-bean-uses h2.block-title {
   text-transform: uppercase;
   font-size: 23px;
@@ -424,14 +377,6 @@ section#block-bean-benefits-0, section#block-bean-uses {
 section#block-bean-benefits-0 .field.field-name-field-benifit-image.field-type-image.field-label-hidden, section#block-bean-uses .field.field-name-field-benifit-image.field-type-image.field-label-hidden {
     display: none;
 }
-/*section#block-bean-uses {
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  padding: 40px 50px 60px;
-}
-section#block-bean-uses .field.field-name-field-benifit-image.field-type-image.field-label-hidden {
-  display: none;
-}*/
 /*          MODULES */
 .da-thumbs {
   list-style: none;
@@ -500,26 +445,6 @@ section#block-bean-uses .field.field-name-field-benifit-image.field-type-image.f
   color: #fff;
   background: #78a952;
 }
-/*.page-home section#block-views-modules-block .view.view-modules.view-id-modules .views-field.views-field-field-module-image img.img-responsive {
-  display: none;
-}
-.page-home section#block-views-modules-block .view.view-modules.view-id-modules {
-  color: #ffffff;
-}
-.page_home section#block-views-modules-block .view.view-modules.view-id-modules table.views-view-grid tr td {
-  padding: 20px;
-}
-.page-home section#block-views-modules-block .views-field.views-field-title {
-    padding: 0 15px;
-}
-.page-home section#block-views-modules-block .views-field.views-field-body {
-    padding: 10px 17px;
-    line-height: 25px;
-}
-.page-home section#block-views-modules-block .views-field.views-field-field-call-to-action {
-    padding: 10px 20px;
-    float: right;
-}*/
 /*          USAGE */
 .page-home section#block-views-uses-block {
     padding: 30px 20px 50px;
@@ -576,13 +501,6 @@ section#block-views-blog-view-block ul.pager.pager-load-more {
 .page-home section#block-views-blog-view-block img.img-responsive {
     display: none !important;
 }
-/*section#block-views-blog-view-block .view.view-blog-view.view-id-blog_view .views-field.views-field-nothing .blog-layer {
-    height: 36px;
-    background: #000;
-    opacity: 0.6;
-    position: relative;
-    top: -175px;
-}*/
 section#block-views-blog-view-block .views-field.views-field-nothing {
     height: 215px;
     margin-top: -20px;
@@ -660,7 +578,6 @@ section#block-block-17 .cta {
   height: 342px;
   padding: 90px 0px;
 } 
-
 .dct-bg {
     background-image: url(http://roombox.local.com/sites/default/files/op_0.jpg);
     position: absolute;
@@ -673,35 +590,12 @@ section#block-block-17 .cta {
 -webkit-backface-visibility:hidden; 
 -webkit-transform: translateZ(0);
 }
-  section#block-block-17 .xtranslate{
+section#block-block-17 .xtranslate {
     position: relative;
-    bottom: 0;   
-  }
-
-/*
-.mod-content {
-    z-index: 1;
-    position: relative;
-    margin: 0px 30px;
-    top: 100px;
+    bottom: 0;
+    width: 70%;
+    margin: 0 auto;
 }
-.view.view-modules.view-id-modules .views-field.views-field-nothing {
-    height: 297px;
-    visibility: hidden;
-    margin-top: -38px;
-}
-body.page-home section#block-views-modules-block .view.view-modules.view-id-modules tr td:hover .views-field.views-field-nothing {
-  visibility: inherit !important;
-}
-.mod-body {
-    line-height: 25px;
-    margin-bottom: 40px;
-}
-.mod-link.btn-style {
-    float: right;
-}*/
-
-
 /*CUSTOMER PAGE*/
 
 section#block-bean-headline-text .field.field-name-field-about-heading.field-type-text.field-label-hidden {
@@ -720,5 +614,3 @@ section#block-bean-headline-text-0 .field.field-name-field-description.field-typ
     line-height: 30px;
     margin: 30px 0px;
 }
-
-

@@ -18,7 +18,47 @@
   //   });
   // });
 
-
+var scrollTimer = null;
+$(window).scroll(function() {
+    var top = $(document).scrollTop();
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(
+        function() 
+        {
+            console.log(top);
+            if(top <= 2050)
+            {
+                $(".xtranslate").animate({width:'70%'});
+            }
+            else if(top > 2050 && top <=2100)
+            {
+                $(".xtranslate").animate({width:'72%'});
+            }
+            else if(top > 2100 && top <=2150)
+            {
+                $(".xtranslate").animate({width:'76%'});
+            } else if(top > 2150 && top <=2200)
+            {
+                $(".xtranslate").animate({width:'80%'});
+            } else if(top > 2200 && top <=2250)
+            {
+                $(".xtranslate").animate({width:'84%'});
+            } else if(top > 2250 && top <=2300)
+            {
+                $(".xtranslate").animate({width:'88%'});
+            }  else if(top > 2300 && top <=2350)
+            {
+                $(".xtranslate").animate({width:'92%'});
+            }  else if(top > 2350 && top <=2400)
+            {
+                $(".xtranslate").animate({width:'96%'});
+            } else if(top > 2400)
+            {
+                $(".xtranslate").animate({width:'100%'});
+            } 
+        }, 100);
+    
+});
 
 
 // MENU SHRINK
