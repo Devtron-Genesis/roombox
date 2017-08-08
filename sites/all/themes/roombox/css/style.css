@@ -1,12 +1,15 @@
 /* General CSS */
   body {
-    font-family: 'AvenirLTStd-Black';
+    font-family: 'Avenir';
+    font-weight: bold;
     padding-top: 0;
   }
-
   .no-gutter {
     padding-left: 0px;
     padding-right: 0px;
+  }
+  h1.page-header {
+    display: none;
   }
   ul li.collapsed, ul li.expanded, ul li.leaf {
     list-style: none;
@@ -104,10 +107,11 @@ ul.social-links li {
     font-size: 14px;
     letter-spacing: 1px;
     padding: 4px 20px 2px;
-    font-family: 'AvenirLTStd-Black';
+    font-family: 'Avenir';
   }
   .region.region-header section#block-system-main-menu ul.menu.nav li:nth-child(4) a {
     padding: 6px 25px 5px 20px;
+    font-weight: bold;
   }
   .region.region-header section#block-system-main-menu ul.menu.nav li a:hover,
   .region.region-header section#block-system-main-menu ul.menu.nav li a:focus, 
@@ -127,12 +131,13 @@ ul.social-links li {
     background-color: #212121;
     padding: 50px 0px 30px 0px;
   }
-    .footer-main .region.region-footer h2.block-title {
+.footer-main .region.region-footer h2.block-title {
     color: #FFFFFF;
     text-transform: uppercase;
     font-size: 22px;
     letter-spacing: 2px;
-  }
+    font-weight: bold;
+}
     .footer-main .region.region-footer ul.menu.nav li a {
     padding: 1px 0px;
     color: #DADADA;
@@ -171,11 +176,12 @@ ul.social-links li {
     .footer-main ul.botom-social-links li a i {
     color: #ffffff;
   }
-  .footer-main .region.region-footer .h3 {
+.footer-main .region.region-footer .h3 {
     color: #fff;
     margin-bottom: -20px;
     text-transform: uppercase;
-  }
+    font-weight: bold;
+}
   .tweets-pulled-listing .tweets-pulled-listing .tweet-text a {
     color: #739959;
   }
@@ -296,7 +302,7 @@ a.btn-style {
     text-transform: uppercase;
     letter-spacing: 0.7px;
 }
-.field.field-name-field-about-link.field-type-link-field.field-label-hidden a.btn-style {
+.page-home .field.field-name-field-about-link.field-type-link-field.field-label-hidden a.btn-style {
      background: #ECECEC;
 }
 a.btn-style:hover {
@@ -338,15 +344,19 @@ a.btn-style:hover {
 .arrow-down {
   animation: arrow-jump 1s infinite;
 }
-.fa-lg {
+.arrow-down a i.fa.fa-angle-double-down {
+    font-size: 35px;
+}
+.cntct-btn a .fa-lg {
     font-size: 25px;
 }
 /* HOME -->
             BENEFITS */
 section#block-bean-uses h2.block-title {
-  text-transform: uppercase;
-  font-size: 23px;
-  letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 23px;
+    letter-spacing: 3px;
+    font-weight: bold;
 }
 section#block-bean-benefits-0 h2.block-title {
     text-transform: uppercase;
@@ -412,6 +422,7 @@ section#block-bean-benefits-0 .field.field-name-field-benifit-image.field-type-i
     text-transform: uppercase;
     font-size: 27px;
     letter-spacing: 3px;
+    font-weight: bold;
 }
 .da-thumbs li div p {
     margin: -5px 20px 10px 30px;
@@ -450,17 +461,19 @@ section#block-bean-benefits-0 .field.field-name-field-benifit-image.field-type-i
     padding: 30px 20px 50px;
 }
 /*          ABOUT US */
-.page-home section#block-bean-about-us-heading {
+section#block-bean-about-us-heading {
     background-color: #ECECEC;
     z-index: 1;
     position: relative;
 }
-section#block-bean-about-us-heading .field.field-name-field-about-heading.field-type-text.field-label-hidden {
+
+.field.field-name-field-about-heading.field-type-text.field-label-hidden {
     font-size: 25px;
     margin: 90px 0px 0px 15px;
     letter-spacing: 3px;
+    text-transform: uppercase;
 }
-section#block-bean-about-us-heading .field.field-name-field-description.field-type-text.field-label-hidden {
+.field.field-name-field-description.field-type-text.field-label-hidden {
     line-height: 28px;
     margin: 11px 0px 0px 15px;
 }
@@ -471,18 +484,18 @@ section#block-bean-about-us-heading .field.field-name-field-description.field-ty
     display: none !important;
 }
 /*          BLOG */
-.page-home section#block-views-blog-view-block .views-field.views-field-title {
+.view.view-blog-view.view-id-blog_view.view-display-id-blog .views-field.views-field-title {
     margin: 0px 10px;
     color: #ffffff;
 }
-.page-home section#block-views-blog-view-block .views-field.views-field-body {
+.view.view-blog-view.view-id-blog_view.view-display-id-blog .views-field.views-field-body {
     margin: 20px 10px;
     color: #ffffff;
 }
-.page-home section#block-views-blog-view-block .views-field.views-field-field-blog-link {
+.view.view-blog-view.view-id-blog_view.view-display-id-blog .views-field.views-field-field-blog-link {
     margin: 20px 10px;
 }
-.page-home section#block-views-blog-view-block .pager li > a {
+.view.view-blog-view.view-id-blog_view.view-display-id-blog .pager li > a {
     border: none;
     border-radius: 0px;
     width: 100%;
@@ -491,17 +504,17 @@ section#block-bean-about-us-heading .field.field-name-field-description.field-ty
     padding: 9px 14px 6px;
     letter-spacing: 1px;
 }
-section#block-views-blog-view-block ul.pager.pager-load-more {
+.view.view-blog-view.view-id-blog_view.view-display-id-blog ul.pager.pager-load-more {
     margin-top: 0px;
     background: #212121;
 }
-.page-home section#block-views-blog-view-block .pager li > a: hover {
+.view.view-blog-view.view-id-blog_view.view-display-id-blog .pager li > a: hover {
     color: #ffffff;
 }
-.page-home section#block-views-blog-view-block img.img-responsive {
+.view.view-blog-view.view-id-blog_view.view-display-id-blog img.img-responsive {
     display: none !important;
 }
-section#block-views-blog-view-block .views-field.views-field-nothing {
+.view.view-blog-view.view-id-blog_view.view-display-id-blog .views-field.views-field-nothing {
     height: 215px;
     margin-top: -20px;
 }
@@ -520,10 +533,14 @@ section#block-views-blog-view-block .views-field.views-field-nothing {
     top: -133px;
     z-index: 0;
 }
+
 .blog-link.btn-style {
     margin-top: 22px;
 }
 .page-home section#block-bean-about-us-heading img.img-responsive {
+    height: 360px;
+}
+.page-home .field.field-name-field-about-image.field-type-image.field-label-hidden img.img-responsive {
     height: 360px;
 }
 .blog-body p {
@@ -534,16 +551,18 @@ section#block-views-blog-view-block .views-field.views-field-nothing {
     text-transform: uppercase;
     font-size: 27px;
     letter-spacing: 2px;
+    font-weight: bold;
 }
 /*          CTA */
-.page-home section#block-block-17 {
+
+section#block-bean-cta, .field.field-name-field-html-field.field-type-text-long.field-label-hidden {
     background-color: #212121;
     margin-top: -20px;
     color: #ffffff;
     position: relative;
     z-index: 2;
 }
-.page-home section#block-block-17 input[type="email"] {
+section#block-bean-cta input[type="email"], .field.field-name-field-html-field.field-type-text-long.field-label-hidden input[type="email"] {
     background-color: #7AA65F;
     border: none;
     padding: 18px 20px 18px 10px;
@@ -552,34 +571,35 @@ section#block-views-blog-view-block .views-field.views-field-nothing {
     text-align: center;
     width: 232px;
 }
-.page-home section#block-block-17 input[type="email"]::placeholder {
+section#block-bean-cta input[type="email"]::placeholder, .field.field-name-field-html-field.field-type-text-long.field-label-hidden input[type="email"]::placeholder {
   color: #ffffff;
 }
-.page-home section#block-block-17 a {
+.cta a {
     background-color: #668B50;
     border: none;
     color: #ffffff;
-    padding: 17px 15px 18px 15px;
+    padding: 15px 15px 20px;
     text-transform: uppercase;
     font-size: 20px;
 }
-section#block-block-17 h2 {
+section#block-bean-cta h2 {
     text-transform: uppercase;
     letter-spacing: 1.3px;
     font-size: 32px;
+    font-weight: bold;
 }
-section#block-block-17 {
+section#block-bean-cta, .field.field-name-field-html-field.field-type-text-long.field-label-hidden {
     top: 0px;
     overflow: hidden;
 }
-section#block-block-17 .cta {
+section#block-bean-cta .cta, .field.field-name-field-html-field.field-type-text-long.field-label-hidden .cta {
   width: 100%;
   margin: 0 auto;
   height: 342px;
   padding: 90px 0px;
 } 
 .dct-bg {
-    background-image: url(http://roombox.local.com/sites/default/files/op_0.jpg);
+    background-image: url(http://roombox.local.com/sites/default/files/op.jpg);
     position: absolute;
     opacity: 0.6;
     z-index: -1;
@@ -590,7 +610,7 @@ section#block-block-17 .cta {
 -webkit-backface-visibility:hidden; 
 -webkit-transform: translateZ(0);
 }
-section#block-block-17 .xtranslate {
+section#block-bean-cta .xtranslate, .field.field-name-field-html-field.field-type-text-long.field-label-hidden .xtranslate {
     position: relative;
     bottom: 0;
     width: 70%;
@@ -613,4 +633,98 @@ section#block-bean-headline-text-0 .field.field-name-field-about-heading.field-t
 section#block-bean-headline-text-0 .field.field-name-field-description.field-type-text.field-label-hidden {
     line-height: 30px;
     margin: 30px 0px;
+}
+
+/*OTHER PAGES*/
+    
+    /*HEADER IMAGE*/
+
+.node-other-pages .field.field-name-field-header-background-image.field-type-image.field-label-hidden img.img-responsive {
+  display: none;
+}
+.field.field-name-field-header-background-heading.field-type-text.field-label-hidden {
+    font-size: 51px;
+    background-color: #78a952;
+    color: #fff;
+    display: table;
+    padding: 10px 35px 0px 30px;
+    text-transform: uppercase;
+    margin: -340px auto 10px;
+    letter-spacing: 4px;
+}
+.field.field-name-body.field-type-text-with-summary.field-label-hidden {
+    background: rgba(255, 255, 255, 0.7) none repeat scroll 0 0;
+    display: table;
+    font-size: 31px;
+    margin: 18px auto 208px;
+    padding: 8px 20px 0;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+.entity.entity-bean.bean-video-block.clearfix {
+    padding: 20px 30px;
+}
+.field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .field.field-name-field-about-image.field-type-image.field-label-hidden img.img-responsive {
+    height: 325px;
+    width: 580px;
+}
+.field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .entity.entity-bean.bean-about-us.view-mode-default {
+    padding: 100px 30px 20px;
+}
+.field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .field.field-name-field-about-heading.field-type-text.field-label-hidden {
+    font-size: 47px;
+    margin: 45px 0px 0px 35px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .field.field-name-field-description.field-type-text.field-label-hidden {
+    line-height: 28px;
+    margin: 0px 0px 0px 35px;
+}
+.field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .field.field-name-field-about-link.field-type-link-field.field-label-hidden {
+    margin: 24px 0px 0px 35px;
+}
+.field.field-name-field-video-tittle.field-type-text.field-label-hidden {
+    font-size: 47px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: 10px;
+}
+.field.field-name-field-description-bef-video.field-type-text-long.field-label-hidden {
+    font-weight: lighter;
+    line-height: 30px;
+    margin: 25px 10px 30px 10px;
+}
+.field.field-name-field-description-aft-video.field-type-text-long.field-label-hidden {
+    font-weight: lighter;
+    line-height: 30px;
+    margin: 25px 10px 10px 10px;
+}
+.node-type-other-pages .arrow-down {
+    top: 545px;
+}
+section#block-simplified-social-share-open-sharing {
+    background-color: #ececec;
+    padding: 13px 10px 9px;
+    position: absolute;
+    top: 2357px;
+    width: 100%;
+    z-index: 10;
+}
+.node-type-other-pages .field-item.odd .field.field-name-field-html-field.field-type-text-long.field-label-hidden {
+    background-color: #212121;
+    color: #ffffff;
+    margin-top: 60px;
+    position: relative;
+    z-index: 2;
+}
+section#block-simplified-social-share-open-sharing p {
+    float: left;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 16px;
+}
+section#block-simplified-social-share-open-sharing .share-provider.flat.square.size-32.horizontal {
+    margin-right: 40px;
 }

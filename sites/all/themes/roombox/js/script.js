@@ -11,65 +11,25 @@
   $(document).ready(function() {
 
 
-// var scrollTimer = null;
-// $(window).scroll(function() {
-//     var top = $(document).scrollTop();
-//     clearTimeout(scrollTimer);
-//     scrollTimer = setTimeout(
-//         function() 
-//         {
-//             console.log(top);
-//             if(top <= 2050)
-//             {
-//                 $(".xtranslate").animate({width:'70%'});
-//             }
-//             else if(top > 2050 && top <=2100)
-//             {
-//                 $(".xtranslate").animate({width:'72%'});
-//             }
-//             else if(top > 2100 && top <=2150)
-//             {
-//                 $(".xtranslate").animate({width:'76%'});
-//             } else if(top > 2150 && top <=2200)
-//             {
-//                 $(".xtranslate").animate({width:'80%'});
-//             } else if(top > 2200 && top <=2250)
-//             {
-//                 $(".xtranslate").animate({width:'84%'});
-//             } else if(top > 2250 && top <=2300)
-//             {
-//                 $(".xtranslate").animate({width:'88%'});
-//             }  else if(top > 2300 && top <=2350)
-//             {
-//                 $(".xtranslate").animate({width:'92%'});
-//             }  else if(top > 2350 && top <=2400)
-//             {
-//                 $(".xtranslate").animate({width:'96%'});
-//             } else if(top > 2400)
-//             {
-//                 $(".xtranslate").animate({width:'100%'});
-//             } 
-//         }, 100);
-    
-// });
 
+$('<p>Share On Social Media:</p>').appendTo('.os-share-widget-interface.share-container');
+
+
+// RESIZING OF CTA
 $(window).on('scroll', function () {
     var scrollTop = $(window).scrollTop();
-    if (scrollTop < 2150) {
+    if (scrollTop < 2050) {
         $('.xtranslate').stop().animate({width: "70%"},200);
-    } else if (scrollTop > 2150 && scrollTop < 2300) {
+    } else if (scrollTop > 2050 && scrollTop < 2100) {
         $('.xtranslate').stop().animate({width: "80%"},200);
-    }  else if (scrollTop > 2300 && scrollTop < 2450) {
+    }  else if (scrollTop > 2100 && scrollTop < 2250) {
         $('.xtranslate').stop().animate({width: "90%"},200);
     }  else {
         $('.xtranslate').stop().animate({width: "100%"},200);
     } 
 });
 
-
-
 // MENU SHRINK
-
     $(document).on("scroll", function(){
     if
       ($(document).scrollTop() > 50){
@@ -85,20 +45,12 @@ $(window).on('scroll', function () {
     }
   });
 
-
-
 // SROLL DOWN ARROW
-
 $(".arrow-down a").click(function() {
     $('html,body').animate({
         scrollTop: $(".arrow-down a").offset().top},
         'slow');
 });
-
-
-
-
-
 
   // SMOOTH SCROLL SLIDER TEXT
   redrawDotNav();  
@@ -117,19 +69,16 @@ $(".arrow-down a").click(function() {
     var section1Top =  0;  
   }
   // SET SLIDER, BLOG AND MODULE IMAGE AS BACKGROUND IMAGE
-    // $('section#block-views-modules-block .view-id-modules td').each(function() {
-    //   var bg_img = $(this).find('img').attr('src');
-    //   $(this).css("background-image", 'url("' + bg_img + '")').css('background-size', 'cover').css('height', '317px');
-    // });
-    $('section#block-views-blog-view-block .view-id-blog_view td').each(function() {
+
+    $('.node-other-pages').each(function(){
+      var hdr_bg_img = $(this).find('img').attr('src');
+      $(this).find('header').css("background-image", 'url("'+ hdr_bg_img +'")').css('background-size', 'cover').css('height', '562px');
+    });
+
+    $('.view-id-blog_view td').each(function() {
       var bg_img = $(this).find('img').attr('src');
       $(this).css("background-image", 'url("' + bg_img + '")').css('background-size', 'cover').css('height', '240px');
     });
-
-    // $('section#block-bean-main-slider-0 li').each(function() {
-    //   var bg_img = $(this).find('img').attr('src');
-    //   $(this).css("background-image", 'url("' + bg_img + '")');
-    // });
 
     $('section#block-bean-benefits-0').each(function() {
       var bg_img = $(this).find('img').attr('src');
@@ -140,6 +89,7 @@ $(".arrow-down a").click(function() {
       var bg_img = $(this).find('img').attr('src');
       $(this).css("background-image", 'url("' + bg_img + '")').css('background-size', 'cover');
     });
+
     $('.header-wrapper .header-top-links > div').removeClass('container');
     $('.header-wrapper .header-top-menu > div').removeClass('container');
     // ADD SPACE IN LOAD MORE
@@ -154,7 +104,7 @@ $(".arrow-down a").click(function() {
   $(document).ajaxComplete(function(e) {
 
   // SET BLOG AND MODULE IMAGE AS BACKGROUND IMAGE
-    $('section#block-views-blog-view-block .view-id-blog_view td').each(function() {
+    $('.view-id-blog_view td').each(function() {
       var bg_img = $(this).find('img').attr('src');
       $(this).css("background-image", 'url("' + bg_img + '")').css('background-size', 'cover').css('height', '240px');;
     });
