@@ -19,6 +19,8 @@
   }
   .row {
     margin: 0;
+    clear: both;
+ 
   }
   section.col-sm-12 {
     margin:0;
@@ -77,7 +79,7 @@ ul.social-links li {
     list-style: none;
     padding: 2.5px 5.2px 0.5px;
     color: #fff;
-    font-size: 15.5px;
+    font-size: 15px;
 }
   ul.social-links li i.fa {
     color: #fff;
@@ -311,8 +313,8 @@ a.btn-style:hover {
 }
 .arrow-down {
     text-align: center;
-    position: relative;
-    top: -45px;
+    /*position: relative;
+    top: -45px;*/
     z-index: 1;
 }
 .arrow-down a {
@@ -328,12 +330,14 @@ a.btn-style:hover {
     font-size: 15px;
     color: #fff;
     background: #212121;
-    position: fixed;
-    top: 610px;
-    z-index: 5;
+   /* position: fixed;
+    top: 617px;*/
+    z-index: 11;
     right: 30px;
     text-decoration: none;
     letter-spacing: 0.3px;
+    position: fixed;
+    bottom: 30px;
 }
 @-webkit-keyframes arrow-jump {
   0%   { opacity: 1;}
@@ -343,7 +347,12 @@ a.btn-style:hover {
 }
 .arrow-down {
   animation: arrow-jump 1s infinite;
+    position: relative;
+    bottom: 50px;
+    margin-bottom: 0px;
+    z-index: 10;
 }
+
 .arrow-down a i.fa.fa-angle-double-down {
     font-size: 35px;
 }
@@ -448,14 +457,14 @@ section#block-bean-benefits-0 .field.field-name-field-benifit-image.field-type-i
     position: absolute;
     margin: 305px 0px 0px 449px;
 }
-.view.view-modules.view-id-modules.view-display-id-block td.col-1:hover .btn-style a {
+/*.view.view-modules.view-id-modules.view-display-id-block td.col-1:hover .btn-style a {
   color: #fff;
   background: #78a952;
 }
 .view.view-modules.view-id-modules.view-display-id-block td.col-2:hover .btn-style a {
   color: #fff;
   background: #78a952;
-}
+}*/
 /*          USAGE */
 .page-home section#block-views-uses-block {
     padding: 30px 20px 50px;
@@ -503,6 +512,7 @@ section#block-bean-about-us-heading {
     background-color: #212121;
     padding: 9px 14px 6px;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 .view.view-blog-view.view-id-blog_view.view-display-id-blog ul.pager.pager-load-more {
     margin-top: 0px;
@@ -578,9 +588,10 @@ section#block-bean-cta input[type="email"]::placeholder, .field.field-name-field
     background-color: #668B50;
     border: none;
     color: #ffffff;
-    padding: 15px 15px 20px;
+    padding: 17px 15px 18px;
     text-transform: uppercase;
     font-size: 20px;
+
 }
 section#block-bean-cta h2 {
     text-transform: uppercase;

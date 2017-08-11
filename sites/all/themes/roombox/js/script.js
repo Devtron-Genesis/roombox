@@ -9,7 +9,8 @@
     console.log('Load Completed');
   });
   $(document).ready(function() {
-
+    var y=$(window).height();
+    $('section#block-bean-main-slider-0').css('height', y-80);
 
 
 $('<p>Share On Social Media:</p>').appendTo('.os-share-widget-interface.share-container');
@@ -343,3 +344,4 @@ $(".arrow-down a").click(function() {
     };
     $.fn.hoverdir.Constructor = Hoverdir;
 });
+
