@@ -327,6 +327,22 @@ a.btn-style:hover {
     color: #ffffff;
     background-color: #78a952 !important;
 }
+.module-btn-style {
+    background-color: #ffffff;
+    border: 2px solid #78a952;
+    color: #78a952;
+    font-size: 13px;
+    padding: 11px 22px 6px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.page-home .field.field-name-field-about-link.field-type-link-field.field-label-hidden .module-btn-style {
+     background: #ECECEC;
+}
+.module-btn-style:hover {
+    color: #ffffff !important;
+    background-color: #78a952 !important;
+}
 .arrow-down {
     text-align: center;
     position: relative;
@@ -468,20 +484,68 @@ section#block-bean-benefits-0 .field.field-name-field-benifit-image.field-type-i
     background-color: #78a952;
     text-transform: uppercase;
 }
-.view.view-modules.view-id-modules.view-display-id-block .views-field.views-field-field-call-to-action {
+.btn-listing.module-btn-style {
     position: absolute;
-    margin: 305px 0px 0px 449px;
-    z-index: 1;
+    z-index: 1;display: inline-block;bottom: 30px; right:30px;
+    max-width: 250px;
+    margin-bottom: 0; color: #78a952;
 }
-.view.view-modules.view-id-modules.view-display-id-block td.col-1:hover .btn-style a {
+.btn-listing.module-btn-style a{color: #78a952;}
+.view.view-modules.view-id-modules.view-display-id-block .module-btn-style:hover a{
   color: #fff;
   background: #78a952;
 }
-.view.view-modules.view-id-modules.view-display-id-block td.col-2:hover .btn-style a {
+
+
+.view.view-modules.view-id-modules.view-display-id-block .views-field.views-field-field-call-to-action {
+ display: none;
+}
+
+
+/*.views-field .views-field-nothing #da-thumbs li{
+display: none;
+}
+a:hover
++ .view.view-modules.view-id-modules.view-display-id-block .views-field.views-field-field-call-to-action .btn-style{
   color: #fff;
   background: #78a952;
+   opacity:1;
+
+ }  */  
+.cntct-form{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 15px;
 }
-/*          USAGE */
+
+.cntct-form .form-item.webform-component.webform-component-textfield.webform-component--name.form-group.form-item.form-item-submitted-name.form-type-textfield.form-group{
+ 
+   float: left;
+    margin-top: 15px;
+    width: 45%;
+    margin-right: 10px;
+}
+/* .cntct-form .form-group .form-control.form-text{
+    width:95%;
+ }*/
+.cntct-form .form-group .email.form-control.form-text.form-email {
+    background-color: #fff;
+    padding: 0;
+    margin-top: 15px;
+    width: 45%;
+   
+}
+.cntct-form .form-item.webform-component.webform-component-textfield.webform-component--telephone-number.form-group.form-item.form-item-submitted-telephone-number.form-type-textfield.form-group{
+     margin-left: 170px;
+    width: 45%;
+}
+.cntct-form .form-item.webform-component.webform-component-textarea.webform-component--message.form-group.form-item.form-item-submitted-message.form-type-textarea.form-group{
+ clear:both;
+ max-width: 100%;
+ /*margin-top:30px;*/
+}
+
+   /*   USAGE */
 .page-home section#block-views-uses-block {
     padding: 30px 20px 50px;
 }
@@ -836,3 +900,7 @@ section#block-simplified-social-share-open-sharing .share-provider.flat.square.s
 .node-other-pages[about*="/content/products"] .field-item.odd .field.field-name-field-html-field.field-type-text-long.field-label-hidden  {
   margin-top: -20px !important;
 }
+
+/*.cntct-form input#edit-submitted-email-address {
+  background: #fff;
+}*/
