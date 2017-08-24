@@ -33,17 +33,17 @@
 }
   .node-type-other-pages a.logo.navbar-btn.pull-left img {
     width: 60px;
-    margin: -3px 7px 0px;
+    margin: -3px 15px 0px;
   }
   a.logo.navbar-btn.pull-left img {
     width: 73px;
-    margin: 10px 7px;
+    margin: 10px 18px;
     position: fixed;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
   .logo-shrink {
     width: 30px !important;
-    margin: 1px 7px !important;
+    margin: 1px 15px !important;
   }
  .header-top-links {
     background-color: #212121;
@@ -57,7 +57,7 @@
     width: 100%;
     position: fixed;
     top: 25;
-    transition: all 0.4s ease-in-out;
+    transition: all 0s ease-in-out;
 }
 .head-shrink {
   top: 0;
@@ -66,7 +66,7 @@
   section#block-system-main-menu {
     padding: 31px 0px;
     position: fixed;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.1s ease-in-out;
     right: 0;
   }
   .node-type-other-pages section#block-system-main-menu {
@@ -270,23 +270,24 @@ section#block-bean-main-slider-0 div#flexslider-1 {
     line-height: 1.3em;
     position: relative;
     text-transform: uppercase;
-    margin-top: 97px;
     z-index: 2;
     position: fixed;
-    top: 130px;
+    top: 33%;
 }
 .field.field-name-field-half-third-description.field-type-text-long.field-label-hidden {
     line-height: 2em;
     width: 329px;
     z-index: 2;
     position: fixed;
-    top: 432px;
+    top: 33%;
+    margin-top: 200px;
 }
 .field.field-name-field-half-third-link.field-type-link-field.field-label-hidden {
     margin-top: 25px;
     z-index: 250;
     position: fixed;
-    top: 500px;
+    top: 33%;
+    margin-top: 300px;
 }
 .field.field-name-field-main-slider-image.field-type-image.field-label-hidden div#flexslider-1 {
   padding: 0 30px 0 0;
@@ -458,14 +459,14 @@ section#block-bean-benefits-0 .field.field-name-field-benifit-image.field-type-i
   height: 100%;
 }
 .da-thumbs li div h2 {
-    margin: 120px 20px 10px 30px;
+     margin: 20% 0% 0% 4%;
     text-transform: uppercase;
     font-size: 27px;
     letter-spacing: 3px;
     font-weight: bold;
 }
 .da-thumbs li div p {
-    margin: -5px 20px 10px 30px;
+    margin: 0px 20px 10px 30px;
     line-height: 28px;
 }
 .da-thumbs li div a:nth-child(2) {
@@ -600,6 +601,9 @@ section#block-bean-about-us-heading {
 }
 .view.view-blog-view.view-id-blog_view.view-display-id-blog .pager li > a: hover {
     color: #ffffff;
+}
+.view.view-blog-view.view-id-blog_view.view-display-id-blog table.views-view-grid {
+  width: 100%;
 }
 .view.view-blog-view.view-id-blog_view.view-display-id-blog img.img-responsive {
     display: none !important;

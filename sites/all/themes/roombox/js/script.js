@@ -9,10 +9,27 @@
     console.log('Load Completed');
   });
   $(document).ready(function() {
-    // MODULE HOVER SLIDE
+    // CONTACT FORM((
+    // $('cntct-form').remove(function(){
+    //   // $(this).parents().prev().find('field .field-name-field-html-field .field-type-text-long .field-label-hidden').css({"margin-top":"0"});
+    //   console.log('cntct-form');
+    // });
+     // $('cntct-form').parents().find('field.field-name-field-html-field.field-type-text-long.field-label-hidden').css({"margin-top":"0"});
+
+      // $('cntct-form').hover(function(){
+      //   $('this').find('.btn-primary').addClass("btn-style").css({"background-color":"#fff","color":"#78a952"});
+
+      // });
+
+    $('.cntct-form form#webform-client-form-31 .form-actions button.webform-submit').removeClass("btn-primary");
+    $('.cntct-form form#webform-client-form-31 .form-actions button.webform-submit').addClass("btn-style");
+
+    // MODULE HOVER SLIDE  EFFECT
     $(function() {
+
       $(' #da-thumbs > li ').hoverdir();
     });
+
 
     $(' #da-thumbs > li ').append('<a class="field-content module-btn-style btn-listing" href="http://roombox.local.com/">CALL TO ACTION</a> ');
 
@@ -47,7 +64,6 @@
    //    }
    //  );
 
-    
     // MORE INFO IN PRODUCT PAGE
     $('.entity.entity-bean.bean-module-info.view-mode-default .field.field-name-field-more-info').addClass('fa').addClass('fa-chevron-circle-down');
     $('.entity.entity-bean.bean-module-info.view-mode-default .field.field-name-field-more-info').click(function() {
@@ -85,7 +101,7 @@
     });
     // MENU SHRINK
     $(document).on("scroll", function() {
-      if ($(document).scrollTop() > 50) {
+      if ($(document).scrollTop() > 0) {
         $(".header-top-menu").addClass("head-shrink");
         $("section#block-system-main-menu").addClass("nav-shrink");
         $("a.logo.navbar-btn.pull-left img").addClass("logo-shrink");
@@ -111,9 +127,9 @@
 
     function parallaxScroll() {
       var scrolled = $(window).scrollTop();
-      $('.field.field-name-field-slider-heading.field-type-text.field-label-hidden').css('top', (130 - (scrolled * .7)) + 'px');
-      $('.field.field-name-field-half-third-description.field-type-text-long.field-label-hidden').css('top', (432 - (scrolled * .7)) + 'px');
-      $('.field.field-name-field-half-third-link.field-type-link-field.field-label-hidden').css('top', (520 - (scrolled * .7)) + 'px');
+      $('.field.field-name-field-slider-heading.field-type-text.field-label-hidden').css('top', (33 - (scrolled * .08)) + '%');
+      $('.field.field-name-field-half-third-description.field-type-text-long.field-label-hidden').css('top', (33 - (scrolled * .08)) + '%');
+      $('.field.field-name-field-half-third-link.field-type-link-field.field-label-hidden').css('top', (33 - (scrolled * .08)) + '%');
     }
 
     function redrawDotNav() {
