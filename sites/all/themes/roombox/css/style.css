@@ -469,6 +469,32 @@ section#block-bean-benefits-0 .field.field-name-field-benifit-image.field-type-i
     margin: 0px 20px 10px 30px;
     line-height: 28px;
 }
+@media only screen and (max-width: 1500px){
+.da-thumbs li div h2 {
+     margin: 22% 0% 0% 4%;
+    text-transform: uppercase;
+    font-size: 27px;
+    letter-spacing: 3px;
+    font-weight: bold;
+  }
+  .da-thumbs li div p {
+    margin: 0px 20px 10px 30px;
+    line-height: 28px;
+ }
+}
+@media only screen and (max-width: 2000px){
+.da-thumbs li div h2 {
+     margin: 23% 0% 0% 4%;
+    text-transform: uppercase;
+    font-size: 27px;
+    letter-spacing: 3px;
+    font-weight: bold;
+  }
+  .da-thumbs li div p {
+    margin: 0px 20px 10px 30px;
+    line-height: 28px;
+ }
+}
 .da-thumbs li div a:nth-child(2) {
     color: #78a952;
     font-size: 14px;
@@ -616,7 +642,7 @@ section#block-bean-about-us-heading {
     z-index: 1;
     position: relative;
     margin: 0px 30px;
-    top: 50px;
+    top: 48px;
     color: #fff;
 }
 .blog-layer {
@@ -708,6 +734,7 @@ section#block-bean-cta .xtranslate,
     position: relative;
     bottom: 0;
     width: 70%;
+    max-width: 100%;
     margin: 0 auto;
     background: #739D5E;
 }
@@ -744,20 +771,34 @@ section#block-bean-headline-text-0 .field.field-name-field-description.field-typ
     display: table;
     padding: 10px 35px 0px 30px;
     text-transform: uppercase;
-    margin: -340px auto 10px;
+    margin: -27% auto 10px;
     letter-spacing: 4px;
 }
 .field.field-name-body.field-type-text-with-summary.field-label-hidden {
     background: rgba(255, 255, 255, 0.7) none repeat scroll 0 0;
     display: table;
     font-size: 31px;
-    margin: 18px auto 208px;
+    margin: 17px auto 20%;
     padding: 8px 20px 0;
     letter-spacing: 1px;
     font-weight: lighter;
 }
-.entity.entity-bean.bean-video-block.clearfix {
-    padding: 20px 30px;
+@media only screen and (min-width: 1500px) and (max-width: 2000px) {
+  .field.field-name-body.field-type-text-with-summary.field-label-hidden {
+    
+    margin: 17px auto 20%;
+    padding: 8px 20px 0;
+  
+}
+
+@media only screen and (max-width: 2500px){
+  .field.field-name-body.field-type-text-with-summary.field-label-hidden {
+    
+    margin: 17px auto 22%;
+    padding: 8px 20px 0;
+  
+}
+    
 }
 .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .field.field-name-field-about-image.field-type-image.field-label-hidden img.img-responsive {
     height: 325px;
