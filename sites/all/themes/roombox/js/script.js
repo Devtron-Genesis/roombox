@@ -5,22 +5,19 @@
   $(document).delegate('', 'click', function(event) {
     console.log('delegate');
   });
-  $(window).load(function(e) {
-    console.log('Load Completed');
-  });
-  $(document).ready(function() {
-// CONTACT FORM((
+$(window).load(function(e) {
+  console.log('Load Completed');
+});
+$(document).ready(function() {
 
+// CONTACT FORM((
 $('.cntct-form form#webform-client-form-31 .form-actions button.webform-submit').removeClass("btn-primary");
 $('.cntct-form form#webform-client-form-31 .form-actions button.webform-submit').addClass("btn-style");
 
 // MODULE HOVER SLIDE  EFFECT
 $(function() {
-
   $(' #da-thumbs > li ').hoverdir();
 });
-
-
 $(' #da-thumbs > li ').append('<a class="field-content module-btn-style btn-listing" href="http://roombox.local.com/">CALL TO ACTION</a> ');
 
 // MORE INFO IN PRODUCT PAGE
@@ -29,6 +26,12 @@ $('.entity.entity-bean.bean-module-info.view-mode-default .field.field-name-fiel
   $(this).parent().find('.group-info-inner-section.field-group-div.speed-fast.effect-none').slideToggle('slow');
   $(this).toggleClass("fa-chevron-circle-down fa-chevron-circle-up");
 });
+
+
+$(".field-group-format-wrapper a").append('<span><i class="fa fa-info-circle"></i></span>').css({'display':'inline-block', 'font-size':'20px'});
+ $('.field-group-format-wrapper a').removeAttr("href");
+$('.field-group-format-wrapper a').removeAttr("class");
+
 // Set slider height according to window height
 var y = $(window).height();
 $('section#block-bean-main-slider-0').css('height', y - 24);
@@ -37,17 +40,13 @@ $('body.node-type-other-pages article.node-other-pages header').css('height', y 
 $('.node-type-other-pages .arrow-down').css('top', y - 110);
 console.log(y);
 $('<p>Share On Social Media:</p>').appendTo('.os-share-widget-interface.share-container');
+ 
 // RESIZING OF CTA
-
 $(document).on("scroll", function(){
-
   if ($(document).scrollTop()>2000){
-
     var scrolled = $(window).scrollTop();
-
     $('.xtranslate').css('width', (70 + ((scrolled - 2000) * .09)) + '%');
   }
-
 });
 
 // MENU SHRINK
@@ -62,31 +61,29 @@ $(document).on("scroll", function() {
     $("a.logo.navbar-btn.pull-left img").removeClass("logo-shrink");
   }
 });
+
 // SCROLL DOWN ARROW
 $(".arrow-down a").click(function() {
   $('html,body').animate({
     scrollTop: $(".arrow-down a").offset().top
   }, 'slow');
 });
+
 // SMOOTH SCROLL SLIDER TEXT
-redrawDotNav();
-/* Scroll event handler */
 $(window).bind('scroll', function(e) {
-//ctaWidthScroll();
 parallaxScroll();
 redrawDotNav();
 });
-
 function parallaxScroll() {
   var scrolled = $(window).scrollTop();
-  $('.field.field-name-field-slider-heading.field-type-text.field-label-hidden').css('top', (33 - (scrolled * .08)) + '%');
-  $('.field.field-name-field-half-third-description.field-type-text-long.field-label-hidden').css('top', (33 - (scrolled * .08)) + '%');
-  $('.field.field-name-field-half-third-link.field-type-link-field.field-label-hidden').css('top', (33 - (scrolled * .08)) + '%');
+$('.field.field-name-field-slider-heading.field-type-text.field-label-hidden').css('top', (33 - (scrolled * .08)) + '%');
+$('.field.field-name-field-half-third-description.field-type-text-long.field-label-hidden').css('top', (33 - (scrolled * .08)) + '%');
+$('.field.field-name-field-half-third-link.field-type-link-field.field-label-hidden').css('top', (33 - (scrolled * .08)) + '%');
 }
-
 function redrawDotNav() {
   var section1Top = 0;
 }
+
 // SET SLIDER, BLOG AND MODULE IMAGE AS BACKGROUND IMAGE
 $('.node-other-pages').each(function() {
   var hdr_bg_img = $(this).find('img').attr('src');
@@ -98,27 +95,29 @@ $('.view-id-blog_view td').each(function() {
 });
 $('section#block-bean-benefits-0').each(function() {
   var bg_img = $(this).find('img').attr('src');
-  $(this).css("background-image", 'url("' + bg_img + '")').css('background-size', 'cover');
+  $(this).css("background-image", 'url("' + bg_img + '")').css({'background-size': 'cover', 'background' : '#78a952'});
 });
 $('section#block-bean-uses').each(function() {
   var bg_img = $(this).find('img').attr('src');
-  $(this).css("background-image", 'url("' + bg_img + '")').css('background-size', 'cover');
+  $(this).css("background-image", 'url("' + bg_img + '")').css({'background-size': 'cover', 'background' :'#fff', 'color':'#686868'});
 });
 $('.header-wrapper .header-top-links > div').removeClass('container');
 $('.header-wrapper .header-top-menu > div').removeClass('container');
+
 // ADD SPACE IN LOAD MORE
-$(".page-home section#block-views-blog-view-block .pager li > a").html("LOAD MORE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
-// MODULE HOVER SLIDE
+$(".view.view-blog-view.view-id-blog_view.view-display-id-blog .pager li > a").html("LOAD MORE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
 });
 
 console.log('Document Ready');
+
 $(document).ajaxComplete(function(e) {
+
 // SET BLOG AND MODULE IMAGE AS BACKGROUND IMAGE
 $('.view-id-blog_view td').each(function() {
   var bg_img = $(this).find('img').attr('src');
   $(this).css("background-image", 'url("' + bg_img + '")').css('background-size', 'cover').css('height', '240px');;
 });
-$(".page-home section#block-views-blog-view-block .pager li > a").html("LOAD MORE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+$(".view.view-blog-view.view-id-blog_view.view-display-id-blog .pager li > a").html("LOAD MORE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
 console.log('Ajax Completed');
 });
 var getUrlParameter = function getUrlParameter(sParam) {
@@ -134,6 +133,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
   }
 };
 })(jQuery);
+
 // MODULE HOVER SLIDE
 (function(factory) {
   'use strict';
@@ -147,7 +147,6 @@ var getUrlParameter = function getUrlParameter(sParam) {
 })
 (function($) {
   'use strict';
-
   function Hoverdir(element, options) {
     this.$el = $(element);
 // set options
@@ -368,3 +367,16 @@ if (typeof option === 'string') {
 };
 $.fn.hoverdir.Constructor = Hoverdir;
 });
+
+// loading page 
+
+document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'complete') {
+      setTimeout(function(){
+          document.getElementById('interactive');
+         document.getElementById('loading').style.visibility="hidden";
+      },1000);
+  }
+}
+

@@ -73,7 +73,9 @@
 * @ingroup templates
 */
 ?>
-
+<div id="loading">
+  <!-- <span><img class="av-preloading-logo" src="sites/all/themes/roombox/logo.png"></span> -->
+</div>
 <header id="navbar" class="site-header">
   <div class="header-wrapper">
     <div class="header-container">

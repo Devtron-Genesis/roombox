@@ -3,7 +3,12 @@
     /*background-color: red;/*Breakpoint-colour*/
   }
   .blog-layer {
-    top: -104px;
+    top: -112px;
+    height: 123px;
+  }
+  .blog-content{
+    margin: 0px 30px;
+    top: 60px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {  /** Brown **/
