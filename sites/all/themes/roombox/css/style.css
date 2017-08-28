@@ -632,7 +632,7 @@ section#block-bean-about-us-heading {
 .blog-layer {
   background: #000 none repeat scroll 0 0;
   opacity: 0.4;
-  height: 124px;
+  height: 123px;
   position: relative;
   top: -139px;
   z-index: 0;
@@ -809,28 +809,26 @@ section#block-bean-headline-text-0 .field.field-name-field-description.field-typ
 .node-type-other-pages .arrow-down {
   top: 545px;
 }
-section#block-simplified-social-share-open-sharing {
-  background-color: #ececec;
-  padding: 13px 10px 9px;
-  position: absolute;
-  top: 2357px;
-  width: 100%;
-  z-index: 10;
-}
 .node-type-other-pages .field-item.odd .field.field-name-field-html-field.field-type-text-long.field-label-hidden {
   background-color: #212121;
   color: #ffffff;
   position: relative;
-  z-index: 2;
 }
-section#block-simplified-social-share-open-sharing p {
+.os-share-widget-interface.share-container {
+  background-color: #ececec;
+  padding: 15px 10px 28px;
+  width: 100%;
+  z-index: 10;
+}
+.os-share-widget-interface.share-container p {
   float: left;
   font-weight: bold;
   padding: 10px;
   margin-right: 20px;
   font-size: 16px;
+  color: #212121;
 }
-section#block-simplified-social-share-open-sharing .share-provider.flat.square.size-32.horizontal {
+.os-share-widget-interface.share-container .share-provider.flat.square.size-32.horizontal {
   margin-right: 40px;
 }
 .entity.entity-bean.bean-module-info.view-mode-default {

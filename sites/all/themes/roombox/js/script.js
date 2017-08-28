@@ -45,7 +45,19 @@ $('<p>Share On Social Media:</p>').appendTo('.os-share-widget-interface.share-co
 $(document).on("scroll", function(){
   if ($(document).scrollTop()>2000){
     var scrolled = $(window).scrollTop();
-    $('.xtranslate').css('width', (70 + ((scrolled - 2000) * .09)) + '%');
+    $('.front .xtranslate').css('width', (70 + ((scrolled - 2000) * .09)) + '%');
+  }
+});
+$(document).on("scroll", function(){
+  if ($(document).scrollTop()>2150){
+    var scrolled = $(window).scrollTop();
+    $('.page-node-20 .xtranslate, .page-node-21 .xtranslate, .page-node-23 .xtranslate, .page-node-24 .xtranslate').css('width', (70 + ((scrolled - 2150) * .09)) + '%');
+  }
+});
+$(document).on("scroll", function(){
+  if ($(document).scrollTop()>2450){
+    var scrolled = $(window).scrollTop();
+    $('.page-node-22 .xtranslate').css('width', (70 + ((scrolled - 2450) * .09)) + '%');
   }
 });
 
@@ -91,7 +103,7 @@ $('.node-other-pages').each(function() {
 });
 $('.view-id-blog_view td').each(function() {
   var bg_img = $(this).find('img').attr('src');
-  $(this).css("background-image", 'url("' + bg_img + '")').css('background-size', 'cover').css('height', '240px');
+  $(this).css("background-image", 'url("' + bg_img + '")').css('background-size', 'cover').css('height', '240px').css('overflow','hidden');
 });
 $('section#block-bean-benefits-0').each(function() {
   var bg_img = $(this).find('img').attr('src');
