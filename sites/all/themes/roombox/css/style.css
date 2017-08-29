@@ -317,7 +317,7 @@ a.btn-style {
   border: 2px solid #78a952;
   color: #78a952;
   font-size: 13px;
-  padding: 11px 22px 6px;
+  padding: 11px 22px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -468,7 +468,7 @@ section#block-bean-benefits-0 .field.field-name-field-benifit-image.field-type-i
   height: 100%;
 }
 .da-thumbs li div h2 {
-  margin: 20% 0% 0% 4%;
+  margin: 22% 0% 0% 4%;
   text-transform: uppercase;
   font-size: 27px;
   letter-spacing: 3px;
@@ -633,7 +633,7 @@ section#block-bean-about-us-heading {
   opacity: 0.4;
   height: 400px;
   position: relative;
-  top: -132px;
+  top: -139px;
   z-index: 0;
 }
 
@@ -843,7 +843,8 @@ section#block-bean-headline-text-0 .field.field-name-field-description.field-typ
 .entity.entity-bean.bean-module-info.view-mode-default .field.field-name-field-information {
   font-size: 25px;
   text-transform: uppercase;
-  margin: 13% 0px 0px;
+  /*margin: 13% 0px 0px;*/
+  margin-top: 3%;
 }
 .entity.entity-bean.bean-module-info.view-mode-default .field.field-name-field-short-description {
   line-height: 27px;
@@ -851,12 +852,12 @@ section#block-bean-headline-text-0 .field.field-name-field-description.field-typ
   font-weight: lighter;
 }
 .entity.entity-bean.bean-module-info.view-mode-default .field.field-name-field-info-link {
-  margin: 25px 0px 90px;
+  /*margin: 25px 0px 90px;*/
 }
 .entity.entity-bean.bean-module-info.view-mode-default .group-info-section-display.field-group-div {
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
-  padding: 5px 0px 10px;
+  /*padding: 5px 0px 10px;*/
   margin: 15px 0px;
 }
 .entity.entity-bean.bean-module-info.view-mode-default .group-info-inner-section.field-group-div.speed-fast.effect-none,
@@ -865,6 +866,7 @@ section#block-bean-headline-text-0 .field.field-name-field-description.field-typ
 }
 .entity.entity-bean.bean-module-info.view-mode-default .field.field-name-field-more-info {
   width: 100%;
+  cursor: pointer;
 }
 .field.field-name-field-info-image.field-type-image.field-label-hidden .field-items .field-item.even{
     max-width: 90%;
@@ -880,7 +882,7 @@ section#block-bean-headline-text-0 .field.field-name-field-description.field-typ
 }
 i.fa.fa-info-circle {
     
-        padding-left: 10px;
+  padding-left: 10px;
 }
 
 .entity.entity-bean.bean-module-info.view-mode-default .field.field-name-field-long-description-heading {
@@ -902,6 +904,8 @@ i.fa.fa-info-circle {
 }
 .entity.entity-bean.bean-module-info.view-mode-default .field.field-name-field-info-link a.btn-style {
   padding: 11px 37px 7px;
+  float: left;
+  margin-bottom: 3.7%;
 }
 .node-other-pages[about*="/content/products"] .field-item.odd .field.field-name-field-html-field.field-type-text-long.field-label-hidden  {
   margin-top: -20px !important;
@@ -950,4 +954,7 @@ img.av-preloading-logo {
 }
 table.views-view-grid.cols-4.views-row-first.views-row-odd {
   margin-bottom: -1px;
+}
+body.page-home .blog-layer{
+  top: -132px;
 }

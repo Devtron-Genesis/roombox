@@ -28,7 +28,7 @@ $('.entity.entity-bean.bean-module-info.view-mode-default .field.field-name-fiel
 });
 
 
-$(".field-group-format-wrapper a").append('<span><i class="fa fa-info-circle"></i></span>').css({'display':'inline-block', 'font-size':'20px'});
+$(".field-group-format-wrapper a").append('<span><i class="fa fa-info-circle"></i></span>').css({'display':'inline-block', 'font-size':'15px','float':'left'});
  $('.field-group-format-wrapper a').removeAttr("href");
 $('.field-group-format-wrapper a').removeAttr("class");
 
