@@ -566,10 +566,9 @@ section#block-bean-about-us-heading {
   z-index: 1;
   position: relative;
 }
-
 .field.field-name-field-about-heading.field-type-text.field-label-hidden {
   font-size: 25px;
-  margin: 90px 0px 0px 15px;
+  margin: 11% 0px 0px 15px;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -632,20 +631,14 @@ section#block-bean-about-us-heading {
 .blog-layer {
   background: #000 none repeat scroll 0 0;
   opacity: 0.4;
-  height: 123px;
+  height: 400px;
   position: relative;
-  top: -139px;
+  top: -132px;
   z-index: 0;
 }
 
 .blog-link.btn-style {
   margin-top: 22px;
-}
-.page-home section#block-bean-about-us-heading img.img-responsive {
-  height: 360px;
-}
-.page-home .field.field-name-field-about-image.field-type-image.field-label-hidden img.img-responsive {
-  height: 360px;
 }
 .blog-body p {
   line-height: 27px;
@@ -770,16 +763,12 @@ section#block-bean-headline-text-0 .field.field-name-field-description.field-typ
 .entity.entity-bean.bean-video-block.clearfix {
   padding: 20px 30px;
 }
-.field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .field.field-name-field-about-image.field-type-image.field-label-hidden img.img-responsive {
-  height: 325px;
-  width: 580px;
-}
 .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .entity.entity-bean.bean-about-us.view-mode-default {
   padding: 100px 30px 20px;
 }
 .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .field.field-name-field-about-heading.field-type-text.field-label-hidden {
   font-size: 47px;
-  margin: 45px 0px 0px 35px;
+  margin: 6% 0px 0px 35px;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -958,4 +947,7 @@ img.av-preloading-logo {
 }
 .col-sm-6.no-gutter {
     margin-bottom: -2px;
-
+}
+table.views-view-grid.cols-4.views-row-first.views-row-odd {
+  margin-bottom: -1px;
+}
