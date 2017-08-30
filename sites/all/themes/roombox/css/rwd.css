@@ -1,9 +1,25 @@
+@media only screen and (min-width: 1400px) and (max-width: 2000px) {  /** Brown **/
+  body {
+    /*background-color: brown;/*Breakpoint-colour*/
+  }
+
+  /*.page-home section#block-bean-about-us-heading img.img-responsive{
+    max-height:563px;
+    min-height:563px;
+  }*/
+}
+
+
 @media only screen and (min-width: 1600px) {  /** Red **/
   body {
     /*background-color: red;/*Breakpoint-colour*/
   }
   .blog-layer{
-    top: -105px;
+    top: -111px;
+
+  }
+  body.page-home .blog-layer {
+    top:-105px;
   }
   .blog-content{
     margin: 0px 30px;
@@ -16,6 +32,36 @@
     margin: 16% 0px 0px 35px;
   }
 }
+@media only screen and (min-width: 1400px) and (max-width: 1450px) {  /** Brown **/
+
+  body {
+    /*background-color: teal;/*Breakpoint-colour*/
+  }
+  .entity.entity-bean.bean-module-info.view-mode-default .field.field-name-field-information {
+    margin-top: 0px;
+  }
+  .entity.entity-bean.bean-module-info.view-mode-default .field.field-name-field-info-link a.btn-style {
+    margin-bottom: 0px;
+  }
+  .col-sm-7.match-height {
+    margin-top: 3%;
+  }
+}
+@media only screen and (min-width: 1451px) and (max-width: 1599px) {  /** Brown **/
+
+  body {
+    /*background-color: teal;/*Breakpoint-colour*/
+  }
+  .entity.entity-bean.bean-module-info.view-mode-default .field.field-name-field-information {
+    margin-top: 0px;
+  }
+  .entity.entity-bean.bean-module-info.view-mode-default .field.field-name-field-info-link a.btn-style {
+    margin-bottom: 0px;
+  }
+  .col-sm-7.match-height {
+    margin-top: 3.5%;
+  }
+}  
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {  /** Brown **/
   body {
     /*background-color: brown;/*Breakpoint-colour*/

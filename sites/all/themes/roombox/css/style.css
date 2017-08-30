@@ -184,7 +184,7 @@ section#block-block-18 {
 }
 .social ul.botom-social-links {
   margin: 0 auto;
-  width: 28%;
+  width: 50%;
 }
 .social ul.botom-social-links li {
   float: left;
@@ -568,7 +568,11 @@ section#block-bean-about-us-heading {
 }
 .field.field-name-field-about-heading.field-type-text.field-label-hidden {
   font-size: 25px;
+<<<<<<< HEAD
+  margin: 78px 0px 0px 15px;
+=======
   margin: 11% 0px 0px 15px;
+>>>>>>> c84c3742f1147e0b604cca97251f311e712cbab6
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -750,12 +754,14 @@ section#block-bean-headline-text-0 .field.field-name-field-description.field-typ
   text-transform: uppercase;
   margin: -30% auto 10px;
   letter-spacing: 4px;
+  width: 80%;
+  text-align: center;
 }
 .field.field-name-body.field-type-text-with-summary.field-label-hidden {
   background: rgba(255, 255, 255, 0.7) none repeat scroll 0 0;
   display: table;
   font-size: 31px;
-  margin: 17px auto 22%;
+  margin: 17px auto 12%;
   padding: 8px 20px 0;
   letter-spacing: 1px;
   font-weight: lighter;
