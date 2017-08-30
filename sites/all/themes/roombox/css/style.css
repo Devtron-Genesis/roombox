@@ -184,7 +184,7 @@ section#block-block-18 {
 }
 .social ul.botom-social-links {
   margin: 0 auto;
-  width: 50%;
+  width: 38%;
 }
 .social ul.botom-social-links li {
   float: left;
@@ -640,7 +640,6 @@ section#block-bean-about-us-heading {
   top: -139px;
   z-index: 0;
 }
-
 .blog-link.btn-style {
   margin-top: 22px;
 }
@@ -761,7 +760,7 @@ section#block-bean-headline-text-0 .field.field-name-field-description.field-typ
   background: rgba(255, 255, 255, 0.7) none repeat scroll 0 0;
   display: table;
   font-size: 31px;
-  margin: 17px auto 12%;
+  margin: 17px auto 15%;
   padding: 8px 20px 0;
   letter-spacing: 1px;
   font-weight: lighter;
@@ -770,7 +769,7 @@ section#block-bean-headline-text-0 .field.field-name-field-description.field-typ
   padding: 20px 30px;
 }
 .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .entity.entity-bean.bean-about-us.view-mode-default {
-  padding: 100px 30px 20px;
+  padding: 0px 30px 20px;
 }
 .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .field.field-name-field-about-heading.field-type-text.field-label-hidden {
   font-size: 47px;
@@ -963,4 +962,13 @@ table.views-view-grid.cols-4.views-row-first.views-row-odd {
 }
 body.page-home .blog-layer{
   top: -132px;
+}
+.about.container {
+  padding: 4% 0 ;
+  font-size: 15px;
+  padding: 4% 0;
+  background-color: white;
+  color: #212121; 
+  width: 100%;
+  padding: 4%;
 }

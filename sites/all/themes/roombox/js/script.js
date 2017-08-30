@@ -49,15 +49,21 @@ $(document).on("scroll", function(){
   }
 });
 $(document).on("scroll", function(){
-  if ($(document).scrollTop()>2150){
+  if ($(document).scrollTop()>800){
     var scrolled = $(window).scrollTop();
-    $('.page-node-20 .xtranslate, .page-node-21 .xtranslate, .page-node-23 .xtranslate, .page-node-24 .xtranslate').css('width', (70 + ((scrolled - 2150) * .09)) + '%');
+    $('.page-node-20 .xtranslate').css('width', (70 + ((scrolled - 800) * .09)) + '%');
   }
 });
 $(document).on("scroll", function(){
-  if ($(document).scrollTop()>2450){
+  if ($(document).scrollTop()>2150){
     var scrolled = $(window).scrollTop();
-    $('.page-node-22 .xtranslate').css('width', (70 + ((scrolled - 2450) * .09)) + '%');
+    $('.page-node-21 .xtranslate, .page-node-23 .xtranslate, .page-node-24 .xtranslate').css('width', (70 + ((scrolled - 2150) * .09)) + '%');
+  }
+});
+$(document).on("scroll", function(){
+  if ($(document).scrollTop()>1900){
+    var scrolled = $(window).scrollTop();
+    $('.page-node-22 .xtranslate').css('width', (70 + ((scrolled - 1900) * .09)) + '%');
   }
 });
 
