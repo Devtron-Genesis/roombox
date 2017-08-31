@@ -161,6 +161,45 @@
   bottom: 6px;
   left: 10px;
   }
+  iframe.media-youtube-player {
+    width: 100% !important;
+  }
+
+  /*Product Page */
+  .field.field-name-field-header-background-heading.field-type-text.field-label-hidden {
+    font-size: 27px;
+  }
+  .node-type-other-pages a.logo.navbar-btn.pull-left img {
+    width: 73px;
+    position: fixed;
+    top: 35px;
+    margin: 0px;
+  }
+  .field.field-name-body.field-type-text-with-summary.field-label-hidden {
+    margin-bottom: 15%;
+  }
+  .os-share-widget-interface.share-container {
+    padding: 15px 9px 55px;
+  }
+   .node-type-other-pages .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .field.field-name-field-about-heading.field-type-text.field-label-hidden {
+    margin: 6% 0px 0px 0px;
+  }
+  .node-type-other-pages .col-sm-6 {
+    padding: 0px;
+  }
+  .node-type-other-pages .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .field.field-name-field-description.field-type-text.field-label-hidden {
+    margin: 6% 0px 0px 0px; 
+  }
+  .node-type-other-pages .entity.entity-bean.bean-half-right-image-slider.view-mode-default {
+    padding: 0 15px;
+  }
+  .node-type-other-pages .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .entity.entity-bean.bean-about-us.view-mode-default {
+    padding: 0 15px;
+  }
+  .node-type-other-pages .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    margin: 25px 0px;
+  }
+
 }
 @media only screen and (min-device-width: 480px) and (max-device-width:767px) {  /** Grey **/
   body {
@@ -228,7 +267,7 @@
 
   /*button */
 
-.btn-listing.module-btn-style {
+.page-home .btn-listing.module-btn-style {
   bottom: 10px;
   right: 10px;
   }
@@ -239,6 +278,61 @@
   position: absolute;
   bottom: -41px;
   left: 10px;
+  }
+  iframe.media-youtube-player {
+    width: 100% !important;
+  }
+
+  /*Product Page */
+  .field.field-name-field-header-background-heading.field-type-text.field-label-hidden {
+    font-size: 16px;
+    margin: -80% auto 10px;
+  }
+  .field.field-name-body.field-type-text-with-summary.field-label-hidden {
+    font-size: 17px;
+  }
+    article#node-20 header {
+    height: 500px!important;
+  }
+    article#node-21 header {
+    height: 500px!important;
+  }
+  article#node-22 header {
+    height: 500px!important;
+  }
+   article#node-23 header {
+    height: 500px!important;
+  }
+  .node-type-other-pages a.logo.navbar-btn.pull-left img {
+    width: 73px;
+    position: fixed;
+    top: 35px;
+    margin: 0px;
+  }
+  .field.field-name-body.field-type-text-with-summary.field-label-hidden {
+    margin-bottom: 55%;
+  }
+  .os-share-widget-interface.share-container {
+    padding: 15px 9px 55px;
+  }
+  .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .field.field-name-field-about-heading.field-type-text.field-label-hidden {
+    margin: 6% 0px 0px 0px;
+  }
+  .page-node-21 .col-sm-6 {
+    padding: 0px;
+  }
+  .node-type-other-pages .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .field.field-name-field-description.field-type-text.field-label-hidden,
+   {
+    margin: 6% 0px 0px 0px; 
+  }
+  .node-type-other-pages .entity.entity-bean.bean-half-right-image-slider.view-mode-default {
+    padding: 0 15px;
+  }
+  .node-type-other-pages .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .entity.entity-bean.bean-about-us.view-mode-default {
+    padding: 0 15px;
+  }
+  .node-type-other-pages .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    margin: 25px 0px;
   }
 
 }
@@ -303,7 +397,7 @@
   }
 /*button */
 
-.btn-listing.module-btn-style {
+.page-home .btn-listing.module-btn-style {
   bottom: 10px;
   right: 10px;
   }
@@ -315,7 +409,79 @@
     bottom: -41px;
     left: 10px;
   }
+  iframe.media-youtube-player {
+    width: 100% !important;
+  }
+
+  /*Product Page */
+  .field.field-name-field-header-background-heading.field-type-text.field-label-hidden {
+    font-size: 16px;
+    margin: -80% auto 10px;
+  }
+  .field.field-name-body.field-type-text-with-summary.field-label-hidden {
+    font-size: 17px;
+  }
+  article#node-20 header {
+    height: 400px!important;
+  }
+  article#node-21 header {
+    height: 400px!important;
+  }
+  article#node-22 header {
+    height: 400px!important;
+  }
+   article#node-23 header {
+    height: 400px!important;
+  }
+  .node-type-other-pages a.logo.navbar-btn.pull-left img {
+    width: 73px;
+    position: fixed;
+    top: 35px;
+    margin: 0px;
+  }
+  .field.field-name-body.field-type-text-with-summary.field-label-hidden {
+    margin-bottom: 55%;
+  }
+  .os-share-widget-interface.share-container {
+    padding: 15px 9px 55px;
+  }
+  .social ul.botom-social-links li {
+    float: left;
+    list-style: none;
+    padding: 5px 15px 0px 0px;
+  }
+  .node-type-other-pages .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .field.field-name-field-about-heading.field-type-text.field-label-hidden {
+    margin: 6% 0px 0px 0px;
+  }
+  .node-type-other-pages .col-sm-6 {
+    padding: 0px;
+  }
+  .node-type-other-pages .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .field.field-name-field-description.field-type-text.field-label-hidden {
+    margin: 6% 0px 0px 0px; 
+  }
+  .node-type-other-pages .entity.entity-bean.bean-half-right-image-slider.view-mode-default {
+    padding: 0 15px;
+  }
+  .node-type-other-pages .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .entity.entity-bean.bean-about-us.view-mode-default {
+    padding: 0 15px;
+  }
+  .node-type-other-pages .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    margin: 25px 0px;
+  }
 }
+
+  /*home page text */
+
+/*  .field.field-name-field-half-third-description.field-type-text-long.field-label-hidden {
+    position: fixed;   
+  }
+  .field.field-name-field-slider-heading.field-type-text.field-label-hidden {
+    position: fixed;
+  }
+  .field.field-name-field-half-third-link.field-type-link-field.field-label-hidden {
+    position: absolute!important;
+  }
+}*/
 
 @media only screen and (max-device-width: 319px) {  /** Blue **/
   body {
