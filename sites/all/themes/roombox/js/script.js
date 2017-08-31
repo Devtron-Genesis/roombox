@@ -113,11 +113,11 @@ $('.view-id-blog_view td').each(function() {
 });
 $('section#block-bean-benefits-0').each(function() {
   var bg_img = $(this).find('img').attr('src');
-  $(this).css("background-image", 'url("' + bg_img + '")').css({'background-size': 'cover', 'background' : '#78a952'});
+  $(this).css("background-image", 'url("' + bg_img + '")').css({'background-size': 'cover', 'background' : '#ECECEC'});
 });
 $('section#block-bean-uses').each(function() {
   var bg_img = $(this).find('img').attr('src');
-  $(this).css("background-image", 'url("' + bg_img + '")').css({'background-size': 'cover', 'background' :'#fff', 'color':'#686868'});
+  $(this).css("background-image", 'url("' + bg_img + '")').css({'background-size': 'cover', 'background' :'#fff', 'color':'#212121'});
 });
 $('.header-wrapper .header-top-links > div').removeClass('container');
 $('.header-wrapper .header-top-menu > div').removeClass('container');

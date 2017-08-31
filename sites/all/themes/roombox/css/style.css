@@ -33,7 +33,7 @@ section.col-sm-12 {
 }
 .node-type-other-pages a.logo.navbar-btn.pull-left img {
   width: 60px;
-  margin: -3px 15px 0px;
+  margin: 20px 0px 0px 19px;
 }
 a.logo.navbar-btn.pull-left img {
   width: 73px;
@@ -43,13 +43,13 @@ a.logo.navbar-btn.pull-left img {
 }
 .logo-shrink {
   width: 30px !important;
-  margin: 1px 15px !important;
+  margin: 20px 0px 0px 19px !important;
 }
 .header-top-links {
   background-color: #212121;
 }
 .node-type-other-pages .header-top-menu {
-  height: 75px;
+  height: 119px;
 }
 .header-top-menu {
   height: 100px;
@@ -61,7 +61,7 @@ a.logo.navbar-btn.pull-left img {
 }
 .head-shrink {
   top: 0;
-  height: 50px !important;
+  height: 88px !important;
 }
 section#block-system-main-menu {
   padding: 31px 0px;
@@ -70,10 +70,10 @@ section#block-system-main-menu {
   right: 0;
 }
 .node-type-other-pages section#block-system-main-menu {
-  padding: 15px 0px;
+  padding: 36px 0px;
 }
 .nav-shrink {
-  padding: 0 !important;
+  padding: 20px 0px !important;
 
 }
 ul.social-links {
@@ -127,7 +127,7 @@ ul.social-links li i.fa {
   font-weight: bold;
 }
 .region.region-header section#block-system-main-menu ul.menu.nav li a:hover,
-.region.region-header section#block-system-main-menu ul.menu.nav li a:focus, 
+.region.region-header section#block-system-main-menu ul.menu.nav li a:focus, <
 .region.region-header section#block-system-main-menu ul.menu.nav li.active a {
   color: #fff;
   background-color: #212121;
@@ -184,7 +184,7 @@ section#block-block-18 {
 }
 .social ul.botom-social-links {
   margin: 0 auto;
-  width: 38%;
+  width: 29%;
 }
 .social ul.botom-social-links li {
   float: left;
@@ -401,6 +401,7 @@ section#block-bean-benefits-0 h2.block-title {
   font-size: 23.6px;
   letter-spacing: 3px;
   font-weight: bold;
+  color: #212121;
 }
 .page-home section#block-views-benefits-block {
   background-color: #78a952;
@@ -463,9 +464,10 @@ section#block-bean-benefits-0 .field.field-name-field-benifit-image.field-type-i
 }
 .da-thumbs li div {
   position: absolute;
-  background: rgba(33,33,33,0.6);
+  background: rgba(255,255,255,0.6);
   width: 100%;
   height: 100%;
+  background: radial-gradient(rgba(255,255,255,0.4) 5%, rgba(255,255,255,0.9) 54%);
 }
 .da-thumbs li div h2 {
   margin: 22% 0% 0% 4%;
@@ -473,10 +475,12 @@ section#block-bean-benefits-0 .field.field-name-field-benifit-image.field-type-i
   font-size: 27px;
   letter-spacing: 3px;
   font-weight: bold;
+  color: #212121;
 }
 .da-thumbs li div p {
   margin: 0px 20px 10px 30px;
   line-height: 28px;
+  color: #212121;
 }
 
 .da-thumbs li div a:nth-child(2) {
@@ -568,11 +572,8 @@ section#block-bean-about-us-heading {
 }
 .field.field-name-field-about-heading.field-type-text.field-label-hidden {
   font-size: 25px;
-<<<<<<< HEAD
-  margin: 78px 0px 0px 15px;
-=======
+  /*margin: 78px 0px 0px 15px;*/
   margin: 11% 0px 0px 15px;
->>>>>>> c84c3742f1147e0b604cca97251f311e712cbab6
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -662,7 +663,7 @@ section#block-bean-cta, .field.field-name-field-html-field.field-type-text-long.
   z-index: 2;
 }
 section#block-bean-cta input[type="email"], .field.field-name-field-html-field.field-type-text-long.field-label-hidden input[type="email"] {
-  background-color: #7AA65F;
+  background-color: #85b75e;
   border: none;
   padding: 18px 20px 18px 10px;
   text-align: center;
@@ -674,7 +675,7 @@ section#block-bean-cta input[type="email"]::placeholder, .field.field-name-field
   color: #ffffff;
 }
 .cta a {
-  background-color: #668B50;
+  background-color: #6e9a4c;
   border: none;
   color: #ffffff;
   padding: 17px 15px 18px;
@@ -788,17 +789,17 @@ section#block-bean-headline-text-0 .field.field-name-field-description.field-typ
   font-size: 47px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin-left: 10px;
+  /*margin-left: 10px;*/
 }
 .field.field-name-field-description-bef-video.field-type-text-long.field-label-hidden {
   font-weight: lighter;
   line-height: 30px;
-  margin: 25px 10px 30px 10px;
+  margin: 25px 10px 30px 0px;
 }
 .field.field-name-field-description-aft-video.field-type-text-long.field-label-hidden {
   font-weight: lighter;
   line-height: 30px;
-  margin: 25px 10px 10px 10px;
+  margin: 25px 10px 10px 0px;
 }
 .node-type-other-pages .arrow-down {
   top: 545px;
@@ -937,12 +938,12 @@ background: #fff;
   background-size: 10%;
 }
 img.av-preloading-logo {
-    position: relative;
-    margin: 0 auto;
-    display: block;
-    width: 73px;
-    z-index: 100;
-    margin-top: 15%;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  width: 73px;
+  z-index: 100;
+  margin-top: 15%;
 }
 
 
@@ -971,4 +972,10 @@ body.page-home .blog-layer{
   color: #212121; 
   width: 100%;
   padding: 4%;
+}
+.entity.entity-bean.bean-benefits.clearfix .content {
+  color: #212121;
+}
+body.page-node-24 .os-share-widget-interface.share-container {
+  display: none;
 }
