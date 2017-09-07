@@ -5,14 +5,20 @@
   $(document).delegate('', 'click', function(event) {
     console.log('delegate');
   });
-$(window).load(function(e) {
-  console.log('Load Completed');
-});
-$(document).ready(function() {
-
+  $(window).load(function(e) {
+    console.log('Load Completed');
+  });
+  $(document).ready(function() {
+    $('.match-height').matchHeight();
 // CONTACT FORM((
 $('.cntct-form form#webform-client-form-31 .form-actions button.webform-submit').removeClass("btn-primary");
 $('.cntct-form form#webform-client-form-31 .form-actions button.webform-submit').addClass("btn-style");
+$(".cntct-form ").parent().find("#edit-submitted-name").attr("placeholder", "First Name").css({'color':'#333'});
+$(".cntct-form ").parent().find("#edit-submitted-last-name").attr("placeholder", "Last Name");
+$(".cntct-form ").parent().find("#edit-submitted-email-address").attr({"placeholder": "*Email","color":"#000"});
+$(".cntct-form ").parent().find("#edit-submitted-telephone-number").attr("placeholder", "Telephone");
+$(".cntct-form ").parent().find("#edit-submitted-message").attr("placeholder", "Message...");
+$(".cntct-form ").parent().find("#edit-submitted-message").attr("placeholder", "Message...");
 
 // MODULE HOVER SLIDE  EFFECT
 $(function() {
@@ -29,7 +35,7 @@ $('.entity.entity-bean.bean-module-info.view-mode-default .field.field-name-fiel
 
 
 $(".field-group-format-wrapper a").append('<span><i class="fa fa-info-circle"></i></span>').css({'display':'inline-block', 'font-size':'15px','float':'left'});
- $('.field-group-format-wrapper a').removeAttr("href");
+$('.field-group-format-wrapper a').removeAttr("href");
 $('.field-group-format-wrapper a').removeAttr("class");
 
 // Set slider height according to window height
@@ -40,7 +46,7 @@ $('body.node-type-other-pages article.node-other-pages header').css('height', y 
 $('.node-type-other-pages .arrow-down').css('top', y - 110);
 console.log(y);
 $('<p>Share On Social Media:</p>').appendTo('.os-share-widget-interface.share-container');
- 
+
 // RESIZING OF CTA
 $(document).on("scroll", function(){
   if ($(document).scrollTop()>2000){
@@ -89,14 +95,14 @@ $(".arrow-down a").click(function() {
 
 // SMOOTH SCROLL SLIDER TEXT
 $(window).bind('scroll', function(e) {
-parallaxScroll();
-redrawDotNav();
+  parallaxScroll();
+  redrawDotNav();
 });
 function parallaxScroll() {
   var scrolled = $(window).scrollTop();
-$('.field.field-name-field-slider-heading.field-type-text.field-label-hidden').css('top', (33 - (scrolled * .08)) + '%');
-$('.field.field-name-field-half-third-description.field-type-text-long.field-label-hidden').css('top', (33 - (scrolled * .08)) + '%');
-$('.field.field-name-field-half-third-link.field-type-link-field.field-label-hidden').css('top', (33 - (scrolled * .08)) + '%');
+  $('.field.field-name-field-slider-heading.field-type-text.field-label-hidden').css('top', (33 - (scrolled * .08)) + '%');
+  $('.field.field-name-field-half-third-description.field-type-text-long.field-label-hidden').css('top', (33 - (scrolled * .08)) + '%');
+  $('.field.field-name-field-half-third-link.field-type-link-field.field-label-hidden').css('top', (33 - (scrolled * .08)) + '%');
 }
 function redrawDotNav() {
   var section1Top = 0;
@@ -107,7 +113,7 @@ $('.node-other-pages').each(function() {
   var hdr_bg_img = $(this).find('img').attr('src');
   $(this).find('header').css("background-image", 'url("' + hdr_bg_img + '")').css('background-size', 'cover');
 });
-$('.view-id-blog_view td').each(function() {
+$('.view-id-blog_view .blog-listing').each(function() {
   var bg_img = $(this).find('img').attr('src');
   $(this).css("background-image", 'url("' + bg_img + '")').css('background-size', 'cover').css('height', '240px').css('overflow','hidden');
 });
@@ -131,7 +137,7 @@ console.log('Document Ready');
 $(document).ajaxComplete(function(e) {
 
 // SET BLOG AND MODULE IMAGE AS BACKGROUND IMAGE
-$('.view-id-blog_view td').each(function() {
+$('.view-id-blog_view .blog-listing').each(function() {
   var bg_img = $(this).find('img').attr('src');
   $(this).css("background-image", 'url("' + bg_img + '")').css('background-size', 'cover').css('height', '240px');;
 });
@@ -386,15 +392,15 @@ if (typeof option === 'string') {
 $.fn.hoverdir.Constructor = Hoverdir;
 });
 
-// loading page 
+// loading page
 
 document.onreadystatechange = function () {
   var state = document.readyState
   if (state == 'complete') {
-      setTimeout(function(){
-          document.getElementById('interactive');
-         document.getElementById('loading').style.visibility="hidden";
-      },1000);
+    setTimeout(function(){
+      document.getElementById('interactive');
+      document.getElementById('loading').style.visibility="hidden";
+    },1000);
   }
 }
 
