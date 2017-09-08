@@ -269,7 +269,7 @@ section#block-bean-main-slider-0 div#flexslider-1 {
   width: 250px;
   line-height: 1.3em;
   text-transform: uppercase;
-  z-index: 2;
+  z-index: 3;
   position: fixed;
   top: 33%;
 }

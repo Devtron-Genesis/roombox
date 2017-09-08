@@ -416,3 +416,4 @@ document.onreadystatechange = function () {
   }
 }
 
+// Media Query in Jquery For Data Capture 

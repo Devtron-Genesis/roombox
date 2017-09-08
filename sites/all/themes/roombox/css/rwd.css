@@ -157,7 +157,7 @@ min-height:563px;
 
   
 }
-@media only screen and (min-device-width: 769px) and (max-device-width: 989px) {  /** Orange **/
+@media only screen and (min-device-width: 768px) and (max-device-width: 989px) {  /** Orange **/
   body {
     /*background-color: orange;/*Breakpoint-colour*/
   }
@@ -229,6 +229,7 @@ min-height:563px;
   }
   .field.field-name-field-about-link.field-type-link-field.field-label-hidden {
     margin: 51px 0px 0px 15px;
+    margin-bottom: 12% !important;
   }
   .page-home .field.field-name-field-about-link.field-type-link-field.field-label-hidden a.btn-style {
     position: absolute;
@@ -282,6 +283,22 @@ min-height:563px;
    
   .cntct-form {
     width: 100%;
+  }
+  body.page-node-24 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden{
+    font-size: 26px;
+    }
+  
+  body.page-node-24 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden{
+    margin: -35% auto 10px;
+  }
+  body.page-node-24 .cntct-form.col-md-6.match-height{
+    margin-top: 12%;
+  }
+  body.page-node-24  .form-actions{
+    margin-bottom: 15px;
+  }
+  body.page-node-24  iframe#gmap_canvas{
+    margin-bottom: 14px;
   }
   .view.view-main-slider .views-field.views-field-title {
     float: none;
@@ -518,28 +535,31 @@ min-height:563px;
   /*Product Page */
   .field.field-name-field-header-background-heading.field-type-text.field-label-hidden {
     font-size: 16px;
-    margin: -80% auto 10px;
+    margin: -100% auto 10px;
   }
   .field.field-name-body.field-type-text-with-summary.field-label-hidden {
     font-size: 17px;
   }
   article#node-20 header {
-    height: 400px!important;
+   /* height: 400px!important;*/
   }
   article#node-21 header {
-    height: 400px!important;
+   /* height: 400px!important;*/
   }
   article#node-22 header {
-    height: 400px!important;
+    /*height: 400px!important;*/
   }
   article#node-23 header {
-    height: 400px!important;
+    /*height: 400px!important;*/
   }
   .node-type-other-pages a.logo.navbar-btn.pull-left img {
     width: 73px;
     position: fixed;
     top: 33px;
     margin: 0px;
+  }
+  body.page-node-20 .about.container{
+    margin-top: 10%;
   }
   .field.field-name-body.field-type-text-with-summary.field-label-hidden {
     margin-bottom: 55%;
@@ -626,6 +646,12 @@ position: absolute!important;
   .cntct-form form#webform-client-form-31 .form-item.webform-component.form-group {
     width: 100%;
 }
+.page-node-24 .form-actions {
+margin-bottom: 4%;
+}
+.page-node-24 iframe#gmap_canvas {
+  margin-bottom: 4.8%;
+}
 .cntct-form .form-group .email.form-control.form-text.form-email {
    
     width: 100%;
@@ -652,7 +678,7 @@ position: absolute!important;
     margin-top: 2%;
   }
   .col-sm-7.no-gutter {
-   margin-top: 4.4%;
+   margin-top: 4.1%;
   }
   body.page-home .blog-layer {
     top: -87px;
@@ -832,6 +858,9 @@ position: absolute!important;
 .entity.entity-bean.bean-about-us.view-mode-default{
   margin-top: 14%;
 }
+body.page-home .entity.entity-bean.bean-about-us.view-mode-default{
+  margin-top: 0px !important;
+}
 .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden{
   margin-top: 14%;
 }
@@ -846,6 +875,9 @@ section#block-bean-benefits-0{
   }
 .views-row.views-row-4.views-row-even.views-row-last.col-md-6.col-sm-6.col-xs-12.no-gutter{
   top: 65px;
+}
+body.page-node-23 .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden{
+  margin-top: 0px !important;
 }
 iframe#gmap_canvas {
   width: 104%;
