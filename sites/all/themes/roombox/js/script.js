@@ -49,27 +49,39 @@ $('<p>Share On Social Media:</p>').appendTo('.os-share-widget-interface.share-co
 
 // RESIZING OF CTA
 $(document).on("scroll", function(){
-  if ($(document).scrollTop()>2000){
+  if ($(document).scrollTop()>1850){
     var scrolled = $(window).scrollTop();
-    $('.front .xtranslate').css('width', (70 + ((scrolled - 2000) * .09)) + '%');
+    $('.front .xtranslate').css('width', (80 + ((scrolled - 1850) * .09)) + '%');
   }
 });
 $(document).on("scroll", function(){
-  if ($(document).scrollTop()>800){
+  if ($(document).scrollTop()>600){
     var scrolled = $(window).scrollTop();
-    $('.page-node-20 .xtranslate').css('width', (70 + ((scrolled - 800) * .09)) + '%');
-  }
-});
-$(document).on("scroll", function(){
-  if ($(document).scrollTop()>2150){
-    var scrolled = $(window).scrollTop();
-    $('.page-node-21 .xtranslate, .page-node-23 .xtranslate, .page-node-24 .xtranslate').css('width', (70 + ((scrolled - 2150) * .09)) + '%');
+    $('.page-node-20 .xtranslate').css('width', (80 + ((scrolled - 600) * .09)) + '%');
   }
 });
 $(document).on("scroll", function(){
   if ($(document).scrollTop()>1900){
     var scrolled = $(window).scrollTop();
-    $('.page-node-22 .xtranslate').css('width', (70 + ((scrolled - 1900) * .09)) + '%');
+    $('.page-node-21 .xtranslate').css('width', (80 + ((scrolled - 1900) * .09)) + '%');
+  }
+});
+$(document).on("scroll", function(){
+  if ($(document).scrollTop()>1950){
+    var scrolled = $(window).scrollTop();
+    $('.page-node-23 .xtranslate').css('width', (80 + ((scrolled - 1950) * .09)) + '%');
+  }
+});
+// $(document).on("scroll", function(){
+//   if ($(document).scrollTop()>2150){
+//     var scrolled = $(window).scrollTop();
+//     $('.page-node-24 .xtranslate').css('width', (80 + ((scrolled - 2150) * .09)) + '%');
+//   }
+// });
+$(document).on("scroll", function(){
+  if ($(document).scrollTop()>1750){
+    var scrolled = $(window).scrollTop();
+    $('.page-node-22 .xtranslate').css('width', (80 + ((scrolled - 1750) * .09)) + '%');
   }
 });
 
@@ -123,7 +135,7 @@ $('section#block-bean-benefits-0').each(function() {
 });
 $('section#block-bean-uses').each(function() {
   var bg_img = $(this).find('img').attr('src');
-  $(this).css("background-image", 'url("' + bg_img + '")').css({'background-size': 'cover', 'background' :'#fff', 'color':'#212121'});
+  $(this).css("background-image", 'url("' + bg_img + '")').css({'background-size': 'cover', 'background' :'#ececec', 'color':'#212121'});
 });
 $('.header-wrapper .header-top-links > div').removeClass('container');
 $('.header-wrapper .header-top-menu > div').removeClass('container');
