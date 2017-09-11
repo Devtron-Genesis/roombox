@@ -32,18 +32,20 @@ section.col-sm-12 {
   background-color: #fff;
 }
 .node-type-other-pages a.logo.navbar-btn.pull-left img {
-  width: 60px;
-  margin: 20px 0px 0px 19px;
+  width: 80px;
+  margin: 8px 0px 0px 19px;
+  margin-top: 1px!important;
 }
 a.logo.navbar-btn.pull-left img {
   width: 73px;
   margin: 10px 18px;
   position: fixed;
   transition: all 0.1s ease-in-out;
+  margin-top: 1px;
 }
 .logo-shrink {
-  width: 30px !important;
-  margin: 20px 0px 0px 19px !important;
+  width: 55px !important;
+  margin: 7px 0px 0px 19px !important;
 }
 .header-top-links {
   background-color: #212121;
@@ -61,7 +63,7 @@ a.logo.navbar-btn.pull-left img {
 }
 .head-shrink {
   top: 0;
-  height: 88px !important;
+  height: 76px !important;
 }
 section#block-system-main-menu {
   padding: 31px 0px;
@@ -106,13 +108,27 @@ ul.social-links li i.fa {
   float: left;
   margin: 0px 13px;
 }
-.region.region-header section#block-system-main-menu ul.menu.nav li:hover {
+.region.region-header section#block-system-main-menu ul.menu.nav li:hover,
+.region.region-header section#block-system-main-menu ul.menu.nav li:active {
   background-color: #000;
   color: #fff;
 }
-.region.region-header section#block-system-main-menu ul.menu.nav li:hover a {
+.region.region-header section#block-system-main-menu ul.menu.nav li:hover a,
+.region.region-header section#block-system-main-menu ul.menu.nav li:active a {
   background-color: #000;
   color: #fff;
+}
+.region.region-header section#block-system-main-menu ul.menu.nav li.active {
+  background-color: #212121;
+}
+.region.region-header section#block-system-main-menu ul.menu.nav li.active a {
+  color: #fff;
+}
+ul.dropdown-menu{
+  min-width: 195px;
+  padding: 10px 0px;
+  margin: 10px 0px 0px;
+  left: 45px;
 }
 .region.region-header section#block-system-main-menu ul.menu.nav li a {
   color: #212121;
@@ -121,6 +137,12 @@ ul.social-links li i.fa {
   letter-spacing: 0px;
   padding: 4px 21.8px 1px;
   font-family: 'Avenir';
+}
+.region.region-header section#block-system-main-menu ul.menu.nav li {
+  color: #212121;
+}
+.region.region-header section#block-system-main-menu ul.menu.nav li:active a {
+  color: #fff;
 }
 .region.region-header section#block-system-main-menu ul.menu.nav li:nth-child(4) a {
   padding: 7px 25px 4px 20px;
@@ -151,7 +173,7 @@ section#block-block-18 {
 }
 .footer-main .region.region-footer h2.block-title {
   color: #FFFFFF;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 22px;
   letter-spacing: 2px;
   font-weight: bold;
@@ -159,7 +181,10 @@ section#block-block-18 {
 .footer-main .region.region-footer ul.menu.nav li a {
   padding: 1px 0px;
   color: #DADADA;
-  text-transform: uppercase;
+  text-transform: capitalize;
+
+  /*text-transform: uppercase;*/
+
 }
 .region.region-footer ul li {
   list-style: none;
@@ -197,7 +222,7 @@ section#block-block-18 {
 .footer-main .region.region-footer .h3 {
   color: #fff;
   margin-bottom: -20px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: bold;
 }
 .tweets-pulled-listing .tweets-pulled-listing .tweet-text a {
@@ -268,7 +293,7 @@ section#block-bean-main-slider-0 div#flexslider-1 {
   font-size: 48px;
   width: 250px;
   line-height: 1.3em;
-  text-transform: uppercase;
+  text-transform: capitalize;
   z-index: 3;
   position: fixed;
   top: 33%;
@@ -390,13 +415,13 @@ a.btn-style:hover {
 /* HOME -->
 BENEFITS */
 section#block-bean-uses h2.block-title {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 23px;
   letter-spacing: 3px;
   font-weight: bold;
 }
 section#block-bean-benefits-0 h2.block-title {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 23.6px;
   letter-spacing: 3px;
   font-weight: bold;
@@ -470,7 +495,7 @@ section#block-bean-benefits-0 .field.field-name-field-benifit-image.field-type-i
 }
 .da-thumbs li div h2 {
   margin: 22% 0% 0% 4%;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 27px;
   letter-spacing: 3px;
   font-weight: bold;
@@ -557,14 +582,13 @@ width:95%;
 }*/
 .cntct-form .form-group .email.form-control.form-text.form-email 
 {  background-color: #fff;
-  padding: 0;
   margin-top: 0px;
   width: 49%;
  float:left;
  margin-right:8px;
  border:1px solid #d4d3d3;
- padding: 20px 10px;
-
+ padding: 5px 10px;
+ height: 45px;
 }
 .cntct-form .form-item.webform-component.webform-component-textfield.webform-component--telephone-number.form-group.form-item.form-item-submitted-telephone-number.form-type-textfield.form-group{
  /* margin-left: 170px; */
@@ -591,7 +615,8 @@ background-color: #333;
 color:#fff;
 }
 body.page-node-24 input[type="text"]{
-padding: 20px 10px;
+padding: 5px 10px;
+height: 45px;
 }
 /*   USAGE */
 .page-home section#block-views-uses-block {
@@ -608,7 +633,7 @@ section#block-bean-about-us-heading {
   /*margin: 78px 0px 0px 15px;*/
   margin: 11% 0px 0px 15px;
   letter-spacing: 3px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .field.field-name-field-description.field-type-text.field-label-hidden {
   line-height: 28px;
@@ -682,7 +707,7 @@ section#block-bean-about-us-heading {
 }
 .blog-heading h2 {
   margin: 5px 0px 3px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 27px;
   letter-spacing: 2px;
   font-weight: bold;
@@ -699,11 +724,12 @@ section#block-bean-cta {
 section#block-bean-cta input[type="email"], .field.field-name-field-html-field.field-type-text-long.field-label-hidden input[type="email"] {
   background-color: #85b75e;
   border: none;
-  padding: 19px 11px 16px 10px;
+  /*padding: 19px 11px 16px 10px;*/
   text-align: center;
   margin-top: 20px;
   text-align: center;
   width: 232px;
+  height: 55px;
 }
 section#block-bean-cta input[type="email"]::placeholder, .field.field-name-field-html-field.field-type-text-long.field-label-hidden input[type="email"]::placeholder {
   color: #ffffff;
@@ -712,12 +738,12 @@ section#block-bean-cta input[type="email"]::placeholder, .field.field-name-field
   background-color: #6e9a4c;
   border: none;
   color: #ffffff;
-  padding: 18px 15px 17px;
+  padding: 16px 15px 20px;
   text-transform: uppercase;
   font-size: 20px;
 }
 section#block-bean-cta h2 {
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 1.3px;
   font-size: 32px;
   font-weight: bold;
@@ -785,7 +811,7 @@ section#block-bean-headline-text-0 .field.field-name-field-description.field-typ
   color: #fff;
   display: table;
   padding: 10px 35px 0px 30px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin: -30.7% auto 10px;
   letter-spacing: 4px;
   width: 80%;
@@ -810,7 +836,7 @@ section#block-bean-headline-text-0 .field.field-name-field-description.field-typ
   font-size: 47px;
   margin: 6% 0px 0px 35px;
   letter-spacing: 3px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .field.field-name-field-description.field-type-text.field-label-hidden {
   line-height: 28px;
@@ -821,7 +847,7 @@ section#block-bean-headline-text-0 .field.field-name-field-description.field-typ
 }
 .field.field-name-field-video-tittle.field-type-text.field-label-hidden {
   font-size: 47px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 3px;
   /*margin-left: 10px;*/
 }
@@ -885,7 +911,7 @@ body.page-node-22 .entity.entity-bean.bean-module-info.view-mode-default {
 }
 .entity.entity-bean.bean-module-info.view-mode-default .field.field-name-field-information {
   font-size: 25px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-top: 66px;
 }
 .entity.entity-bean.bean-module-info.view-mode-default .field.field-name-field-short-description {
@@ -968,7 +994,7 @@ background: #fff;
   width: 100%;
   height: 100%;
   background-color:#fff;
-  background-image: url("/sites/all/themes/roombox/LOADER.gif");
+  background-image: url("/sites/all/themes/roombox/giphy.gif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 10%;
@@ -986,7 +1012,7 @@ img.av-preloading-logo {
 /*Data Capture on product page*/
 
 .entity.entity-bean.bean-simple-html-block.clearfix h2 {
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 1.3px;
   font-size: 32px;
   font-weight: bold;
@@ -1047,4 +1073,17 @@ input#edit-submitted-email-address::placeholder {
 }
 .entity.entity-bean.bean-simple-html-block[about*="/block/cta"] {
     background: #212121;
+}
+.field-item.even i {
+  position: relative;
+  top: 3px;
+}
+body.page-node-24 img.img-responsive {
+  margin-top: 40px;
+}
+body.page-node-24 footer.footer-wrapper {
+  margin-top: 50px;
+}
+a.logo.navbar-btn.pull-left {
+  margin-top: 1px;
 }
