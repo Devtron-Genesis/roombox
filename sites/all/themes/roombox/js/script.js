@@ -31,7 +31,9 @@
     $('.linkedin.share-provider').addClass('fa fa-linkedin-square fa-3x').removeClass('linkedin flat square size-32 horizontal');
     $('.email.share-provider').addClass('fa fa-envelope fa-3x').removeClass('email flat square size-32 horizontal');
     $('.more.share-provider').addClass('fa fa-share-alt fa-3x').removeClass('more flat square size-32 horizontal');
-    
+
+
+
     // MODULE HOVER SLIDE  EFFECT
     $(function() {
       $(' #da-thumbs > li ').hoverdir();
@@ -54,7 +56,7 @@
     var y = $(window).height();
     $('section#block-bean-main-slider-0').css('height', y - 24);
     $('section#block-block-18 .cntct-btn a').css('top', y - 67);
-    $('body.node-type-other-pages article.node-other-pages header').css('height', y - 80);
+    $('body.node-type-other-pages article.node-other-pages header').css('height', y - 75);
     $('.node-type-other-pages .arrow-down').css('top', y - 110);
     console.log(y);
     $('<p>Share On Social Media:</p>').appendTo('.os-share-widget-interface.share-container');
@@ -209,11 +211,11 @@
     $(document).on("scroll", function() {
       if ($(document).scrollTop() > 0) {
         $(".header-top-menu").addClass("head-shrink");
-        $("section#block-system-main-menu").addClass("nav-shrink");
+        $("section#block-superfish-1").addClass("menu-shrink");
         $("a.logo.navbar-btn.pull-left img").addClass("logo-shrink");
       } else {
         $(".header-top-menu").removeClass("head-shrink");
-        $("section#block-system-main-menu").removeClass("nav-shrink");
+        $("section#block-superfish-1").removeClass("menu-shrink");
         $("a.logo.navbar-btn.pull-left img").removeClass("logo-shrink");
       }
     });

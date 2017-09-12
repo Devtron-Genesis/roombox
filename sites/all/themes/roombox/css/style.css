@@ -1,9 +1,18 @@
 /* General CSS */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility; 
+
+}
 body {
   font-family: 'Avenir';
   font-weight: bold;
   padding-top: 0;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility; 
+
 }
 .no-gutter {
   padding-left: 0px;
@@ -34,8 +43,8 @@ section.col-sm-12 {
 }
 .node-type-other-pages a.logo.navbar-btn.pull-left img {
   width: 80px;
-  margin: 8px 0px 0px 19px;
-  margin-top: 1px!important;
+  margin: 16px 0px 0px 19px;
+  /*margin-top: 1px!important;*/
 }
 a.logo.navbar-btn.pull-left img {
   width: 73px;
@@ -1094,7 +1103,7 @@ body.page-node-24 footer.footer-wrapper {
 a.logo.navbar-btn.pull-left {
   margin-top: 1px;
 }
-.dropdown-menu li:hover {
+/*.dropdown-menu li:hover {
   visibility: visible;
 
 }
@@ -1115,9 +1124,66 @@ ul.dropdown-menu li.first.leaf a {
 }
 .dropdown-menu li {
   width: 100%;
+  position: relative;
+  left: -13px;
 }
 .dropdown-menu li a {
   float: left;
+  padding-left: 40px !important;
+}*/
+/*NEW MENU*/
+.block-superfish h2 {
+  /*visibility: hidden;*/
+  display: none;
+}
+section#block-superfish-1 {
   position: relative;
-  left: -3px;
+  transition: all 0.1s ease-in-out; 
+  right: 0;
+  
+}
+.block-superfish {
+  margin-top: 40px;
+}
+ul#superfish-1 {
+  float: right;
+  /*margin: 10px 0px;*/
+}
+ul#superfish-1 li {
+  float: left;
+  color: #212121;
+  padding: 10px 20px;
+}
+ul#superfish-1 li a {
+  text-decoration: none;
+  color: #212121;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Avenir';
+  padding: 5px 20px;
+}
+ul#superfish-1 li a:hover {
+  background-color: #212121;
+  color: #fff;
+}
+span.sf-sub-indicator {
+  display: none;
+}
+.fa-angle-down {
+  color: #212121;
+  padding-left: 20px;
+}
+.sf-menu.sf-horizontal.sf-shadow ul, .sf-menu.sf-vertical.sf-shadow ul, .sf-menu.sf-navbar.sf-shadow ul ul {
+  background-image: none;
+  background-color:rgb(236, 236, 236);
+  color: #fff;
+}
+ul.sf-hidden li {
+  padding: 0px!important;
+}
+.menu-shrink {
+  margin-top: 20px;
+}
+.page-node-24 .arrow-down {
+  display: none;
 }
