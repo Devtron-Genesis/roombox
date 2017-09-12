@@ -3,6 +3,7 @@ body {
   font-family: 'Avenir';
   font-weight: bold;
   padding-top: 0;
+  -webkit-font-smoothing: antialiased;
 }
 .no-gutter {
   padding-left: 0px;
@@ -110,11 +111,11 @@ ul.social-links li i.fa {
 }
 .region.region-header section#block-system-main-menu ul.menu.nav li:hover,
 .region.region-header section#block-system-main-menu ul.menu.nav li:active {
-  background-color: #000;
-  color: #fff;
+  /*background-color: #000;*/
+  /*color: #fff;*/
+  text-align: center;
 }
-.region.region-header section#block-system-main-menu ul.menu.nav li:hover a,
-.region.region-header section#block-system-main-menu ul.menu.nav li:active a {
+.region.region-header section#block-system-main-menu ul.menu.nav li a:hover {
   background-color: #000;
   color: #fff;
 }
@@ -124,12 +125,12 @@ ul.social-links li i.fa {
 .region.region-header section#block-system-main-menu ul.menu.nav li.active a {
   color: #fff;
 }
-ul.dropdown-menu{
+/*ul.dropdown-menu{
   min-width: 195px;
   padding: 10px 0px;
   margin: 10px 0px 0px;
   left: 45px;
-}
+}*/
 .region.region-header section#block-system-main-menu ul.menu.nav li a {
   color: #212121;
   text-transform: uppercase;
@@ -883,8 +884,14 @@ section#block-bean-headline-text-0 .field.field-name-field-description.field-typ
   font-size: 16px;
   color: #212121;
 }
-.os-share-widget-interface.share-container .share-provider.flat.square.size-32.horizontal {
+.os-share-widget-interface.share-container .share-provider {
   margin-right: 40px;
+  color: #212121;
+  position: relative;
+  top: -5px;
+}
+.os-share-widget-interface.share-container .share-provider:hover{
+  text-decoration: none;
 }
 body.page-node-22 .entity.entity-bean.bean-module-info.view-mode-default {
   margin: 0  20px 0px;
@@ -1086,4 +1093,31 @@ body.page-node-24 footer.footer-wrapper {
 }
 a.logo.navbar-btn.pull-left {
   margin-top: 1px;
+}
+.dropdown-menu li:hover {
+  visibility: visible;
+
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: #fff !important;
+  color: #000!important;
+}
+span.caret {
+  display: none;
+}
+ul.dropdown-menu li.first.leaf a {
+  background-color: #fff;
+}
+.dropdown-menu {
+  margin:0px;
+  padding: 0px;
+}
+.dropdown-menu li {
+  width: 100%;
+}
+.dropdown-menu li a {
+  float: left;
+  position: relative;
+  left: -3px;
 }
