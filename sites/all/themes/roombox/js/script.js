@@ -10,6 +10,7 @@
   });
   $(document).ready(function() {
     $('.match-height').matchHeight();
+    // $('.sf-depth-1.menuparent.sf-depth-1.menuparent.sf-with-ul').append('<i class="fa fa-angle-down"> </i>');
     // CONTACT FORM((
     $('.cntct-form form#webform-client-form-31 .form-actions button.webform-submit').removeClass("btn-primary");
     $('.cntct-form form#webform-client-form-31 .form-actions button.webform-submit').addClass("btn-style");
@@ -25,13 +26,13 @@
     $(".cntct-form ").parent().find("#edit-submitted-message").attr("placeholder", "Message...");
     $(".cntct-form ").parent().find("#edit-submitted-message").attr("placeholder", "Message...");
     
-    $('.facebook.share-provider').addClass('fa fa-facebook-square fa-3x').removeClass('facebook flat square size-32 horizontal');
-    $('.googleplus.share-provider').addClass('fa fa-google-plus-square fa-3x').removeClass('googleplus flat square size-32 horizontal');
-    $('.twitter.share-provider').addClass('fa fa-twitter-square fa-3x').removeClass('twitter flat square size-32 horizontal');
-    $('.linkedin.share-provider').addClass('fa fa-linkedin-square fa-3x').removeClass('linkedin flat square size-32 horizontal');
-    $('.email.share-provider').addClass('fa fa-envelope fa-3x').removeClass('email flat square size-32 horizontal');
-    $('.more.share-provider').addClass('fa fa-share-alt fa-3x').removeClass('more flat square size-32 horizontal');
-
+    $('.facebook.share-provider').addClass('fa fa-facebook-square ').removeClass('facebook flat square size-32 horizontal').css('font-size','2em');
+    $('.googleplus.share-provider').addClass('fa fa-google-plus-square ').removeClass('googleplus flat square size-32 horizontal').css('font-size','2em');
+    $('.twitter.share-provider').addClass('fa fa-twitter-square ').removeClass('twitter flat square size-32 horizontal').css('font-size','2em');
+    $('.linkedin.share-provider').addClass('fa fa-linkedin-square ').removeClass('linkedin flat square size-32 horizontal').css('font-size','2em');
+    $('.email.share-provider').addClass('fa fa-envelope ').removeClass('email flat square size-32 horizontal').css('font-size','2em');
+    $('.more.share-provider').removeClass('more flat square size-32 horizontal');
+    
 
 
     // MODULE HOVER SLIDE  EFFECT

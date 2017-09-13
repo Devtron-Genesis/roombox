@@ -39,7 +39,7 @@ min-height:563px;
   }
   .blog-content{
     margin: 0px 30px;
-    top: 60px;
+    /*top: 68px;*/
   }
   .field.field-name-field-about-heading.field-type-text.field-label-hidden {
     margin: 17% 0px 0px 15px;
@@ -828,6 +828,9 @@ margin-bottom: 4%;
   }
   body.page-node-24 img.img-responsive {
     /* margin-top: 40px; */
+  }
+  .blog-content {
+    top: 68px;
   }
 }
 
