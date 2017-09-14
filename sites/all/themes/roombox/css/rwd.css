@@ -666,10 +666,10 @@ margin-bottom: 4%;
 @media only screen and (min-width: 2880px) and (max-width: 2885px) {  
 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden
   {
-    margin: -30% auto 10px;
+    margin: -29% auto 10px;
   }
   .field.field-name-body.field-type-text-with-summary.field-label-hidden {
-    margin: 17px auto 24%;
+    margin: 17px auto 28%;
   }
   .page-node-24 .field.field-name-body.field-type-text-with-summary.field-label-hidden {
      margin: 17px auto 14.5%;
@@ -691,6 +691,18 @@ margin-bottom: 4%;
   }
   iframe#gmap_canvas {
     width: 101%;
+  }
+  .cntct-form.col-md-6.match-height {
+    margin-top: 19%;
+  }
+  .page-node-24 img.img-responsive {
+    margin-top: 39%!important;
+  }
+  page-node-34 .field.field-name-body.field-type-text-with-summary.field-label-hidden {
+    margin: 27% auto 2%;
+  }
+  .page-node-33 .field.field-name-body.field-type-text-with-summary.field-label-hidden {
+    margin: -29% auto 10px;
   }
 }
 
@@ -726,6 +738,13 @@ margin-bottom: 4%;
   .page-node-24 .field.field-name-body.field-type-text-with-summary.field-label-hidden {
     margin: 17px auto 12%;
   }
+  .page-node-33 .field.field-name-body.field-type-text-with-summary.field-label-hidden {
+    margin: 26% auto 3%;
+  }
+  .field.field-name-body.field-type-text-with-summary.field-label-hidden {
+    margin: 28% auto 4%;
+}
+
 }
 
 @media only screen and (min-width: 2560px) and (max-width: 2565px){  

@@ -25,21 +25,23 @@
     $(".cntct-form ").parent().find("#edit-submitted-telephone-number").attr("placeholder", "Telephone");
     $(".cntct-form ").parent().find("#edit-submitted-message").attr("placeholder", "Message...");
     $(".cntct-form ").parent().find("#edit-submitted-message").attr("placeholder", "Message...");
-    
-    $('.facebook.share-provider').addClass('fa fa-facebook-square ').removeClass('facebook flat square size-32 horizontal').css('font-size','2em');
-    $('.googleplus.share-provider').addClass('fa fa-google-plus-square ').removeClass('googleplus flat square size-32 horizontal').css('font-size','2em');
-    $('.twitter.share-provider').addClass('fa fa-twitter-square ').removeClass('twitter flat square size-32 horizontal').css('font-size','2em');
-    $('.linkedin.share-provider').addClass('fa fa-linkedin-square ').removeClass('linkedin flat square size-32 horizontal').css('font-size','2em');
-    $('.email.share-provider').addClass('fa fa-envelope ').removeClass('email flat square size-32 horizontal').css('font-size','2em');
+    $('.facebook.share-provider').addClass('fa fa-facebook-square ').removeClass('facebook flat square size-32 horizontal').css('font-size', '2em');
+    $('.googleplus.share-provider').addClass('fa fa-google-plus-square ').removeClass('googleplus flat square size-32 horizontal').css('font-size', '2em');
+    $('.twitter.share-provider').addClass('fa fa-twitter-square ').removeClass('twitter flat square size-32 horizontal').css('font-size', '2em');
+    $('.linkedin.share-provider').addClass('fa fa-linkedin-square ').removeClass('linkedin flat square size-32 horizontal').css('font-size', '2em');
+    $('.email.share-provider').addClass('fa fa-envelope ').removeClass('email flat square size-32 horizontal').css('font-size', '2em');
     $('.more.share-provider').removeClass('more flat square size-32 horizontal');
-    
-
-
+    // $("li#menu-2851-1").hover(function(){
+    //   $(this).parents('li a.active').hide();
+    // });
+    // Responsice menu
+    $('h2.sidr-class-block-title').hide();
+    $('ul#sidr-id-superfish-1').prepend('<i class="fa fa-times" aria-hidden="true"></i>');
     // MODULE HOVER SLIDE  EFFECT
     $(function() {
       $(' #da-thumbs > li ').hoverdir();
     });
-    $(' #da-thumbs > li ').append('<a class="field-content module-btn-style btn-listing" href="http://roombox.local.com/">CALL TO ACTION</a> ');
+    $(' #da-thumbs > li ').append('<a class="field-content module-btn-style btn-listing" href="http://roombox.local.com/">CUSTOMISE</a> ');
     // MORE INFO IN PRODUCT PAGE
     $('.entity.entity-bean.bean-module-info.view-mode-default .field.field-name-field-more-info').addClass('fa').addClass('fa-chevron-circle-down');
     $('.entity.entity-bean.bean-module-info.view-mode-default .field.field-name-field-more-info').click(function() {
@@ -62,10 +64,7 @@
     console.log(y);
     $('<p>Share On Social Media:</p>').appendTo('.os-share-widget-interface.share-container');
     $('article#node-24 header').css('height', y / 2);
-
-
     // RESIZING OF CTA
-    
     (function($) {
       function mediaSize() {
         if (window.matchMedia('(width: 1280px)').matches) {
@@ -173,36 +172,36 @@
             }
           });
         } else {
-          $(document).on("scroll", function(){
-      if ($(document).scrollTop()>1850){
-        var scrolled = $(window).scrollTop();
-        $('.front .xtranslate').css('width', (80 + ((scrolled - 1850) * .05)) + '%');
-      }
-    });
-    $(document).on("scroll", function(){
-      if ($(document).scrollTop()>600){
-        var scrolled = $(window).scrollTop();
-        $('.page-node-20 .xtranslate').css('width', (80 + ((scrolled - 600) * .05)) + '%');
-      }
-    });
-    $(document).on("scroll", function(){
-      if ($(document).scrollTop()>1900){
-        var scrolled = $(window).scrollTop();
-        $('.page-node-21 .xtranslate').css('width', (80 + ((scrolled - 1900) * .05)) + '%');
-      }
-    });
-    $(document).on("scroll", function(){
-      if ($(document).scrollTop()>1750){
-        var scrolled = $(window).scrollTop();
-        $('.page-node-22 .xtranslate').css('width', (80 + ((scrolled - 1750) * .05)) + '%');
-      }
-    });
-    $(document).on("scroll", function(){
-      if ($(document).scrollTop()>1950){
-        var scrolled = $(window).scrollTop();
-        $('.page-node-23 .xtranslate').css('width', (80 + ((scrolled - 1950) * .05)) + '%');
-      }
-    });
+          $(document).on("scroll", function() {
+            if ($(document).scrollTop() > 1850) {
+              var scrolled = $(window).scrollTop();
+              $('.front .xtranslate').css('width', (80 + ((scrolled - 1850) * .05)) + '%');
+            }
+          });
+          $(document).on("scroll", function() {
+            if ($(document).scrollTop() > 600) {
+              var scrolled = $(window).scrollTop();
+              $('.page-node-20 .xtranslate').css('width', (80 + ((scrolled - 600) * .05)) + '%');
+            }
+          });
+          $(document).on("scroll", function() {
+            if ($(document).scrollTop() > 1900) {
+              var scrolled = $(window).scrollTop();
+              $('.page-node-21 .xtranslate').css('width', (80 + ((scrolled - 1900) * .05)) + '%');
+            }
+          });
+          $(document).on("scroll", function() {
+            if ($(document).scrollTop() > 1750) {
+              var scrolled = $(window).scrollTop();
+              $('.page-node-22 .xtranslate').css('width', (80 + ((scrolled - 1750) * .05)) + '%');
+            }
+          });
+          $(document).on("scroll", function() {
+            if ($(document).scrollTop() > 1950) {
+              var scrolled = $(window).scrollTop();
+              $('.page-node-23 .xtranslate').css('width', (80 + ((scrolled - 1950) * .05)) + '%');
+            }
+          });
         }
       };
       mediaSize();
@@ -272,7 +271,6 @@
     $(".view.view-blog-view.view-id-blog_view.view-display-id-blog .pager li > a").html("LOAD MORE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
     console.log('Document Ready');
   });
-
   $(document).ajaxComplete(function(e) {
     // SET BLOG AND MODULE IMAGE AS BACKGROUND IMAGE
     $('.view-id-blog_view .blog-listing').each(function() {
