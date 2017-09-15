@@ -6,7 +6,8 @@
   text-rendering: optimizeLegibility;
 }
 body {
-  font-family: 'Avenir';
+  /*font-family: 'Avenir';*/
+  font-family: ‘Lato’, sans-serif;
   font-weight: bold;
   padding-top: 0;
   -webkit-font-smoothing: antialiased;
@@ -147,7 +148,8 @@ ul.social-links li i.fa {
   font-size: 14px;
   letter-spacing: 0px;
   padding: 4px 21.8px 1px;
-  font-family: 'Avenir';
+  /*font-family: 'Avenir';*/
+  font-family: ‘Lato’, sans-serif;
 }
 .region.region-header section#block-system-main-menu ul.menu.nav li {
   color: #212121;
@@ -991,7 +993,8 @@ body.page-node-22 .entity.entity-bean.bean-module-info.view-mode-default {
   text-transform: uppercase;
   text-decoration: none;
   padding: 10px 10px 5px;
-  font-family: 'Avenir';
+  /*font-family: 'Avenir';*/
+  font-family: ‘Lato’, sans-serif;
 }
 i.fa.fa-info-circle {
   padding-left: 10px;
@@ -1201,7 +1204,8 @@ ul#superfish-1 li a {
   color: #212121;
   font-size: 14px;
   text-transform: uppercase;
-  font-family: 'Avenir';
+  /*font-family: 'Avenir';*/
+  font-family: ‘Lato’, sans-serif;
   padding: 7px 20px 5px 20px;
   left: -12px;
   top: -10px;
