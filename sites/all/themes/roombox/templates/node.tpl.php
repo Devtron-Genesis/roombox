@@ -93,8 +93,10 @@
       <?php print $submitted; ?>
     </span>
     <?php endif; ?>
-    <?php print render($content['field_header_background_heading']); ?>
-    <?php print render($content['body']); ?>
+    <div class="header-content-field">
+      <?php print render($content['field_header_background_heading']); ?>
+      <?php print render($content['body']); ?>
+    </div>
   </header>
   <?php endif; ?>
   <?php

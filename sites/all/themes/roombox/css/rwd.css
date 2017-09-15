@@ -29,7 +29,7 @@ min-height:563px;
   body {
     /*background-color: red;/*Breakpoint-colour*/
   }
- 
+
   .blog-layer{
     top: -111px;
 
@@ -92,13 +92,13 @@ min-height:563px;
   .col-sm-7.match-height {
     margin-top: 4.4%;
   }
-}  
+}
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {  /** Brown **/
- 
+
   body {
     /*background-color: teal;/*Breakpoint-colour*/
   }
-  
+
   .field.field-name-field-about-heading.field-type-text.field-label-hidden {
     margin: 16% 0px 0px 15px;
   }
@@ -155,7 +155,7 @@ min-height:563px;
     width: 80%;
   }*/
 
-  
+
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 989px) {  /** Orange **/
   body {
@@ -263,7 +263,7 @@ min-height:563px;
     padding: 0px;
   }
   .node-type-other-pages .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .field.field-name-field-description.field-type-text.field-label-hidden {
-    margin: 6% 0px 0px 0px; 
+    margin: 6% 0px 0px 0px;
   }
   .node-type-other-pages .entity.entity-bean.bean-half-right-image-slider.view-mode-default {
     padding: 0 15px;
@@ -280,14 +280,14 @@ min-height:563px;
   body {
     /*background-color: grey;/*Breakpoint-colour*/
   }
-   
+
   .cntct-form {
     width: 100%;
   }
   body.page-node-24 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden{
     font-size: 26px;
     }
-  
+
   body.page-node-24 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden{
     margin: -35% auto 10px;
   }
@@ -307,7 +307,7 @@ min-height:563px;
   .view.view-main-slider .views-field.views-field-body {
     float: none;
     width: 100%;
-    margin-top: 260px; 
+    margin-top: 260px;
   }
   .view.view-main-slider .views-field.views-field-field-slide-link {
     float: none;
@@ -418,7 +418,7 @@ min-height:563px;
   }
   .node-type-other-pages .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .field.field-name-field-description.field-type-text.field-label-hidden,
   {
-    margin: 6% 0px 0px 0px; 
+    margin: 6% 0px 0px 0px;
   }
   .node-type-other-pages .entity.entity-bean.bean-half-right-image-slider.view-mode-default {
     padding: 0 15px;
@@ -579,7 +579,7 @@ min-height:563px;
     padding: 0px;
   }
   .node-type-other-pages .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .field.field-name-field-description.field-type-text.field-label-hidden {
-    margin: 6% 0px 0px 0px; 
+    margin: 6% 0px 0px 0px;
   }
   .node-type-other-pages .entity.entity-bean.bean-half-right-image-slider.view-mode-default {
     padding: 0 15px;
@@ -626,7 +626,7 @@ min-height:563px;
 /*home page text */
 
 /*  .field.field-name-field-half-third-description.field-type-text-long.field-label-hidden {
-position: fixed;   
+position: fixed;
 }
 .field.field-name-field-slider-heading.field-type-text.field-label-hidden {
 position: fixed;
@@ -653,17 +653,17 @@ margin-bottom: 4%;
   margin-bottom: 4.8%;
 }
 .cntct-form .form-group .email.form-control.form-text.form-email {
-   
+
     width: 100%;
     margin-bottom: 18px;
-   
+
  }
 }
 
 /*Selected Resolutions Media Query */
 
 
-@media only screen and (min-width: 2880px) and (max-width: 2885px) {  
+@media only screen and (min-width: 2880px) and (max-width: 2885px) {
 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden
   {
     margin: -29% auto 10px;
@@ -706,13 +706,13 @@ margin-bottom: 4%;
   }
 }
 
-@media only screen and (min-width: 1920px) and (max-width: 1925px){  
+@media only screen and (min-width: 1920px) and (max-width: 1925px){
 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden
   {
-    margin: -30% auto 10px;
+    /*margin: -30% auto 10px;*/
   }
   .field.field-name-body.field-type-text-with-summary.field-label-hidden {
-    margin: 17px auto 21%;
+    /*margin: 17px auto 21%;*/
   }
   ./*page-node-24 .field.field-name-body.field-type-text-with-summary.field-label-hidden {
      margin: 17px auto 19%;
@@ -733,30 +733,30 @@ margin-bottom: 4%;
     margin-bottom: 30px;
   }
   iframe#gmap_canvas {
-    width: 102%;
+    /*width: 102%;*/
   }
   .page-node-24 .field.field-name-body.field-type-text-with-summary.field-label-hidden {
-    margin: 17px auto 12%;
+    /*margin: 17px auto 12%;*/
   }
   .page-node-33 .field.field-name-body.field-type-text-with-summary.field-label-hidden {
-    margin: 26% auto 3%;
+    /*margin: 26% auto 3%;*/
   }
   .field.field-name-body.field-type-text-with-summary.field-label-hidden {
-    margin: 28% auto 4%;
+    /*margin: 28% auto 4%;*/
 }
 
 }
 
-@media only screen and (min-width: 2560px) and (max-width: 2565px){  
+@media only screen and (min-width: 2560px) and (max-width: 2565px){
 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden
   {
-    margin: -30% auto 10px;
+    /*margin: -30% auto 10px;*/
   }
   .field.field-name-body.field-type-text-with-summary.field-label-hidden {
-    margin: 17px auto 23%;
+    /*margin: 17px auto 23%;*/
   }
   .page-node-24 .field.field-name-body.field-type-text-with-summary.field-label-hidden {
-     margin: 17px auto 21.6%;
+     /*margin: 17px auto 21.6%;*/
   }
   body.page-node-22 .os-share-widget-interface.share-container {
     margin-top: 2%;
@@ -774,20 +774,20 @@ margin-bottom: 4%;
     margin-bottom: 30px;
   }
   iframe#gmap_canvas {
-    width: 102%;
+    /*width: 102%;*/
   }
 }
 
-@media only screen and (min-width: 1680px) and (max-width: 1685px){  
+@media only screen and (min-width: 1680px) and (max-width: 1685px){
 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden
   {
-    margin: -30% auto 10px;
+    /*margin: -30% auto 10px;*/
   }
   .field.field-name-body.field-type-text-with-summary.field-label-hidden {
-  margin-bottom: 20%;
+  /*margin-bottom: 20%;*/
   }
   .page-node-24 .field.field-name-body.field-type-text-with-summary.field-label-hidden {
-    margin: 17px auto 10.8%;
+    /*margin: 17px auto 10.8%;*/
   }
   body.page-node-22 .os-share-widget-interface.share-container {
     margin-top: 2%;
@@ -805,20 +805,20 @@ margin-bottom: 4%;
     margin-bottom: 30px;
   }
   iframe#gmap_canvas {
-    width: 102%;
+    /*width: 102%;*/
   }
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 1285px) {  
+@media only screen and (min-width: 1280px) and (max-width: 1285px) {
 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden
   {
-    margin: -30% auto 10px;
+    /*margin: -30% auto 10px;*/
   }
   .field.field-name-body.field-type-text-with-summary.field-label-hidden {
-  margin-bottom: 14.8%;
+  /*margin-bottom: 14.8%;*/
   }
   .page-node-24 .field.field-name-body.field-type-text-with-summary.field-label-hidden {
-    margin: 17px auto 6.8%;;
+    /*margin: 17px auto 6.8%;;*/
   }
   body.page-node-22 .os-share-widget-interface.share-container {
     margin-top: 2%;
@@ -840,29 +840,26 @@ margin-bottom: 4%;
     margin-bottom: 30px;
   }
   iframe#gmap_canvas {
-    width: 103%;
+    /*width: 103%;*/
   }
   .page-node-24 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden {
-    margin: -19.58% auto 10px;
-  }
-  body.page-node-24 img.img-responsive {
-    /* margin-top: 40px; */
+    /*margin: -19.58% auto 10px;*/
   }
   .blog-content {
     top: 68px;
   }
 }
 
-@media only screen and (min-width: 1024px) and  (max-width: 1025px) {  
+@media only screen and (min-width: 1024px) and  (max-width: 1025px) {
 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden
   {
-    margin: -30% auto 10px;
+    /*margin: -30% auto 10px;*/
   }
   .field.field-name-body.field-type-text-with-summary.field-label-hidden {
-  margin-bottom: 4%;
+  /*margin-bottom: 4%;*/
   }
   .page-node-24 .field.field-name-body.field-type-text-with-summary.field-label-hidden {
-    margin: 17px auto 15.9%;
+    /*margin: 17px auto 15.9%;*/
   }
   body.page-node-22 .os-share-widget-interface.share-container {
     margin-top: 2%;
@@ -911,6 +908,6 @@ body.page-node-23 .field.field-name-field-blocks-bundel.field-type-entityreferen
   margin-top: 0px !important;
 }
 iframe#gmap_canvas {
-  width: 104%;
+  /*width: 104%;*/
   }
 }

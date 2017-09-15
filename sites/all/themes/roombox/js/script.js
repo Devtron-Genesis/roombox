@@ -10,7 +10,7 @@
   });
   $(document).ready(function() {
     $('.match-height').matchHeight();
-    // $('.sf-depth-1.menuparent.sf-depth-1.menuparent.sf-with-ul').append('<i class="fa fa-angle-down"> </i>');
+
     // CONTACT FORM((
     $('.cntct-form form#webform-client-form-31 .form-actions button.webform-submit').removeClass("btn-primary");
     $('.cntct-form form#webform-client-form-31 .form-actions button.webform-submit').addClass("btn-style");
@@ -31,9 +31,7 @@
     $('.linkedin.share-provider').addClass('fa fa-linkedin-square ').removeClass('linkedin flat square size-32 horizontal').css('font-size', '2em');
     $('.email.share-provider').addClass('fa fa-envelope ').removeClass('email flat square size-32 horizontal').css('font-size', '2em');
     $('.more.share-provider').removeClass('more flat square size-32 horizontal');
-    // $("li#menu-2851-1").hover(function(){
-    //   $(this).parents('li a.active').hide();
-    // });
+
     // Responsice menu
     $('h2.sidr-class-block-title').hide();
     $('ul#sidr-id-superfish-1').prepend('<i class="fa fa-times" aria-hidden="true"></i>');
@@ -57,10 +55,12 @@
     $('.field-group-format-wrapper a').removeAttr("class");
     // Set slider height according to window height
     var y = $(window).height();
+    console.log($('.header-content-field').height());
     $('section#block-bean-main-slider-0').css('height', y - 24);
     $('section#block-block-18 .cntct-btn a').css('top', y - 67);
-    $('body.node-type-other-pages article.node-other-pages header').css('height', y - 75);
-    $('.node-type-other-pages .arrow-down').css('top', y - 110);
+    $('body.node-type-other-pages article.node-other-pages header').css({'height': y - 119,'float':'left','width':'100%'});
+    $('.node-type-other-pages .arrow-down').css('top', y - 50);
+    // $('.field.field-name-field-header-background-heading.field-type-text.field-label-hidden').css('top', y - 250);
     console.log(y);
     $('<p>Share On Social Media:</p>').appendTo('.os-share-widget-interface.share-container');
     $('article#node-24 header').css('height', y / 2);
@@ -212,6 +212,7 @@
       if ($(document).scrollTop() > 0) {
         $(".header-top-menu").addClass("head-shrink");
         $("section#block-superfish-1").addClass("menu-shrink");
+        $('body.node-type-other-pages article.node-other-pages header').matchHeight('')
         $("a.logo.navbar-btn.pull-left img").addClass("logo-shrink");
       } else {
         $(".header-top-menu").removeClass("head-shrink");

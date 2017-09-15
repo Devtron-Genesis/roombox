@@ -574,13 +574,13 @@ opacity:1;
 .cntct-form {
   width: 50%;
   margin: 0 auto;
-  margin-top: 15px;
+  /*margin-top: 15px;*/
 }
 body.page-node-24 label.control-label {
   display: none;
 }
 .field.field-name-field-html-field.field-type-text-long.field-label-hidden {
-  margin-top: -20px;
+  /*margin-top: -20px;*/
   color: #ffffff;
   position: relative;
   z-index: 2;
@@ -834,32 +834,46 @@ section#block-bean-headline-text-0 .field.field-name-field-description.field-typ
 .node-other-pages .field.field-name-field-header-background-image.field-type-image.field-label-hidden img.img-responsive {
   display: none;
 }
-.field.field-name-field-header-background-heading.field-type-text.field-label-hidden {
+.header-content-field {
+ /* display: table-cell;
+  vertical-align: middle;
+  text-align:center;*/
+}
+.field.field-name-field-header-background-heading.field-type-text.field-label-hidden  {
   font-size: 51px;
   background-color: #78a952;
   color: #fff;
   display: table;
   padding: 10px 35px 0px 30px;
   text-transform: capitalize;
-  margin: -30.7% auto 10px;
+  /*margin: -30.7% auto 10px;*/
   letter-spacing: 4px;
-  width: 80%;
   text-align: center;
+  width: auto;
+  margin:0 auto;
+  /*margin-top: 10%;*/
+  margin-bottom: 18px;
+  /*display: inline-block;
+  vertical-align: middle;*/
 }
 .field.field-name-body.field-type-text-with-summary.field-label-hidden {
   background: rgba(255, 255, 255, 0.7) none repeat scroll 0 0;
   display: table;
   font-size: 31px;
-  margin: 17px auto 16.88%;
+  /*margin: 17px auto 16.88%;*/
   padding: 8px 20px 0;
   letter-spacing: 1px;
   font-weight: lighter;
+  margin: 0 auto;
+  /*display: inline-block;
+  vertical-align: middle;*/
 }
 .entity.entity-bean.bean-video-block.clearfix {
   padding: 20px 30px;
 }
 .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .entity.entity-bean.bean-about-us.view-mode-default {
   padding: 0px 30px 20px;
+  margin-top: 4%;
 }
 .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .field.field-name-field-about-heading.field-type-text.field-label-hidden {
   font-size: 47px;
@@ -926,7 +940,6 @@ body.page-node-22 .entity.entity-bean.bean-module-info.view-mode-default {
   border-top: solid 1px;
   padding: 15px 0px;
   position: relative;
-  top: 10px;
 }
 
 /* PRODUCT PAGE */
@@ -1060,7 +1073,7 @@ body.page-home .blog-layer {
   /*background-color: white;*/
   color: #212121;
   width: 100%;
-  padding: 2% 4% 4% 4%;
+  padding: 4% 4% 4% 4%;
 }
 .entity.entity-bean.bean-benefits.clearfix .content {
   color: #212121;
@@ -1072,7 +1085,7 @@ body.page-node-22 .os-share-widget-interface.share-container {
   margin-top: 15px;
 }
 body.page-home ul.pager.pager-load-more {
-  /*padding-bottom: 20px;*/
+  padding-bottom: 20px;
 }
 .page-node-22 .entity.entity-bean.bean-module-info.view-mode-default .field.field-name-field-information {
   margin-top: 20px;
@@ -1108,9 +1121,6 @@ input#edit-submitted-email-address::placeholder {
 }
 .page-node-22 i.fa.fa-info-circle {
   top: 0px;
-}
-body.page-node-24 img.img-responsive {
-  margin-top: 40px;
 }
 body.page-node-24 footer.footer-wrapper {
   margin-top: 50px;
@@ -1290,3 +1300,29 @@ ul#sidr-id-superfish-1 i {
   padding-left: 85%;
   cursor: pointer;
 }
+ol.breadcrumb {
+  display: none;
+}
+.node-other-pages header {
+  margin-top: 119px;
+}
+.field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden {
+  float: left;
+  width: 100%;
+}
+.entity.entity-bean.bean-half-right-image-slider.view-mode-default {
+  margin-bottom: 4%;
+}
+.page-node-22 .field-name-field-blocks-bundel > .field-items > .field-item:first-child {
+  margin-top: 4%;
+}
+.page-node-22 .field-name-field-blocks-bundel > .field-items > .field-item:nth-child(4) {
+  margin-bottom: 4%;
+}
+ul.pager.pager-load-more {
+  margin: 0px;
+}
+.page-node-24 .field-name-field-blocks-bundel > .field-items > .field-item:first-child {
+  margin-top: 4%;
+}
+
