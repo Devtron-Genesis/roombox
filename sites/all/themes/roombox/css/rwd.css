@@ -558,8 +558,8 @@ min-height:563px;
     top: 33px;
     margin: 0px;
   }
-  body.page-node-20 .about.container{
-    margin-top: 10%;
+  body.page-node-40 .about.container{
+    /*margin-top: 10%;*/
   }
   .field.field-name-body.field-type-text-with-summary.field-label-hidden {
     margin-bottom: 55%;
@@ -862,7 +862,7 @@ margin-bottom: 4%;
     /*margin: 17px auto 15.9%;*/
   }
   body.page-node-22 .os-share-widget-interface.share-container {
-    margin-top: 2%;
+    /*margin-top: 2%;*/
   }
   .col-sm-7.no-gutter {
    margin-top: 0%;
