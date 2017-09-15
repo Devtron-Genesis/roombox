@@ -1212,12 +1212,13 @@ ul#superfish-1 li a:hover {
   color: #fff;
   /*width: 116%;*/
 }
-ul#superfish-1 li a:hover i.fa.fa-angle-down {
+/*ul#superfish-1 li a:hover i.fa.fa-angle-down {
   color: green;
-}
+}*/
 a.sf-depth-1.menuparent.sf-depth-1.menuparent.sf-with-ul:hover {
-  background-color: #fff!important;
-  color: #78a952!important;
+  /*background-color: #fff!important;*/
+  /*color: #78a952!important;*/
+  /*padding-right: 5px!important;*/
 }
 a.sf-depth-1.menuparent.sf-depth-1.menuparent.sf-with-ul {
   margin-right: -7px;
