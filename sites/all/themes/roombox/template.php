@@ -3,6 +3,8 @@
  * @file
  * The primary PHP file for this theme.
  */
+function roombox_preprocess_node(&$vars, $hook) {
+}
 function roombox_preprocess_page(&$vars, $hook) {
   if (isset($vars['node'])) {
     if (isset($vars['node']->type)) {
