@@ -666,16 +666,16 @@ margin-bottom: 4%;
 @media only screen and (min-width: 2880px) and (max-width: 2885px) {
 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden
   {
-    margin: -29% auto 10px;
+    /*margin: -29% auto 10px;*/
   }
   .field.field-name-body.field-type-text-with-summary.field-label-hidden {
-    margin: 17px auto 28%;
+    /*margin: 17px auto 28%;*/
   }
   .page-node-24 .field.field-name-body.field-type-text-with-summary.field-label-hidden {
-     margin: 17px auto 14.5%;
+     /*margin: 17px auto 14.5%;*/
   }
   body.page-node-22 .os-share-widget-interface.share-container {
-    margin-top: 2%;
+    /*margin-top: 2%;*/
   }
   .col-sm-7.no-gutter {
    margin-top: 4.1%;
@@ -690,19 +690,19 @@ margin-bottom: 4%;
     margin-bottom: 30px;
   }
   iframe#gmap_canvas {
-    width: 101%;
+    /*width: 101%;*/
   }
   .cntct-form.col-md-6.match-height {
-    margin-top: 19%;
+    /*margin-top: 19%;*/
   }
   .page-node-24 img.img-responsive {
-    margin-top: 39%!important;
+    /*margin-top: 39%!important;*/
   }
   page-node-34 .field.field-name-body.field-type-text-with-summary.field-label-hidden {
-    margin: 27% auto 2%;
+    /*margin: 27% auto 2%;*/
   }
   .page-node-33 .field.field-name-body.field-type-text-with-summary.field-label-hidden {
-    margin: -29% auto 10px;
+    /*margin: -29% auto 10px;*/
   }
 }
 
@@ -718,7 +718,7 @@ margin-bottom: 4%;
      margin: 17px auto 19%;
   }*/
   body.page-node-22 .os-share-widget-interface.share-container {
-    margin-top: 2%;
+    /*margin-top: 2%;*/
   }
   .col-sm-7.no-gutter {
    margin-top: 5.2%;
@@ -759,7 +759,7 @@ margin-bottom: 4%;
      /*margin: 17px auto 21.6%;*/
   }
   body.page-node-22 .os-share-widget-interface.share-container {
-    margin-top: 2%;
+    /*margin-top: 2%;*/
   }
   .col-sm-7.no-gutter {
    margin-top: 4.4%;
@@ -790,7 +790,7 @@ margin-bottom: 4%;
     /*margin: 17px auto 10.8%;*/
   }
   body.page-node-22 .os-share-widget-interface.share-container {
-    margin-top: 2%;
+    /*margin-top: 2%;*/
   }
   .col-sm-7.no-gutter {
    margin-top: 3.5%;
@@ -821,7 +821,7 @@ margin-bottom: 4%;
     /*margin: 17px auto 6.8%;;*/
   }
   body.page-node-22 .os-share-widget-interface.share-container {
-    margin-top: 2%;
+    /*margin-top: 2%;*/
   }
   .col-sm-7.no-gutter {
    margin-top: 1.1%;
@@ -831,10 +831,10 @@ margin-bottom: 4%;
   position: relative;*/
 }
   body.page-home .blog-layer {
-    top: -112px;
+    top: -113px;
   }
   .blog-layer {
-    top: -119px;
+    top: -120px;
   }
   .collapsible.group-info-inner-section.field-group-div.speed-fast.effect-none.fieldgroup-effects-processed {
     margin-bottom: 30px;
