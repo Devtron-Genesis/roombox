@@ -57,7 +57,7 @@ a.logo.navbar-btn.pull-left img {
 }
 .logo-shrink {
   width: 55px !important;
-  margin: 7px 0px 0px 19px !important;
+  margin: 4px 0px 0px 19px !important;
 }
 .header-top-links {
   background-color: #212121;
@@ -75,7 +75,7 @@ a.logo.navbar-btn.pull-left img {
 }
 .head-shrink {
   top: 0;
-  height: 76px !important;
+  height: 68px !important;
 }
 section#block-system-main-menu {
   padding: 31px 0px;
@@ -1254,7 +1254,7 @@ ul.sf-hidden li {
   padding: 0px!important;
 }
 .menu-shrink {
-  margin-top: 27px;
+  margin-top: 21px;
 }
 .page-node-24 .arrow-down {
   display: none;
