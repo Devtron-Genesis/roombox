@@ -389,6 +389,9 @@ min-height:563px;
   .node-type-other-pages .header-top-menu {
     height: 93px;
   }
+  .entity.entity-bean.bean-about-us.view-mode-default {
+    margin-bottom: 37px;
+  }
 
 }
 
@@ -475,7 +478,7 @@ min-height:563px;
     right: 10px;
   }
   .field.field-name-field-about-link.field-type-link-field.field-label-hidden {
-    margin: 51px 0px 0px 15px;
+    margin: 80px 0px 0px 15px;
   }
   .page-home .field.field-name-field-about-link.field-type-link-field.field-label-hidden a.btn-style {
     position: absolute;
@@ -575,6 +578,29 @@ min-height:563px;
   }
   .field.field-name-field-slider-heading.field-type-text.field-label-hidden {
     position: fixed;
+  }
+  .os-share-widget-interface.share-container p {
+    position: absolute;
+    top: 20px;
+  }
+  .os-share-widget-interface.share-container .share-provider {
+    position: relative;
+    top: 52px;
+  }
+  section#block-block-16 {
+    display: none;
+  }
+  li.leaf.centerAlign {
+
+  }
+  li.leaf.centerAlign {
+    border: none!important;
+    text-align: center;
+    left: 45px;
+  }
+  .region.region-footer-bottom {
+    left: 25px;
+    position: relative;
   }
 }
 

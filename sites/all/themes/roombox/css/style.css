@@ -867,6 +867,8 @@ section#block-bean-headline-text-0 .field.field-name-field-description.field-typ
   letter-spacing: 1px;
   font-weight: lighter;
   margin: 0 auto;
+  width: auto;
+  text-align: center;
   /*display: inline-block;
   vertical-align: middle;*/
 }
