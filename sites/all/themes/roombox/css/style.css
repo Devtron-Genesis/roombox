@@ -1339,3 +1339,6 @@ ul.pager.pager-load-more {
   line-height: 28px;
   color: #212121;
 }
+.page-node-24 .cntct-btn {
+  display: none;
+}
