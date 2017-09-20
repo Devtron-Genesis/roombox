@@ -1344,3 +1344,6 @@ ul.pager.pager-load-more {
 .page-node-24 .cntct-btn {
   display: none;
 }
+div#os-share-more {
+  display: none;
+}

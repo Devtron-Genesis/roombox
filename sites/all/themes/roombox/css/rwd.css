@@ -523,7 +523,7 @@ min-height:563px;
     /*margin-bottom: 55%;*/
   }
   .os-share-widget-interface.share-container {
-    padding: 15px 9px 55px;
+    padding: 15px 9px 70px;
   }
   .social ul.botom-social-links li {
     float: left;
@@ -601,6 +601,9 @@ min-height:563px;
   .region.region-footer-bottom {
     left: 25px;
     position: relative;
+  }
+  .os-share-widget-interface.share-container .share-provider {
+    margin-right: 35px;
   }
 }
 

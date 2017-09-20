@@ -231,6 +231,16 @@
         scrollTop: $(".arrow-down a").offset().top
       }, 'slow');
     });
+
+    $('i.fa.fa-times').on('click', function(e) {
+      $('a#sidr-0-button').trigger('click');
+    });
+
+    $('.main-container.container-fluid').on('click', function(e) {
+      $('a#sidr-0-button').trigger('click');
+    });
+
+
     // SMOOTH SCROLL SLIDER TEXT
     $(window).bind('scroll', function(e) {
       parallaxScroll();
