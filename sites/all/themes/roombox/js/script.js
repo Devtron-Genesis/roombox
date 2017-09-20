@@ -235,10 +235,11 @@
     $('ul#sidr-id-superfish-1 i.fa.fa-times').on('click', function(e) {
       $('a#sidr-0-button').trigger('click');
     });
-
+      if($('#sidr-0:visible').length) {
     $('.main-container.container-fluid').on('click', function(e) {
       $('a#sidr-0-button').trigger('click');
     });
+  }
 
 
     // SMOOTH SCROLL SLIDER TEXT
