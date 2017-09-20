@@ -232,7 +232,7 @@
       }, 'slow');
     });
 
-    $('i.fa.fa-times').on('click', function(e) {
+    $('ul#sidr-id-superfish-1 i.fa.fa-times').on('click', function(e) {
       $('a#sidr-0-button').trigger('click');
     });
 
