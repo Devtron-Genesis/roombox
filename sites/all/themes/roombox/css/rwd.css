@@ -7,17 +7,10 @@
 max-height:563px;
 min-height:563px;
 }*/
- .page-node-24 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden
-  {
-    margin: -28.8% auto 10px;
-  }
 }
 @media only screen and (min-width: 1501px) and (max-width: 1600px) {  /** Brown **/
   body {
     /*background-color: brown;/*Breakpoint-colour*/
-  }
-  .page-node-24 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden {
-    margin: -29.58% auto 10px;
   }
    .col-sm-7.match-height {
     margin-top: 4.4%;
@@ -53,14 +46,6 @@ min-height:563px;
   body {
     /*background-color: teal;/*Breakpoint-colour*/
   }
-   .page-node-24 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden {
-    margin: -27.82% auto 10px;
-}
- .page-node-24 .field.field-name-body.field-type-text-with-summary.field-label-hidden{
-    margin: 17px auto 13.77%;
-
- }
-
   .entity.entity-bean.bean-module-info.view-mode-default .field.field-name-field-information {
     margin-top: 0px;
   }
@@ -98,26 +83,11 @@ min-height:563px;
   body {
     /*background-color: teal;/*Breakpoint-colour*/
   }
-
-  .field.field-name-field-about-heading.field-type-text.field-label-hidden {
-    margin: 16% 0px 0px 15px;
-  }
-  .field.field-name-field-blocks-bundel.field-type-entityreference.field-label-hidden .field.field-name-field-about-heading.field-type-text.field-label-hidden {
-    margin: 15% 0px 0px 35px;
-  }
 }
 @media only screen and (max-width: 1200px) {  /** Teal **/
   body {
     /*background-color: teal;/*Breakpoint-colour*/
   }
-  .page-node-24 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden {
-    margin: -27.85% auto 10px;
-    font-size:40px;
-}
- .page-node-24 .field.field-name-body.field-type-text-with-summary.field-label-hidden{
-    margin: 17px auto 13.5%;
-
- }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {  /** Purple **/
   body {
@@ -126,13 +96,6 @@ min-height:563px;
   .mod-layer {
     top: -184px;
   }
-    .page-node-24 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden {
-    margin: -32.7% auto 10px;
-    font-size:40px;
-}
- .page-node-24 .field.field-name-body.field-type-text-with-summary.field-label-hidden{
-    margin: 17px auto 15.85%;
- }
  .social ul.botom-social-links {
   width: 53%;
  }
@@ -142,13 +105,8 @@ min-height:563px;
     /*background-color: green;/*Breakpoint-colour*/
   }
    .page-node-24 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden {
-    margin: -33.87% auto 10px;
     font-size:40px;
 }
- .page-node-24 .field.field-name-body.field-type-text-with-summary.field-label-hidden{
-    margin: 17px auto 16.5%;
-
- }
 }
 @media only screen and (max-device-width: 992px) {
   /* .cntct-form {
@@ -157,7 +115,7 @@ min-height:563px;
 
 
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 989px) {  /** Orange **/
+@media only screen and (min-device-width: 769px) and (max-device-width: 989px) {  /** Orange **/
   body {
     /*background-color: orange;/*Breakpoint-colour*/
   }
@@ -169,11 +127,11 @@ min-height:563px;
     top: -209px;
   }
   .page-node-24 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden {
-    margin: -46.6% auto 10px;
+    /*margin: -46.6% auto 10px;*/
     font-size:35px;
 }
  .page-node-24 .field.field-name-body.field-type-text-with-summary.field-label-hidden{
-    margin: 17px auto 17%;
+    /*margin: 17px auto 17%;*/
 
  }
   .header-wrapper .header-top-links section#block-block-1 {
@@ -250,9 +208,6 @@ min-height:563px;
     top: 35px;
     margin: 0px;
   }
-  .field.field-name-body.field-type-text-with-summary.field-label-hidden {
-    margin-bottom: 15%;
-  }
   .os-share-widget-interface.share-container {
     padding: 15px 9px 55px;
   }
@@ -289,7 +244,7 @@ min-height:563px;
     }
 
   body.page-node-24 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden{
-    margin: -35% auto 10px;
+    /*margin: -35% auto 10px;*/
   }
   body.page-node-24 .cntct-form.col-md-6.match-height{
     margin-top: 12%;
@@ -349,7 +304,7 @@ min-height:563px;
   img.logo-shrink {
     margin: 28px 0px 0px 0px !important;
     position: fixed;
-    top: -3px !important;
+    top: -18px !important;
   }
   .head-shrink {
     height: 77px !important;
@@ -381,7 +336,6 @@ min-height:563px;
   /*Product Page */
   .field.field-name-field-header-background-heading.field-type-text.field-label-hidden {
     font-size: 16px;
-    margin: -35% auto 10px;
   }
   .field.field-name-body.field-type-text-with-summary.field-label-hidden {
     font-size: 17px;
@@ -403,9 +357,6 @@ min-height:563px;
     position: fixed;
     top: 33px;
     margin: 0px;
-  }
-  .field.field-name-body.field-type-text-with-summary.field-label-hidden {
-    margin-bottom: 25%;
   }
   .os-share-widget-interface.share-container {
     padding: 15px 9px 55px;
@@ -446,11 +397,11 @@ min-height:563px;
     /*background-color: yellow;/*Breakpoint-colour*/
   }
     .page-node-24 .field.field-name-field-header-background-heading.field-type-text.field-label-hidden {
-    margin: -108.77% auto 10px;
+    /*margin: -108.77% auto 10px;*/
     font-size:22px;
 }
  .page-node-24 .field.field-name-body.field-type-text-with-summary.field-label-hidden{
-    margin: 17px auto 48%;
+    /*margin: 17px auto 48%;*/
 
  }
 
@@ -464,8 +415,12 @@ min-height:563px;
     padding: 0px;
   }
   ul.social-links {
-    float: right;
+    float: left;
     padding:0px;
+  }
+  li.cellNumber {
+    position: absolute;
+    right: 0px;
   }
   .mean-container .mean-bar {
     float: right;
@@ -494,7 +449,7 @@ min-height:563px;
   img.logo-shrink {
     margin: 28px 0px 0px 0px !important;
     position: fixed;
-    top: -3px !important;
+    top: -18px !important;
   }
   .head-shrink {
     height: 77px !important;
@@ -535,7 +490,7 @@ min-height:563px;
   /*Product Page */
   .field.field-name-field-header-background-heading.field-type-text.field-label-hidden {
     font-size: 16px;
-    margin: -100% auto 10px;
+    /*margin: -100% auto 10px;*/
   }
   .field.field-name-body.field-type-text-with-summary.field-label-hidden {
     font-size: 17px;
@@ -562,7 +517,7 @@ min-height:563px;
     /*margin-top: 10%;*/
   }
   .field.field-name-body.field-type-text-with-summary.field-label-hidden {
-    margin-bottom: 55%;
+    /*margin-bottom: 55%;*/
   }
   .os-share-widget-interface.share-container {
     padding: 15px 9px 55px;
