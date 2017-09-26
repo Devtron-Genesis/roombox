@@ -1,16 +1,20 @@
 (function($) {
   $(document).mouseup(function(e) {
-    console.log('mouseup');
+    // if(e.clientX > 80 && e.clientY < 60) {
+      // console.log('Menu button clicked');
+    // }
   });
   $(document).delegate('', 'click', function(event) {
-    console.log('delegate');
   });
   $(window).load(function(e) {
     console.log('Load Completed');
   });
   $(document).ready(function() {
     $('.match-height').matchHeight();
-
+    if (window.matchMedia('(max-width: 767px)').matches)
+{
+   $('.field.field-name-field-main-slider-image.field-type-image.field-label-hidden').append("<button>TRY CUSTOMISER</button>");
+}
     // CONTACT FORM((
     $('.cntct-form form#webform-client-form-31 .form-actions button.webform-submit').removeClass("btn-primary");
     $('.cntct-form form#webform-client-form-31 .form-actions button.webform-submit').addClass("btn-style");
@@ -33,8 +37,9 @@
     $('.more.share-provider').removeClass('more flat square size-32 horizontal');
 
     // Responsice menu
-    $('h2.sidr-class-block-title').hide();
-    $('ul#sidr-id-superfish-1').prepend('<i class="fa fa-times" aria-hidden="true"></i>');
+    $('h2.sidr-class-block-title').css("visibility",'hidden');
+    $('.sidr-inner').prepend('<a><i class="fa fa-times" aria-hidden="true"></i></a>');
+    // $('ul#sidr-id-superfish-1').prepend('<a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>');
     // MODULE HOVER SLIDE  EFFECT
     $(function() {
       $(' #da-thumbs > li ').hoverdir();
@@ -227,21 +232,14 @@
     });
     // SCROLL DOWN ARROW
     $(".arrow-down a").click(function() {
-      $('html,body').animate({
+    $('html,body').animate({
         scrollTop: $(".arrow-down a").offset().top
       }, 'slow');
     });
 
-    $('ul#sidr-id-superfish-1 i.fa.fa-times').on('click', function(e) {
-      $('a#sidr-0-button').trigger('click');
+    $('.sidr-inner i.fa.fa-times').on('click', function(e) {
+      $.sidr("toggle","sidr-0");
     });
-      if($('#sidr-0:visible').length) {
-    $('.main-container.container-fluid').on('click', function(e) {
-      $('a#sidr-0-button').trigger('click');
-    });
-  }
-
-
     // SMOOTH SCROLL SLIDER TEXT
     $(window).bind('scroll', function(e) {
       parallaxScroll();
@@ -554,3 +552,6 @@ document.onreadystatechange = function() {
     }, 1000);
   }
 }
+
+
+

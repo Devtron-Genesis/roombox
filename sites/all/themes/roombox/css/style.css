@@ -279,7 +279,7 @@ div.tweet-footer .tweet-actions {
 }
 #block-menu-menu-bottom-footer-menu ul li a, #block-menu-menu-bottom-footer-menu ul li span {
   color: #ccc;
-  padding: 0px 15px;
+  padding: 0px 10px;
   display: block;
 }
 
@@ -347,7 +347,7 @@ section#block-bean-main-slider-0 {
 .btn-style a:hover {
   color: #ffffff;
   background-color: #78a952;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 a.btn-style {
   background-color: #ffffff;
@@ -658,7 +658,7 @@ section#block-bean-about-us-heading {
 .field.field-name-field-about-heading.field-type-text.field-label-hidden {
   font-size: 25px;
   /*margin: 78px 0px 0px 15px;*/
-  margin: 11% 0px 0px 15px;
+  margin: 10% 0px 0px 15px;
   letter-spacing: 3px;
   text-transform: capitalize;
 }
@@ -1299,13 +1299,18 @@ i.fa.fa-bars {
   font-size: 30px;
   color: #212121;
 }
-ul#sidr-id-superfish-1 i {
+.sidr-inner i {
   float: right;
   font-size: 30px;
   clear: both;
   padding: 10px;
   padding-left: 85%;
   cursor: pointer;
+  z-index: 999999;
+  padding-top: 0px;
+  margin-top: 0px;
+  position: relative;
+  top: 22px;
 }
 ol.breadcrumb {
   display: none;
@@ -1345,5 +1350,16 @@ ul.pager.pager-load-more {
   display: none;
 }
 div#os-share-more {
+  display: none;
+}
+
+.sidr-inner a {
+  text-decoration: none;
+  color: #fff;
+}
+li#sidr-id-menu-1762-1 i {
+  /*position: relative;*/
+  /*top: 1px;*/
+  /*color: #fff;*/
   display: none;
 }
