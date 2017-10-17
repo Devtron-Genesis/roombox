@@ -80,7 +80,7 @@
       $(document).on("scroll", function() {
       var secheg = $(document).height();
       var winheg = $(window).height();
-      var tops = secheg - 740;
+      var tops = secheg -  740;
       var top = tops - winheg;
             if ($(document).scrollTop() > top) {
               var scrolled = $(window).scrollTop();
