@@ -78,8 +78,10 @@
       // });
 
       $(document).on("scroll", function() {
-      var winheg = $(document).height();
-      var top = winheg - 1500;
+      var secheg = $(document).height();
+      var winheg = $(window).height();
+      var tops = secheg - 740;
+      var top = tops - winheg;
             if ($(document).scrollTop() > top) {
               var scrolled = $(window).scrollTop();
               $('.xtranslate').css('width', (80 + ((scrolled - top) * .03)) + '%');
