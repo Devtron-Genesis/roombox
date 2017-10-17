@@ -101,7 +101,7 @@ ul.social-links li:first-child {
 ul.social-links li {
   float: left;
   list-style: none;
-  padding: 3px 5.2px 0.5px;
+  padding: 1px 5.2px 0.5px;
   color: #fff;
   font-size: 15px;
 }
@@ -1363,4 +1363,7 @@ li#sidr-id-menu-1762-1 i {
   margin-top: 4%;
   margin-bottom: 4%;
   color: #212121;
+}
+a.sf-depth-1.menuparent.sf-depth-1.menuparent.sf-with-ul {
+  padding-right: 5px !important;
 }
