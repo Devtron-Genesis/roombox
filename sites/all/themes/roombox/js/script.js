@@ -71,11 +71,21 @@
     $('article#node-24 header').css('height', y / 2);
     // RESIZING OF CTA
 
+      // $(document).on("scroll", function() {
+      //   var width = $(window).width();
+      //   var scrolled = $(window).scrollTop();
+      //   $('.front .xtranslate, .node-type-other-pages .xtranslate').css('width', (65 + ((scrolled - width) * .03)) + '%');
+      // });
+
       $(document).on("scroll", function() {
-        var width = $(window).width();
-        var scrolled = $(window).scrollTop();
-        $('.front .xtranslate, .node-type-other-pages .xtranslate').css('width', (70 + ((scrolled - width) * .03)) + '%');
-      });
+      var winheg = $(document).height();
+      var top = winheg - 1500;
+            if ($(document).scrollTop() > top) {
+              var scrolled = $(window).scrollTop();
+              $('.xtranslate').css('width', (80 + ((scrolled - top) * .03)) + '%');
+            }
+          });
+
       /* $(window.windowi)
         if (window.matchMedia('(width: 1280px)').matches) {
           $(document).on("scroll", function() {
