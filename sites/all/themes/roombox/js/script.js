@@ -238,7 +238,11 @@
     });
 
     $('.sidr-inner i.fa.fa-times').on('click', function(e) {
+    // $('a#sidr-0-button').trigger('click');
       $.sidr("toggle","sidr-0");
+    });
+    $('#sidr-0-button').on ('click', function(e) {
+      $('body').css('');
     });
     // SMOOTH SCROLL SLIDER TEXT
     $(window).bind('scroll', function(e) {

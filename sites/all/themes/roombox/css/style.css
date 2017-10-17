@@ -134,7 +134,6 @@ ul.social-links li i.fa {
 .region.region-header section#block-system-main-menu ul.menu.nav li.active a {
   color: #fff;
 }
-
 /*ul.dropdown-menu{
   min-width: 195px;
   padding: 10px 0px;
@@ -1358,8 +1357,10 @@ div#os-share-more {
   color: #fff;
 }
 li#sidr-id-menu-1762-1 i {
-  /*position: relative;*/
-  /*top: 1px;*/
-  /*color: #fff;*/
   display: none;
+}
+.terms-content, .privacy-content, .cookie-content {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  color: #212121;
 }
