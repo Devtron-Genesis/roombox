@@ -24,7 +24,7 @@ min-height:563px;
   }
 
   .blog-layer{
-    top: -111px;
+    /*top: -111px;*/
 
   }
   body.page-home .blog-layer {
@@ -603,7 +603,7 @@ min-height:563px;
   .os-share-widget-interface.share-container .share-provider {
     margin-right: 35px;
   }
- 
+
 }
 
 /*home page text */
@@ -814,10 +814,10 @@ margin-bottom: 4%;
   position: relative;*/
 }
   body.page-home .blog-layer {
-    top: -113px;
+    /*top: -113px;*/
   }
   .blog-layer {
-    top: -120px;
+    /*top: -120px;*/
   }
   .collapsible.group-info-inner-section.field-group-div.speed-fast.effect-none.fieldgroup-effects-processed {
     margin-bottom: 30px;
