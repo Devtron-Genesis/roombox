@@ -10,11 +10,21 @@
     console.log('Load Completed');
   });
   $(document).ready(function() {
+    // Module Price
+    var mpric = $('.slick-active.slick-center.slick-current .slide__content .slide__caption .slide__description').text();
+    $('.slick__slide.slide.slick-slide.slick-active.slick-current').prepend('<div class="module-price"><h1><b>'+mpric+'</h1><p>inc VAT</b><p>');
+    $('.slick-active.slick-center.slick-current .slide__content').each(function(){
+      $(this).click(function(){
+        var mprice = $(this).find('.slide__caption .slide__description').text();
+        $('.slick__slide.slide.slick-slide.slick-active.slick-current').prepend('<div class="module-price"><h1><b>'+mprice+'</h1><p>inc VAT</b><p>');
+      })
+    })
+
     $('.match-height').matchHeight();
     if (window.matchMedia('(max-width: 767px)').matches)
-{
-   $('.field.field-name-field-main-slider-image.field-type-image.field-label-hidden').append("<button>TRY CUSTOMISER</button>");
-}
+      {
+        $('.field.field-name-field-main-slider-image.field-type-image.field-label-hidden').append("<button>TRY CUSTOMISER</button>");
+      }
     // CONTACT FORM((
     $('.cntct-form form#webform-client-form-31 .form-actions button.webform-submit').removeClass("btn-primary");
     $('.cntct-form form#webform-client-form-31 .form-actions button.webform-submit').addClass("btn-style");

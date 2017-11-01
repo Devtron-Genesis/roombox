@@ -1404,7 +1404,19 @@ ul.slide__content {
   margin: 5px 0 0;
   font-size: 25px;
 }
+.slide__content .slide__caption .slide__description {
+  display: none;
+}
 .slick__slide.slide.slick-slide img.img-responsive {
   float: right;
   width: 70%;
+}
+.module-price {
+  position: absolute;
+  right: 20px;
+  text-align: right;
+  color: #fff;
+}
+.module-price h1 {
+  margin-bottom: 0;
 }
