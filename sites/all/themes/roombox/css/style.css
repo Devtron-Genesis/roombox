@@ -1367,3 +1367,44 @@ li#sidr-id-menu-1762-1 i {
 a.sf-depth-1.menuparent.sf-depth-1.menuparent.sf-with-ul {
   padding-right: 5px !important;
 }
+
+/* CUSTOMISER PAGE */
+
+.slick-wrapper {
+  margin: 0;
+  background: #dcd1d1;
+  padding: 20px;
+}
+.slick--center .slick-track {
+  padding: 0;
+  background: #ffffff;
+}
+.slick-dotted.slick-slider {
+  margin: 0;
+}
+ul.slick-dots {
+  display: none !important;
+}
+.slide__content {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+ul.slide__content {
+  padding: 30px;
+}
+.slick-active.slick-current .slide__content {
+  background: #dcd1d1;
+}
+.slide__content .slide__caption {
+  padding: 0;
+}
+.slide__content .slide__caption h2.slide__title {
+  margin: 5px 0 0;
+  font-size: 25px;
+}
+.slick__slide.slide.slick-slide img.img-responsive {
+  float: right;
+  width: 70%;
+}
