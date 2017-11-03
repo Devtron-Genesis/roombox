@@ -1420,3 +1420,12 @@ ul.slide__content {
 .module-price h1 {
   margin-bottom: 0;
 }
+.page-customise2 .form-control.form-checkboxes.bef-select-as-checkboxes {
+  height: auto;
+  padding: 0;
+}
+.page-customise2 input[type="checkbox"] {
+  width: 15px;
+  float: left;
+  height: 15px;
+}
