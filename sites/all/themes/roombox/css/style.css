@@ -1429,3 +1429,32 @@ ul.slide__content {
   float: left;
   height: 15px;
 }
+#block-bean-change-size {
+  display: block;
+  z-index: 1;
+  background: #749c5a;
+  position: absolute;
+  padding: 13px;
+}
+#tablefield-0 {
+  background: #ededed;
+}
+#tablefield-0 tr.even {
+  background: #f7f7f7;
+}
+#tablefield-0 p {
+  font-size: 12px;
+  padding: 7px;
+  font-weight: lighter;
+}
+#tablefield-0 p a {
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+#tablefield-0 p a:hover {
+  background: #749c5a;
+}
+#tablefield-0 p a:active, #tablefield-0 p a:focus {
+  background: #749c5a;
+} 
