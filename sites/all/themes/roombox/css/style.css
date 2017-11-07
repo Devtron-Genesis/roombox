@@ -1429,12 +1429,39 @@ ul.slide__content {
   float: left;
   height: 15px;
 }
-#block-bean-change-size {
-  display: block;
+.page-node-66 .form-control.form-checkboxes.bef-select-as-checkboxes {
+  height: auto;
+  padding: 0;
+}
+.page-node-66 input[type="checkbox"] {
+  width: 15px;
+  float: left;
+  height: 15px;
+}
+.group-show-size h3 {
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0;
+}
+.group-show-size h3 a {
+  background: #749c5a;
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+}
+.bean-size-price .col-sm-12 {
+  padding: 0;
+} 
+#block-bean-change-size .field-name-field-size-price {
   z-index: 1;
   background: #749c5a;
   position: absolute;
-  padding: 13px;
+  padding: 22px 15px;
+  top: -11px;
+  left: -12px;
 }
 #tablefield-0 {
   background: #ededed;
@@ -1448,9 +1475,13 @@ ul.slide__content {
   font-weight: lighter;
 }
 #tablefield-0 p a {
+  font-size: 12px !important;
   color: #000;
   cursor: pointer;
   text-decoration: none;
+}
+#tablefield-0 p a i.fa.fa-info-circle {
+  display: none;
 }
 #tablefield-0 p a:hover {
   background: #749c5a;

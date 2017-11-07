@@ -10,15 +10,27 @@
     console.log('Load Completed');
   });
   $(document).ready(function() {
+    // CUSTOMISER PAGE
     // Module Price
-    var mpric = $('.slick-active.slick-center.slick-current .slide__content .slide__caption .slide__description').text();
-    $('.slick__slide.slide.slick-slide.slick-active.slick-current').prepend('<div class="module-price"><h1><b>'+mpric+'</h1><p>inc VAT</b><p>');
-    $('.slick-active.slick-center.slick-current .slide__content').each(function(){
-      $(this).click(function(){
-        var mprice = $(this).find('.slide__caption .slide__description').text();
-        $('.slick__slide.slide.slick-slide.slick-active.slick-current').prepend('<div class="module-price"><h1><b>'+mprice+'</h1><p>inc VAT</b><p>');
-      })
+    // var mpric = $('.slick-active.slick-center.slick-current .slide__content .slide__caption .slide__description').text();
+    // $('.slick__slide.slide.slick-slide.slick-active.slick-current').prepend('<div class="module-price"><h1><b>'+mpric+'</h1><p>inc VAT</b><p>');
+    // $('.slick-active.slick-center.slick-current .slide__content').each(function(){
+    //   $(this).click(function(){
+    //     var mprice = $(this).find('.slide__caption .slide__description').text();
+    //     $('.slick__slide.slide.slick-slide.slick-active.slick-current').prepend('<div class="module-price"><h1><b>'+mprice+'</h1><p>inc VAT</b><p>');
+    //   })
+    // })
+
+    // Size Price
+    $('.slick-wrapper--asnavfor').prepend('<p id="value">10.499<p>');
+    $('#tablefield-0 p a').click(function(){
+      var value = $(this).text().substring(1);
+      $(this).parents('aside').siblings('.contextual-links-region').find('p#value').html(value);
+      $(this).parents('.group-show-size').find('h3').find('a').click();
     })
+
+
+
 
     $('.match-height').matchHeight();
     if (window.matchMedia('(max-width: 767px)').matches)
