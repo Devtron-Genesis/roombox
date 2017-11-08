@@ -22,15 +22,39 @@
     // })
 
     // Size Price
-    $('.slick-wrapper--asnavfor').prepend('<p id="value">10.499<p>');
+    var size_price = '9.995';
+    $('.slick-wrapper--asnavfor #slick-views-customise2-1-thumbnail').prepend('<p id="value">10.499<p>');
     $('#tablefield-0 p a').click(function(){
-      var value = $(this).text().substring(1);
-      $(this).parents('aside').siblings('.contextual-links-region').find('p#value').html(value);
+      var size_price = $(this).text().substring(1);
+      var total = parseFloat(cladding_price) + parseFloat(dimension_price) + parseFloat(size_price);
+      $('p#value').html(total);
       $(this).parents('.group-show-size').find('h3').find('a').click();
     })
+    // Cladding/dimension Price
+    var cladding_price = $('.views-field-field-cladding-price .field-content').text().substring(1);
+    var dimension_price = $('.views-field-field-dimension-price .field-content').text().substring(1);
 
+    // Trim Price
+    // var trim =  null;
+    $('.views-row').each(function(){
+      var trim =  null;
+      var trim = $(this).find('.views-field-field-trim-price .field-content').text().substring(1);
+      // console.log(trim);
+      // trim_price = parseFloat(trim) + parseFloat(trim_price);
+      // console.log(trim_price);
+    });
+    console.log(trim);
+    
 
+    // Total Price
+    var total = parseFloat(cladding_price) + parseFloat(dimension_price) + parseFloat(size_price);
+    $('p#value').html(total);
 
+    // Close Size Price
+    $('.field-type-tablefield.field-label-hidden').prepend('<i class="fa fa-times close-size-price" aria-hidden="true"></i>');
+    $('.field-type-tablefield.field-label-hidden i.close-size-price').click(function(){
+      $(this).parents('.group-show-size').find('h3').find('a').click();
+    })
 
     $('.match-height').matchHeight();
     if (window.matchMedia('(max-width: 767px)').matches)
@@ -82,13 +106,13 @@
     $('.field-group-format-wrapper a').removeAttr("class");
     // Set slider height according to window height
     var y = $(window).height();
-    console.log($('.header-content-field').height());
+    // console.log($('.header-content-field').height());
     $('section#block-bean-main-slider-0').css('height', y - 24);
     $('section#block-block-18 .cntct-btn a').css('top', y - 67);
     $('body.node-type-other-pages article.node-other-pages header').css({'height': y - 68,'float':'left','width':'100%'});
     $('.node-type-other-pages .arrow-down').css('top', y - 50);
     // $('.header-content-field').css({'top':'50%' , 'position':'relative'});
-    console.log(y);
+    // console.log(y);
     $('<p>Share On Social Media:</p>').appendTo('.os-share-widget-interface.share-container');
     $('article#node-24 header').css('height', y / 2);
     // RESIZING OF CTA
@@ -325,6 +349,31 @@
     console.log('Document Ready');
   });
   $(document).ajaxComplete(function(e) {
+
+    // Size Price
+    var size_price = '9.995';
+    $('#tablefield-0 p a').click(function(){
+      var size_price = $(this).text().substring(1);
+      $(this).parents('.group-show-size').find('h3').find('a').click();
+    })
+    // Cladding/dimension Price
+    var cladding_price = $('.views-field-field-cladding-price .field-content').text().substring(1);
+    var dimension_price = $('.views-field-field-dimension-price .field-content').text().substring(1);
+
+    // Trim Price
+    var i = 1;
+    $('.views-row').each(function(){
+    var trim_price = '0';
+      var trim = $(this).find('.views-field-field-trim-price .field-content').text().substring(1);
+      console.log(trim);
+      trim_price = parseFloat(trim) + parseFloat(trim_price);
+      console.log(trim_price);
+    });
+
+    // Total Price
+    var total = parseFloat(cladding_price) + parseFloat(dimension_price) + parseFloat(size_price);
+    $('p#value').html(total);
+
     // SET BLOG AND MODULE IMAGE AS BACKGROUND IMAGE
     $('.view-id-blog_view .blog-listing').each(function() {
       var bg_img = $(this).find('img').attr('src');

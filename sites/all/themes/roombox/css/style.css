@@ -1488,4 +1488,11 @@ ul.slide__content {
 }
 #tablefield-0 p a:active, #tablefield-0 p a:focus {
   background: #749c5a;
-} 
+}
+aside.module-filters {
+    top: -500px;
+}
+i.close-size-price {
+  float: right;
+  cursor: pointer;
+}
