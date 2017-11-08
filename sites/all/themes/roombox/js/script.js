@@ -35,17 +35,13 @@
     var dimension_price = $('.views-field-field-dimension-price .field-content').text().substring(1);
 
     // Trim Price
-    // var trim =  null;
     $('.views-row').each(function(){
-      var trim =  null;
-      var trim = $(this).find('.views-field-field-trim-price .field-content').text().substring(1);
-      // console.log(trim);
-      // trim_price = parseFloat(trim) + parseFloat(trim_price);
-      // console.log(trim_price);
+      var trim_price;
+      var trim_price = $(this).find('.views-field-field-trim-price .field-content').text().substring(1);
+      trim_price = parseFloat(trim_price) || 0;
     });
-    console.log(trim);
+    // console.log(trim_price);
     
-
     // Total Price
     var total = parseFloat(cladding_price) + parseFloat(dimension_price) + parseFloat(size_price);
     $('p#value').html(total);
@@ -361,15 +357,13 @@
     var dimension_price = $('.views-field-field-dimension-price .field-content').text().substring(1);
 
     // Trim Price
-    var i = 1;
     $('.views-row').each(function(){
-    var trim_price = '0';
-      var trim = $(this).find('.views-field-field-trim-price .field-content').text().substring(1);
-      console.log(trim);
-      trim_price = parseFloat(trim) + parseFloat(trim_price);
-      console.log(trim_price);
+      var trim_price;
+      var trim_price = $(this).find('.views-field-field-trim-price .field-content').text().substring(1);
+      trim_price = parseFloat(trim_price) || 0;
     });
-
+    // console.log(trim_price);
+    
     // Total Price
     var total = parseFloat(cladding_price) + parseFloat(dimension_price) + parseFloat(size_price);
     $('p#value').html(total);
