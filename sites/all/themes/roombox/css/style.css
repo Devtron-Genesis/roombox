@@ -1504,3 +1504,29 @@ div.total-p {
   right: 20px;
   color: #fff;
 }
+#block-webform-client-block-67 {
+  position: relative;
+  z-index: 5;
+  right: 30px;
+  bottom: 200px;
+  background: radial-gradient(rgba(133, 183, 94, 0.6) 100%, rgba(133, 183, 94, 0.6) 100%);
+  color: #fff;
+  text-align: center;
+  font-size: 0px;
+}
+#webform-client-form-67 label {
+  display: none;
+}
+#webform-client-form-67 #edit-submitted-your-email-adress::placeholder {
+  color: #fff;
+}
+#webform-client-form-67 #edit-submitted-your-email-adress {
+  background-color: #85b75e;
+  border: none;
+  padding: 19px 11px 16px 10px;
+  text-align: center;
+  margin-top: 20px;
+  text-align: center;
+  width: 232px;
+  height: 55px;
+}
