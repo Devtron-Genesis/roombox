@@ -23,34 +23,72 @@
 
     // Size Price
     var size_price = '9.995';
-    $('.slick-wrapper--asnavfor #slick-views-customise2-1-thumbnail').prepend('<p id="value">10.499<p>');
+    $('.slick-wrapper--asnavfor #slick-views-customise2-1-thumbnail').prepend('<div class="total-p"><h2><b>£<span id="total-price">10.499</span></h2><h4>inc VAT</b><h4></div>');
     $('#tablefield-0 p a').click(function(){
       var size_price = $(this).text().substring(1);
-      var total = parseFloat(cladding_price) + parseFloat(dimension_price) + parseFloat(size_price);
-      $('p#value').html(total);
+    var total = parseFloat(cladding_price) + parseFloat(dimension_price) + parseFloat(size_price) +
+                parseFloat(doors_price) + parseFloat(trim_p) + parseFloat(window_p) + parseFloat(fheating_p); 
+    $('span#total-price').html(total);
       $(this).parents('.group-show-size').find('h3').find('a').click();
     })
     // Cladding/dimension Price
     var cladding_price = $('.views-field-field-cladding-price .field-content').text().substring(1);
     var dimension_price = $('.views-field-field-dimension-price .field-content').text().substring(1);
+    var doors_price = $('.views-field-field-doors-price .field-content').text().substring(1);
 
     // Trim Price
-    $('.views-row').each(function(){
-      var trim_price;
-      var trim_price = $(this).find('.views-field-field-trim-price .field-content').text().substring(1);
-      trim_price = parseFloat(trim_price) || 0;
-    });
-    // console.log(trim_price);
-    
+    function trim(){
+      var trim_price = 0;
+      $('.views-row').each(function(){
+          var trims = $(this).find('.views-field-field-trim-price .field-content').text().substring(1);
+          var tp = parseFloat(trim_price) || 0;
+          var t = parseFloat(trims) || 0;
+          trim_price =  tp + t;
+          return true;
+      });
+      return trim_price;
+    }
+    var trim_p = trim();
+
+    // Windows Price
+    function windo(){
+      var window_price = 0;
+      $('.views-row').each(function(){
+          var windows = $(this).find('.views-field-field-window-pricr .field-content').text().substring(1);
+          var wp = parseFloat(window_price) || 0;
+          var w = parseFloat(windows) || 0;
+          window_price =  wp + w;
+          return true;
+      });
+      return window_price;
+    }
+    var window_p = windo();
+    console.log(window_p);
+
+    // Floor Heating Price
+    function fheating(){
+      var fheating_price = 0;
+      $('.views-row').each(function(){
+          var fheatings = $(this).find('.views-field-field-electric-heater-price .field-content').text().substring(1);
+          var tp = parseFloat(fheating_price) || 0;
+          var t = parseFloat(fheatings) || 0;
+          fheating_price =  tp + t;
+          return true;
+      });
+      return fheating_price;
+    }
+    var fheating_p = fheating();
+
     // Total Price
-    var total = parseFloat(cladding_price) + parseFloat(dimension_price) + parseFloat(size_price);
-    $('p#value').html(total);
+    var total = parseFloat(cladding_price) + parseFloat(dimension_price) + parseFloat(size_price) +
+                parseFloat(doors_price) + parseFloat(trim_p) + parseFloat(window_p) + parseFloat(fheating_p); 
+    $('span#total-price').html(total);
 
     // Close Size Price
     $('.field-type-tablefield.field-label-hidden').prepend('<i class="fa fa-times close-size-price" aria-hidden="true"></i>');
     $('.field-type-tablefield.field-label-hidden i.close-size-price').click(function(){
       $(this).parents('.group-show-size').find('h3').find('a').click();
-    })
+    });
 
     $('.match-height').matchHeight();
     if (window.matchMedia('(max-width: 767px)').matches)
@@ -129,148 +167,7 @@
               $('.xtranslate').css('width', (80 + ((scrolled - top) * .03)) + '%');
             }
           });
-
-      /* $(window.windowi)
-        if (window.matchMedia('(width: 1280px)').matches) {
-          $(document).on("scroll", function() {
-            if ($(document).scrollTop() > 1600) {
-              var scrolled = $(window).scrollTop();
-              $('.front .xtranslate').css('width', (78 + ((scrolled - 1600) * .03)) + '%');
-            }
-            if ($(document).scrollTop() > 1850) {
-              var scrolled = $(window).scrollTop();
-              $('.page-node-40 .xtranslate').css('width', (83 + ((scrolled - 1850) * .03)) + '%');
-            }
-            if ($(document).scrollTop() > 1850) {
-              var scrolled = $(window).scrollTop();
-              $('.page-node-21 .xtranslate, .page-node-23 .xtranslate, .page-node-38 .xtranslate,.page-node-39 .xtranslate').css('width', (83 + ((scrolled - 1850) * .03)) + '%');
-            }
-            if ($(document).scrollTop() > 1700) {
-              var scrolled = $(window).scrollTop();
-              $('.p+age-node-22 .xtranslate').css('width', (83 + ((scrolled - 1700) * .03)) + '%');
-            }
-          });
-        } else if (window.matchMedia('(width: 1024px)').matches) {
-          $(document).on("scroll", function() {
-            if ($(document).scrollTop() > 1450) {
-              var scrolled = $(window).scrollTop();
-              $('.front .xtranslate').css('width', (75 + ((scrolled - 1450) * .04)) + '%');
-            } else if ($(document).scrollTop() > 700) {
-              var scrolled = $(window).scrollTop();
-              $('.page-node-40 .xtranslate').css('width', (80 + ((scrolled - 700) * .04)) + '%');
-            }
-          });
-        } else if (window.matchMedia('(width: 1440px)').matches) {
-          $(document).on("scroll", function() {
-            if ($(document).scrollTop() > 1850) {
-              var scrolled = $(window).scrollTop();
-              $('.front .xtranslate').css('width', (75 + ((scrolled - 1850) * .05)) + '%');
-            }
-            if ($(document).scrollTop() > 1950) {
-              var scrolled = $(window).scrollTop();
-              $('.page-node-40 .xtranslate').css('width', (75 + ((scrolled - 1950) * .05)) + '%');
-            }
-            if ($(document).scrollTop() > 1950) {
-              var scrolled = $(window).scrollTop();
-              $('.page-node-21 .xtranslate,.page-node-23 .xtranslate, .page-node-38 .xtranslate,.page-node-39 .xtranslate').css('width', (75 + ((scrolled - 1950) * .05)) + '%');
-            }
-            if ($(document).scrollTop() > 1900) {
-              var scrolled = $(window).scrollTop();
-              $('.page-node-22 .xtranslate').css('width', (80 + ((scrolled - 1900) * .04)) + '%');
-            }
-          });
-        } else if (window.matchMedia('(width: 1680px)').matches) {
-          $(document).on("scroll", function() {
-            if ($(document).scrollTop() > 2000) {
-              var scrolled = $(window).scrollTop();
-              $('.front .xtranslate').css('width', (70 + ((scrolled - 2000) * .05)) + '%');
-            } else if ($(document).scrollTop() > 2050) {
-              var scrolled = $(window).scrollTop();
-              $('.page-node-40 .xtranslate').css('width', (75 + ((scrolled - 2050) * .05)) + '%');
-            }
-            if ($(document).scrollTop() > 2050) {
-              var scrolled = $(window).scrollTop();
-              $('.page-node-21 .xtranslate,.page-node-23 .xtranslate, .page-node-38 .xtranslate,.page-node-39 .xtranslate').css('width', (75 + ((scrolled - 2050) * .05)) + '%');
-            }
-            if ($(document).scrollTop() > 2200) {
-              var scrolled = $(window).scrollTop();
-              $('.page-node-22 .xtranslate').css('width', (80 + ((scrolled - 2200) * .04)) + '%');
-            }
-          });
-        } else if (window.matchMedia('(width: 1920px)').matches) {
-          $(document).on("scroll", function() {
-            if ($(document).scrollTop() > 2340) {
-              var scrolled = $(window).scrollTop();
-              $('.front .xtranslate').css('width', (75 + ((scrolled - 2340) * .05)) + '%');
-            }
-            if ($(document).scrollTop() > 2200) {
-              var scrolled = $(window).scrollTop();
-              $('.page-node-40 .xtranslate').css('width', (75 + ((scrolled - 2200) * .05)) + '%');
-            }
-            if ($(document).scrollTop() > 2200) {
-              var scrolled = $(window).scrollTop();
-              $('.page-node-21 .xtranslate,.page-node-23 .xtranslate, .page-node-38 .xtranslate,.page-node-39 .xtranslate').css('width', (75 + ((scrolled - 2200) * .05)) + '%');
-            }
-            if ($(document).scrollTop() > 2300) {
-              var scrolled = $(window).scrollTop();
-              $('.page-node-22 .xtranslate').css('width', (75 + ((scrolled - 2300) * .05)) + '%');
-            }
-          });
-        } else if (window.matchMedia('(width: 2880px)').matches) {
-          $(document).on("scroll", function() {
-            if ($(document).scrollTop() > 3100) {
-              var scrolled = $(window).scrollTop();
-              $('.front .xtranslate').css('width', (70 + ((scrolled - 3100) * .05)) + '%');
-            }
-            if ($(document).scrollTop() > 3000) {
-              var scrolled = $(window).scrollTop();
-              $('.page-node-40 .xtranslate').css('width', (75 + ((scrolled - 3000) * .05)) + '%');
-            }
-            if ($(document).scrollTop() > 3000) {
-              var scrolled = $(window).scrollTop();
-              $('.page-node-21 .xtranslate,.page-node-23 .xtranslate, .page-node-38 .xtranslate,.page-node-39 .xtranslate').css('width', (75 + ((scrolled - 3000) * .05)) + '%');
-            }
-            if ($(document).scrollTop() > 6000) {
-              var scrolled = $(window).scrollTop();
-              $('.page-node-22 .xtranslate').css('width', (70 + ((scrolled - 6000) * .05)) + '%');
-            }
-          });
-        } else {
-          $(document).on("scroll", function() {
-            if ($(document).scrollTop() > 1850) {
-              var scrolled = $(window).scrollTop();
-              $('.front .xtranslate').css('width', (80 + ((scrolled - 1850) * .05)) + '%');
-            }
-          });
-          $(document).on("scroll", function() {
-            if ($(document).scrollTop() > 1900) {
-              var scrolled = $(window).scrollTop();
-              $('.page-node-40 .xtranslate').css('width', (80 + ((scrolled - 1900) * .05)) + '%');
-            }
-          });
-          $(document).on("scroll", function() {
-            if ($(document).scrollTop() > 1900) {
-              var scrolled = $(window).scrollTop();
-              $('.page-node-21 .xtranslate').css('width', (80 + ((scrolled - 1900) * .05)) + '%');
-            }
-          });
-          $(document).on("scroll", function() {
-            if ($(document).scrollTop() > 1750) {
-              var scrolled = $(window).scrollTop();
-              $('.page-node-22 .xtranslate').css('width', (80 + ((scrolled - 1750) * .05)) + '%');
-            }
-          });
-          $(document).on("scroll", function() {
-            if ($(document).scrollTop() > 1950) {
-              var scrolled = $(window).scrollTop();
-              $('.page-node-23 .xtranslate, .page-node-38 .xtranslate,.page-node-39 .xtranslate').css('width', (80 + ((scrolled - 1950) * .05)) + '%');
-            }
-          });
-        }
-      };
-      mediaSize();
-      window.addEventListener('resize', mediaSize, false);
-    })(jQuery);*/
+      
     // MENU SHRINK
     $(document).on("scroll", function() {
       if ($(document).scrollTop() > 0) {
@@ -350,23 +247,64 @@
     var size_price = '9.995';
     $('#tablefield-0 p a').click(function(){
       var size_price = $(this).text().substring(1);
-      $(this).parents('.group-show-size').find('h3').find('a').click();
+    var total = parseFloat(cladding_price) + parseFloat(dimension_price) + parseFloat(size_price) +
+                parseFloat(doors_price) + parseFloat(trim_p) + parseFloat(window_p) + parseFloat(fheating_p); 
+    $('span#total-price').html(total);
+      // $(this).parents('.group-show-size').find('h3').find('a').click();
     })
     // Cladding/dimension Price
     var cladding_price = $('.views-field-field-cladding-price .field-content').text().substring(1);
     var dimension_price = $('.views-field-field-dimension-price .field-content').text().substring(1);
+    var doors_price = $('.views-field-field-doors-price .field-content').text().substring(1);
 
     // Trim Price
-    $('.views-row').each(function(){
-      var trim_price;
-      var trim_price = $(this).find('.views-field-field-trim-price .field-content').text().substring(1);
-      trim_price = parseFloat(trim_price) || 0;
-    });
-    // console.log(trim_price);
-    
-    // Total Price
-    var total = parseFloat(cladding_price) + parseFloat(dimension_price) + parseFloat(size_price);
-    $('p#value').html(total);
+    function trim(){
+      var trim_price = 0;
+      $('.views-row').each(function(){
+          var trims = $(this).find('.views-field-field-trim-price .field-content').text().substring(1);
+          var tp = parseFloat(trim_price) || 0;
+          var t = parseFloat(trims) || 0;
+          trim_price =  tp + t;
+          return true;
+      });
+      return trim_price;
+    }
+    var trim_p = trim();
+    console.log(trim_p);
+
+    // Windows Price
+    function window(){
+      var window_price = 0;
+      $('.views-row').each(function(){
+          var windows = $(this).find('.views-field-field-window-pricr .field-content').text().substring(1);
+          var wp = parseFloat(window_price) || 0;
+          var w = parseFloat(windows) || 0;
+          window_price =  wp + w;
+          return true;
+      });
+      return window_price;
+    }
+    var window_p = window();
+    console.log(window_p);
+
+    // Trim Price
+    function fheating(){
+      var fheating_price = 0;
+      $('.views-row').each(function(){
+          var fheatings = $(this).find('.views-field-field-electric-heater-price .field-content').text().substring(1);
+          var tp = parseFloat(fheating_price) || 0;
+          var t = parseFloat(fheatings) || 0;
+          fheating_price =  tp + t;
+          return true;
+      });
+      return fheating_price;
+    }
+    var fheating_p = fheating();
+
+    // Floor Heating Price
+    var total = parseFloat(cladding_price) + parseFloat(dimension_price) + parseFloat(size_price) +
+                parseFloat(doors_price) + parseFloat(trim_p) + parseFloat(window_p) + parseFloat(fheating_p); 
+    $('span#total-price').html(total);
 
     // SET BLOG AND MODULE IMAGE AS BACKGROUND IMAGE
     $('.view-id-blog_view .blog-listing').each(function() {

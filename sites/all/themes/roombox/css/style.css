@@ -1456,7 +1456,7 @@ ul.slide__content {
   padding: 0;
 } 
 #block-bean-change-size .field-name-field-size-price {
-  z-index: 1;
+  z-index: 5;
   background: #749c5a;
   position: absolute;
   padding: 22px 15px;
@@ -1495,4 +1495,12 @@ aside.module-filters {
 i.close-size-price {
   float: right;
   cursor: pointer;
+}
+div.total-p {
+  float: right;
+  text-align: right;
+  position: absolute;
+  z-index: 5;
+  right: 20px;
+  color: #fff;
 }
