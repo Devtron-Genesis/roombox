@@ -1508,7 +1508,7 @@ div.total-p {
   position: relative;
   z-index: 5;
   right: 30px;
-  bottom: 200px;
+  bottom: 155px;
   background: radial-gradient(rgba(133, 183, 94, 0.6) 100%, rgba(133, 183, 94, 0.6) 100%);
   color: #fff;
   text-align: center;
@@ -1516,6 +1516,10 @@ div.total-p {
 }
 #webform-client-form-67 label {
   display: none;
+}
+#webform-client-form-67 .webform-component-email.webform-component--your-email-adress {
+  width: 232px;
+  float: left;
 }
 #webform-client-form-67 #edit-submitted-your-email-adress::placeholder {
   color: #fff;
@@ -1525,8 +1529,20 @@ div.total-p {
   border: none;
   padding: 19px 11px 16px 10px;
   text-align: center;
-  margin-top: 20px;
   text-align: center;
-  width: 232px;
   height: 55px;
+  border-radius: 0;
+}
+#webform-client-form-67 .form-actions {
+  clear: none;
+  float: left;
+}
+#webform-client-form-67 .webform-submit.form-submit{
+  background-color: #6e9a4c;
+  border: none;
+  color: #ffffff;
+  padding: 13px 15px 13px;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-radius: 0;
 }
