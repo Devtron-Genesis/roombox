@@ -23,23 +23,24 @@
 
     // Size Price
     var size_price = '9.995';
+    $('.form-item-submitted-size-price input').val('£' + size_price);
     $('.slick-wrapper--asnavfor #slick-views-customise2-1-thumbnail').prepend('<div class="total-p"><h2><b>£<span id="total-price">10.499</span></h2><h4>inc VAT</b><h4></div>');
     $('#tablefield-0 p a').click(function(){
       var size_price = $(this).text().substring(1);
-      $('.form-item-submitted-size-price input').val(size_price);
+      $('.form-item-submitted-size-price input').val('£' + size_price);
     var total = parseFloat(cladding_price) + parseFloat(dimension_price) + parseFloat(size_price) +
                 parseFloat(doors_price) + parseFloat(trim_p) + parseFloat(window_p) + parseFloat(fheating_p); 
     $('span#total-price').html(total);
-    $('.form-item-submitted-total-price input').val(total);
+    $('.form-item-submitted-total-price input').val('£' + total);
       $(this).parents('.group-show-size').find('h3').find('a').click();
     })
     // Cladding/dimension Price
     var cladding_price = $('.views-field-field-cladding-price .field-content').text().substring(1);
-    $('.form-item-submitted-cladding-prie input').val(cladding_price);
+    $('.form-item-submitted-cladding-prie input').val('£' + cladding_price);
     var dimension_price = $('.views-field-field-dimension-price .field-content').text().substring(1);
-    $('.form-item-submitted-dimention-price input').val(dimension_price);
+    $('.form-item-submitted-dimention-price input').val('£' + dimension_price);
     var doors_price = $('.views-field-field-doors-price .field-content').text().substring(1);
-    $('.form-item form-item-submitted-doors-price input').val(doors_price);
+    $('.form-item-submitted-doors-price input').val('£' + doors_price);
 
     // Trim Price
     function trim(){
@@ -54,7 +55,7 @@
       return trim_price;
     }
     var trim_p = trim();
-    $('.form-item-submitted-trim-price input').val(trim_p);
+    $('.form-item-submitted-trim-price input').val('£' + trim_p);
     // Windows Price
     function windo(){
       var window_price = 0;
@@ -68,7 +69,7 @@
       return window_price;
     }
     var window_p = windo();
-    $('.form-item-submitted-windo-price input').val(window_p);
+    $('.form-item-submitted-windo-price input').val('£' + window_p);
 
     // Floor Heating Price
     function fheating(){
@@ -83,13 +84,13 @@
       return fheating_price;
     }
     var fheating_p = fheating();
-    $('.form-item-submitted-under-floor-heating-price input').val(fheating_p);
+    $('.form-item-submitted-under-floor-heating-price input').val('£' + fheating_p);
     
     // Total Price
     var total = parseFloat(cladding_price) + parseFloat(dimension_price) + parseFloat(size_price) +
                 parseFloat(doors_price) + parseFloat(trim_p) + parseFloat(window_p) + parseFloat(fheating_p); 
     $('span#total-price').html(total);
-    $('.form-item-submitted-total-price input').val(total);
+    $('.form-item-submitted-total-price input').val('£' + total);
 
     // Close Size Price
     $('.field-type-tablefield.field-label-hidden').prepend('<i class="fa fa-times close-size-price" aria-hidden="true"></i>');
@@ -252,22 +253,23 @@
 
 // Size Price
     var size_price = '9.995';
+    $('.form-item-submitted-size-price input').val('£' + size_price);
     $('#tablefield-0 p a').click(function(){
       var size_price = $(this).text().substring(1);
-      $('.form-item-submitted-size-price input').val(size_price);
+      $('.form-item-submitted-size-price input').val('£' + size_price);
     var total = parseFloat(cladding_price) + parseFloat(dimension_price) + parseFloat(size_price) +
                 parseFloat(doors_price) + parseFloat(trim_p) + parseFloat(window_p) + parseFloat(fheating_p); 
     $('span#total-price').html(total);
-    $('.form-item-submitted-total-price input').val(total);
+    $('.form-item-submitted-total-price input').val('£' + total);
       $(this).parents('.group-show-size').find('h3').find('a').click();
     })
     // Cladding/dimension Price
     var cladding_price = $('.views-field-field-cladding-price .field-content').text().substring(1);
-    $('.form-item-submitted-cladding-prie input').val(cladding_price);
+    $('.form-item-submitted-cladding-prie input').val('£' + cladding_price);
     var dimension_price = $('.views-field-field-dimension-price .field-content').text().substring(1);
-    $('.form-item-submitted-dimention-price input').val(dimension_price);
+    $('.form-item-submitted-dimention-price input').val('£' + dimension_price);
     var doors_price = $('.views-field-field-doors-price .field-content').text().substring(1);
-    $('.form-item form-item-submitted-doors-price input').val(doors_price);
+    $('.form-item-submitted-doors-price input').val('£' + doors_price);
 
     // Trim Price
     function trim(){
@@ -282,7 +284,7 @@
       return trim_price;
     }
     var trim_p = trim();
-    $('.form-item-submitted-trim-price input').val(trim_p);
+    $('.form-item-submitted-trim-price input').val('£' + trim_p);
     // Windows Price
     function windo(){
       var window_price = 0;
@@ -296,7 +298,7 @@
       return window_price;
     }
     var window_p = windo();
-    $('.form-item-submitted-windo-price input').val(window_p);
+    $('.form-item-submitted-windo-price input').val('£' + window_p);
 
     // Floor Heating Price
     function fheating(){
@@ -311,13 +313,13 @@
       return fheating_price;
     }
     var fheating_p = fheating();
-    $('.form-item-submitted-under-floor-heating-price input').val(fheating_p);
+    $('.form-item-submitted-under-floor-heating-price input').val('£' + fheating_p);
 
     // Total Price
     var total = parseFloat(cladding_price) + parseFloat(dimension_price) + parseFloat(size_price) +
                 parseFloat(doors_price) + parseFloat(trim_p) + parseFloat(window_p) + parseFloat(fheating_p); 
     $('span#total-price').html(total);
-    $('.form-item-submitted-total-price input').val(total);
+    $('.form-item-submitted-total-price input').val('£' + total);
 
     // SET BLOG AND MODULE IMAGE AS BACKGROUND IMAGE
     $('.view-id-blog_view .blog-listing').each(function() {
