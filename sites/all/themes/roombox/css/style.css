@@ -1509,23 +1509,26 @@ div.total-p {
   z-index: 5;
   right: 30px;
   bottom: 155px;
-  background: radial-gradient(rgba(133, 183, 94, 0.6) 100%, rgba(133, 183, 94, 0.6) 100%);
+  background: radial-gradient(rgba(130, 176, 101, 0.6) 100%, rgba(130, 176, 101, 0.6) 100%);
   color: #fff;
   text-align: center;
-  font-size: 0px;
+}
+#block-webform-client-block-67 h2 {
+  font-size: 20px;
+  font-weight: bold;
 }
 #webform-client-form-67 label {
   display: none;
 }
 #webform-client-form-67 .webform-component-email.webform-component--your-email-adress {
-  width: 232px;
+  width: 82%;
   float: left;
 }
 #webform-client-form-67 #edit-submitted-your-email-adress::placeholder {
   color: #fff;
 }
 #webform-client-form-67 #edit-submitted-your-email-adress {
-  background-color: #85b75e;
+  background-color: #7aa65f;
   border: none;
   padding: 19px 11px 16px 10px;
   text-align: center;
@@ -1536,9 +1539,10 @@ div.total-p {
 #webform-client-form-67 .form-actions {
   clear: none;
   float: left;
+  width: 18%;
 }
 #webform-client-form-67 .webform-submit.form-submit{
-  background-color: #6e9a4c;
+  background-color: #668a50;
   border: none;
   color: #ffffff;
   padding: 13px 15px 13px;

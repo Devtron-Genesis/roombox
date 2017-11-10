@@ -261,7 +261,7 @@
                 parseFloat(doors_price) + parseFloat(trim_p) + parseFloat(window_p) + parseFloat(fheating_p); 
     $('span#total-price').html(total);
     $('.form-item-submitted-total-price input').val('£' + total);
-      $(this).parents('.group-show-size').find('h3').find('a').click();
+      // $(this).parents('.group-show-size').find('h3').find('a').click();
     })
     // Cladding/dimension Price
     var cladding_price = $('.views-field-field-cladding-price .field-content').text().substring(1);
