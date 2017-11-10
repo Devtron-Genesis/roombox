@@ -1372,8 +1372,8 @@ a.sf-depth-1.menuparent.sf-depth-1.menuparent.sf-with-ul {
 
 .slick-wrapper {
   margin: 0;
-  background: #dcd1d1;
-  padding: 20px;
+  background: #ececec;
+  padding: 20px 0;
 }
 .slick--center .slick-track {
   padding: 0;
@@ -1395,7 +1395,7 @@ ul.slide__content {
   padding: 30px;
 }
 .slick-active.slick-current .slide__content {
-  background: #dcd1d1;
+  background: #ececec;
 }
 .slide__content .slide__caption {
   padding: 0;
@@ -1441,16 +1441,30 @@ ul.slide__content {
 .group-show-size h3 {
   position: relative;
   z-index: 2;
-  font-weight: bold;
-  font-size: 15px;
-  margin: 0;
+  font-size: 14px;
+  margin: 10px 0 30px;
 }
 .group-show-size h3 a {
   background: #749c5a;
   width: 100%;
   color: #fff;
   text-decoration: none;
-  padding: 10px 0;
+  padding: 10px;
+}
+span.dropdown2mx3m {
+  background: #fff;
+  color: #749c5a;
+  padding: 6px;
+  margin-left: 10px;
+}
+p.open2m {
+  color: #fff;
+}
+span.open2mx3m {
+  margin-left: 10px;
+}
+.group-show-size h3 a .fa-angle-down::before {
+  padding-right: 0;
 }
 .bean-size-price .col-sm-12 {
   padding: 0;
@@ -1491,6 +1505,11 @@ ul.slide__content {
 }
 aside.module-filters {
     top: -500px;
+}
+aside .well {
+  background: #f8f8f8;
+  border: none;
+  box-shadow: none;
 }
 i.close-size-price {
   float: right;

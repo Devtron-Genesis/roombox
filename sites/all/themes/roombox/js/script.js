@@ -93,10 +93,20 @@
     $('.form-item-submitted-total-price input').val('£' + total);
 
     // Close Size Price
-    $('.field-type-tablefield.field-label-hidden').prepend('<i class="fa fa-times close-size-price" aria-hidden="true"></i>');
+    $('.field-type-tablefield.field-label-hidden').prepend('<p class="open2m"><span><b>Size:</b> 2m X 5m</span><span class="open2mx3m">Change Size</span><i class="fa fa-times close-size-price" aria-hidden="true"></i><p>');
     $('.field-type-tablefield.field-label-hidden i.close-size-price').click(function(){
       $(this).parents('.group-show-size').find('h3').find('a').click();
     });
+    $('.group-show-size h3 a').html('<span class=""><b>Size:</b> 2m X 5m</span><span class="dropdown2mx3m">Change Size<i class="fa fa-angle-down" aria-hidden="true"></i></span>');
+    
+    // Disable Winow Check Box
+    var sibelrc = $('#edit-field-cladding-tid option:first-child').text();
+    var dimver  = $('#edit-field-dimention-tid-12').attr('checked');
+    if((sibelrc == 'Siberian Larch') && (dimver == 'checked')) {
+      $('.form-item-edit-field-windows-tid-24').css('pointer-events', 'none').css('color', '#cfcfcf');
+    } else {
+      $('.form-item-edit-field-windows-tid-24').css('pointer-events', 'all').css('color', '#555');
+    }
 
     $('.match-height').matchHeight();
     if (window.matchMedia('(max-width: 767px)').matches)
@@ -320,6 +330,15 @@
                 parseFloat(doors_price) + parseFloat(trim_p) + parseFloat(window_p) + parseFloat(fheating_p); 
     $('span#total-price').html(total);
     $('.form-item-submitted-total-price input').val('£' + total);
+
+    // Disable Winow Check Box
+    var sibelrc = $('#edit-field-cladding-tid option:first-child').text();
+    var dimver  = $('#edit-field-dimention-tid-12').attr('checked');
+    if((sibelrc == 'Siberian Larch') && (dimver == 'checked')) {
+      $('.form-item-edit-field-windows-tid-24').css('pointer-events', 'none').css('color', '#cfcfcf');
+    } else {
+      $('.form-item-edit-field-windows-tid-24').css('pointer-events', 'all').css('color', '#555');
+    }
 
     // SET BLOG AND MODULE IMAGE AS BACKGROUND IMAGE
     $('.view-id-blog_view .blog-listing').each(function() {
