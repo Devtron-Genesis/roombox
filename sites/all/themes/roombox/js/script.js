@@ -21,18 +21,40 @@
     //   })
     // })
 
+    // Close Size Price
+    $('.field-type-tablefield.field-label-hidden').prepend('<p class="open2m"><span><b>Size:</b> 2m X 5m</span><span class="open2mx3m">Change Size</span><i class="fa fa-times close-size-price" aria-hidden="true"></i><p>');
+    $('.field-type-tablefield.field-label-hidden i.close-size-price').click(function(){
+      $(this).parents('.group-show-size').find('h3').find('a').click();
+    });
+    $('.group-show-size h3 a').html('<span class=""><b>Size:</b> 2m X 5m</span><span class="dropdown2mx3m">Change Size<i class="fa fa-angle-down" aria-hidden="true"></i></span>');
+    $('#tablefield-0 tbody tr:first-child td:nth-child(2)').addClass('actv-block');
+    $('#tablefield-0 tbody tr:first-child td:first-child').addClass('actv-block');
+    $('#tablefield-0 thead tr th:nth-child(2)').addClass('actv-block');
+    $('#tablefield-0 tbody tr td:not(:first-child)').click(function(){
+      $(this).parents('#tablefield-0').find('td').removeClass('actv-block');
+      $(this).parents('#tablefield-0').find('th').removeClass('actv-block');
+      $(this).addClass('actv-block');
+      $(this).siblings('td:first-child').addClass('actv-block');
+      var cls = $(this).attr('class').split(' ')[1];
+      $(this).parents('#tablefield-0').find('thead tr th.'+cls).addClass('actv-block');
+      var mod_dep = $(this).siblings('td:first-child').text();
+      var mod_wid = $(this).parents('#tablefield-0').find('thead tr th.'+cls).text();
+      $(this).parents('.group-show-size').find('h3').find('a').click();
+    });
+
+
+
     // Size Price
     var size_price = '9.995';
     $('.form-item-submitted-size-price input').val('£' + size_price);
     $('.slick-wrapper--asnavfor #slick-views-customise2-1-thumbnail').prepend('<div class="total-p"><h2><b>£<span id="total-price">10.499</span></h2><h4>inc VAT</b><h4></div>');
-    $('#tablefield-0 p a').click(function(){
+    $('#tablefield-0 tbody tr td:not(:first-child)').click(function(){
       var size_price = $(this).text().substring(1);
       $('.form-item-submitted-size-price input').val('£' + size_price);
     var total = parseFloat(cladding_price) + parseFloat(dimension_price) + parseFloat(size_price) +
                 parseFloat(doors_price) + parseFloat(trim_p) + parseFloat(window_p) + parseFloat(fheating_p); 
-    $('span#total-price').html(total);
-    $('.form-item-submitted-total-price input').val('£' + total);
-      $(this).parents('.group-show-size').find('h3').find('a').click();
+      $('span#total-price').html(total);
+      $('.form-item-submitted-total-price input').val('£' + total);
     })
     // Cladding/dimension Price
     var cladding_price = $('.views-field-field-cladding-price .field-content').text().substring(1);
@@ -92,17 +114,10 @@
     $('span#total-price').html(total);
     $('.form-item-submitted-total-price input').val('£' + total);
 
-    // Close Size Price
-    $('.field-type-tablefield.field-label-hidden').prepend('<p class="open2m"><span><b>Size:</b> 2m X 5m</span><span class="open2mx3m">Change Size</span><i class="fa fa-times close-size-price" aria-hidden="true"></i><p>');
-    $('.field-type-tablefield.field-label-hidden i.close-size-price').click(function(){
-      $(this).parents('.group-show-size').find('h3').find('a').click();
-    });
-    $('.group-show-size h3 a').html('<span class=""><b>Size:</b> 2m X 5m</span><span class="dropdown2mx3m">Change Size<i class="fa fa-angle-down" aria-hidden="true"></i></span>');
-    
     // Disable Winow Check Box
-    var sibelrc = $('#edit-field-cladding-tid option:first-child').text();
+    var sibelrc = $('#edit-field-cladding-tid option:first-child').attr('selected');
     var dimver  = $('#edit-field-dimention-tid-12').attr('checked');
-    if((sibelrc == 'Siberian Larch') && (dimver == 'checked')) {
+    if((sibelrc == 'selected') && (dimver == 'checked')) {
       $('.form-item-edit-field-windows-tid-24').css('pointer-events', 'none').css('color', '#cfcfcf');
     } else {
       $('.form-item-edit-field-windows-tid-24').css('pointer-events', 'all').css('color', '#555');
@@ -264,7 +279,7 @@
 // Size Price
     var size_price = '9.995';
     $('.form-item-submitted-size-price input').val('£' + size_price);
-    $('#tablefield-0 p a').click(function(){
+    $('#tablefield-0 tbody tr td:not(:first-child)').click(function(){
       var size_price = $(this).text().substring(1);
       $('.form-item-submitted-size-price input').val('£' + size_price);
     var total = parseFloat(cladding_price) + parseFloat(dimension_price) + parseFloat(size_price) +
@@ -332,9 +347,9 @@
     $('.form-item-submitted-total-price input').val('£' + total);
 
     // Disable Winow Check Box
-    var sibelrc = $('#edit-field-cladding-tid option:first-child').text();
+    var sibelrc = $('#edit-field-cladding-tid option:first-child').attr('selected');
     var dimver  = $('#edit-field-dimention-tid-12').attr('checked');
-    if((sibelrc == 'Siberian Larch') && (dimver == 'checked')) {
+    if((sibelrc == 'selected') && (dimver == 'checked')) {
       $('.form-item-edit-field-windows-tid-24').css('pointer-events', 'none').css('color', '#cfcfcf');
     } else {
       $('.form-item-edit-field-windows-tid-24').css('pointer-events', 'all').css('color', '#555');

@@ -1480,28 +1480,27 @@ span.open2mx3m {
 #tablefield-0 {
   background: #ededed;
 }
+#tablefield-0 .actv-block {
+  background: #749c5a;
+  color: #fff;
+}
 #tablefield-0 tr.even {
   background: #f7f7f7;
 }
+#tablefield-0 tr td:first-child {
+  width: 30px;
+}
+#tablefield-0 tr td {
+  padding: 7px;
+}
+#tablefield-0 tr td:not(:first-child):hover, #tablefield-0 tr td:not(:first-child):focus {
+  cursor: pointer;
+  background: #343434;
+  color: #fff;
+}
 #tablefield-0 p {
   font-size: 12px;
-  padding: 7px;
   font-weight: lighter;
-}
-#tablefield-0 p a {
-  font-size: 12px !important;
-  color: #000;
-  cursor: pointer;
-  text-decoration: none;
-}
-#tablefield-0 p a i.fa.fa-info-circle {
-  display: none;
-}
-#tablefield-0 p a:hover {
-  background: #749c5a;
-}
-#tablefield-0 p a:active, #tablefield-0 p a:focus {
-  background: #749c5a;
 }
 aside.module-filters {
     top: -500px;
