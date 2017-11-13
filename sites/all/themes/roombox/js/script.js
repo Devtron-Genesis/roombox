@@ -7,6 +7,8 @@
   $(document).delegate('', 'click', function(event) {
   });
   $(window).load(function(e) {
+    var module_height = $('#slick-views-customise2-1-thumbnail-slider').height();
+    $('aside.module-filters').css('bottom', module_height)
     console.log('Load Completed');
   });
   $(document).ready(function() {
@@ -20,6 +22,12 @@
     //     $('.slick__slide.slide.slick-slide.slick-active.slick-current').prepend('<div class="module-price"><h1><b>'+mprice+'</h1><p>inc VAT</b><p>');
     //   })
     // })
+
+    $('.form-item-field-cladding-tid').append('<i class="fa fa-angle-down" aria-hidden="true"></i>');
+    $('.form-item-field-cladding-tid').click(function(){
+      $(this).find('i').toggleClass('fa-angle-down fa-angle-up');
+    })
+    $('.form-item-field-doors-tid').append('<i class="fa fa-angle-down" aria-hidden="true"></i>');
 
     // Close Size Price
     $('.field-type-tablefield.field-label-hidden').prepend('<p class="open2m"><span><b>Size:</b> 2m X 5m</span><span class="open2mx3m">Change Size</span><i class="fa fa-times close-size-price" aria-hidden="true"></i><p>');
@@ -41,8 +49,6 @@
       var mod_wid = $(this).parents('#tablefield-0').find('thead tr th.'+cls).text();
       $(this).parents('.group-show-size').find('h3').find('a').click();
     });
-
-
 
     // Size Price
     var size_price = '9.995';

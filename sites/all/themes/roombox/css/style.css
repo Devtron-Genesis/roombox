@@ -1417,6 +1417,9 @@ ul.slide__content {
   text-align: right;
   color: #fff;
 }
+.views-field-field-cladding-price, .views-field-field-dimension-price, .views-field-field-doors-price, .views-field-field-trim-price, .views-field-field-window-pricr, .views-field-field-electric-heater-price {
+  display: none;
+}
 .module-price h1 {
   margin-bottom: 0;
 }
@@ -1424,10 +1427,43 @@ ul.slide__content {
   height: auto;
   padding: 0;
 }
-.page-customise2 input[type="checkbox"] {
+aside.module-filters .views-exposed-widget:first-child {
+  width: 100%;
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 10px;
+}
+select.form-control {
+  border-radius: 0;
+  border: 1px solid #212121;
+  background: none;
+}
+select.form-control {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.form-type-select .fa.fa-angle-down {
+  float: right;
+  top: -20px;
+}
+.form-type-select .fa.fa-angle-up {
+  float: right;
+  top: -20px;
+  margin: 0;
+  padding: 0px 10px 0px; 
+  position: relative;
+}
+aside.module-filters .form-checkboxes {
+  background: none;
+  border: none;
+}
+/*.page-customise2 input[type="checkbox"] {
   width: 15px;
   float: left;
   height: 15px;
+}
+*/.page-customise2 input[type="checkbox"]:checked {
+  background: #000 !important;
+  color: #fff !important;
 }
 .page-node-66 .form-control.form-checkboxes.bef-select-as-checkboxes {
   height: auto;
@@ -1437,7 +1473,53 @@ ul.slide__content {
   width: 15px;
   float: left;
   height: 15px;
+  display: none;
 }
+.page-node-66 input[type="checkbox"] + label:before {
+  border: 1px solid #333;
+  content: "\00a0";
+  display: inline-block;
+  font: 16px/1em sans-serif;
+  height: 16px;
+  margin: 0 .25em 0 0;
+  padding: 0;
+  vertical-align: top;
+  width: 16px;
+}
+.page-node-66 input[type="checkbox"]:checked + label:before {
+  background: #749c5a;
+  color: #fff;
+  content: "\2713";
+  text-align: center;
+}
+.page-node-66 input[type="radio"] {
+  width: 15px;
+  float: left;
+  height: 15px;
+  display: none;
+}
+.page-node-66 .form-type-radio label {
+  padding: 0 0 9px;
+}
+.page-node-66 input[type="radio"] + label:before {
+  border: 1px solid #333;
+  content: "";
+  display: inline-block;
+  font: 16px/1em sans-serif;
+  height: 16px;
+  margin: 0 .25em 0 0;
+  padding: 0;
+  vertical-align: top;
+  width: 16px;
+  float: left;
+  border-radius: 8px;
+}
+.page-node-66 input[type="radio"]:checked + label:before {
+  background: #000;
+}
+
+
+
 .group-show-size h3 {
   position: relative;
   z-index: 2;
@@ -1501,9 +1583,6 @@ span.open2mx3m {
 #tablefield-0 p {
   font-size: 12px;
   font-weight: lighter;
-}
-aside.module-filters {
-    top: -500px;
 }
 aside .well {
   background: #f8f8f8;
