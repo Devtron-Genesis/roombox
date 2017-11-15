@@ -23,11 +23,8 @@
     //   })
     // })
 
-    $('.form-item-field-cladding-tid').append('<i class="fa fa-angle-down" aria-hidden="true"></i>');
-    $('.form-item-field-cladding-tid').click(function(){
-      $(this).find('i').toggleClass('fa-angle-down fa-angle-up');
-    })
-    $('.form-item-field-doors-tid').append('<i class="fa fa-angle-down" aria-hidden="true"></i>');
+    // Radio Button Styling
+    $('.page-node-66 .form-type-radio label').append('<span></span>');
 
     // Close Size Price
     $('.field-type-tablefield.field-label-hidden').prepend('<p class="open2m"><span><b>Size:</b> 2m X 5m</span><span class="open2mx3m">Change Size</span><i class="fa fa-times close-size-price" aria-hidden="true"></i><p>');
@@ -53,7 +50,7 @@
     // Size Price
     var size_price = '9.995';
     $('.form-item-submitted-size-price input').val('£' + size_price);
-    $('.slick-wrapper--asnavfor #slick-views-customise2-1-thumbnail').prepend('<div class="total-p"><h2><b>£<span id="total-price">10.499</span></h2><h4>inc VAT</b><h4></div>');
+    $('.slick-wrapper--asnavfor #slick-views-customise2-1-thumbnail').prepend('<div class="total-p"><h1><b>£<span id="total-price">10.499</span></h1><h4>inc VAT</b><h4></div>');
     $('#tablefield-0 tbody tr td:not(:first-child)').click(function(){
       var size_price = $(this).text().substring(1);
       $('.form-item-submitted-size-price input').val('£' + size_price);
@@ -282,7 +279,10 @@
   });
   $(document).ajaxComplete(function(e) {
 
-// Size Price
+    // Radio Button Styling
+    $('.page-node-66 .form-type-radio label').append('<span></span>');
+
+    // Size Price
     var size_price = '9.995';
     $('.form-item-submitted-size-price input').val('£' + size_price);
     $('#tablefield-0 tbody tr td:not(:first-child)').click(function(){
