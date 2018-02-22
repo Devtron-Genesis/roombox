@@ -1410,9 +1410,13 @@ ul.slide__content {
 .slide__content .slide__caption .slide__description {
   display: none;
 }
-.slick__slide.slide.slick-slide img.img-responsive {
+.slick--slider .slick__slide.slide.slick-slide img.img-responsive {
   float: right;
   width: 70%;
+}
+.fixed_slide {
+  position:fixed;
+  top:0;
 }
 .module-price {
   position: absolute;

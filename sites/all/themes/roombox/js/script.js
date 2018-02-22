@@ -369,6 +369,16 @@
     $(".view.view-blog-view.view-id-blog_view.view-display-id-blog .pager li > a").html("LOAD MORE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
     console.log('Ajax Completed');
   });
+
+  $(window).scroll(function(){
+      var scrtop = $(this).scrollTop();
+      if (scrtop >= 1240) {
+          $('#slick-views-customise2-1-thumbnail').addClass('fixed_slide');
+      } else {
+          $('#slick-views-customise2-1-thumbnail').removeClass('fixed_slide');
+      }
+  });
+
   var getUrlParameter = function getUrlParameter(sParam) {
     var sPageURL = decodeURIComponent(window.location.search.substring(1)),
       sURLVariables = sPageURL.split('&'),
