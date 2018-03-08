@@ -1,0 +1,63 @@
+<?php
+
+/*
+*  Implement hook_schema().
+*/
+
+function menu_form_schema() {
+  $schema = array();
+  $schema['visitor_info'] = array(
+    'description' => 'Info about the visitor.',
+    'fields' => array(
+      'uid' => array(
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'description' => 'The users id.',
+      ),
+      'fname' => array(
+        'type' => 'varchar',
+        'not null' => TRUE,
+        'length' => 30,
+        'default' => '',
+        'description' => 'The users First Name.',
+      ),
+      'lname' => array(
+        'type' => 'varchar',
+        'not null' => TRUE,
+        'length' => 30,
+        'default' => '',
+        'description' => 'The users Lase Name.',
+      ),
+      'uemail' => array(
+        'type' => 'varchar',
+        'not null' => TRUE,
+        'length' => 30,
+        'default' => '',
+        'description' => 'The users Email.',
+      ),
+      'cdate' => array(
+        'description' => 'Current Date',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'dob' => array(
+        'description' => 'Date Of Birth',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+    ),
+    'primary key' => array('uid'),
+  );
+  return $schema;
+}
+
+/*
+*  Implement hook_update_N()
+*/
+
+function menu_form_update_7009() {
+  drupal_install_schema('menu_form');
+}
