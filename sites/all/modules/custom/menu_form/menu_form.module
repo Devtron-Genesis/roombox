@@ -36,22 +36,27 @@ function form_data_submission() {
 
 	$query = db_select('visitor_info', 'fd');
 	$query
-		->fields('fd', array('uid', 'fname', 'lname', 'uemail', 'cdate', 'dob'))
+		->fields('fd', array('uid', 'fname', 'lname', 'uemail', 'cdate', 'dob', 'Language', 'gen', 'nationality'))
 		->range(0, 50)
 		->orderBy('fd.uid');
 	$results = $query->execute();
 
-	$header = array(t('ID'), t('First Name'), t('Last Name'), t('Email'), t('Submited Date'), t('Date Of Birth'));
+	$header = array(t('ID'), t('First Name'), t('Last Name'), t('Email'), t('Submited Date'), t('Date Of Birth'), t('Language'), t('Gen'), t('Nationality'));
 	$row = array();
 
 	foreach ($results as $result) {
+		$timestampcdate =  date('D, d M Y' , $result->cdate);
+		$timestampdob =  date('D, d M Y' , $result->dob);
 		$row[] =array(
 			$result->uid,
 			$result->fname,
 			$result->lname,
 			$result->uemail,
-			$result->cdate,
-			$result->dob,			
+			$timestampcdate,
+			$timestampdob,
+			$result->Language,
+			$result->gen,
+			$result->nationality,		
 		);
 	}
 	return theme('table', array('header' => $header, 'rows' => $row));

@@ -1,9 +1,7 @@
 <?php
-
 /*
 *  Implement hook_schema().
 */
-
 function menu_form_schema() {
   $schema = array();
   $schema['visitor_info'] = array(
@@ -37,27 +35,78 @@ function menu_form_schema() {
         'description' => 'The users Email.',
       ),
       'cdate' => array(
-        'description' => 'Current Date',
         'type' => 'int',
-        'unsigned' => TRUE,
         'not null' => TRUE,
+        'length' => 11,
+        'default' => 0,
+        'description' => 'Current Date',
       ),
       'dob' => array(
-        'description' => 'Date Of Birth',
         'type' => 'int',
-        'unsigned' => TRUE,
         'not null' => TRUE,
+        'length' => 11,
+        'default' => 0,
+        'description' => 'Date Of Birth.',
+      ),
+      'Language' => array(
+        'type' => 'varchar',
+        'not null' => TRUE,
+        'length' => 30,
+        'default' => '',
+        'description' => 'The users Language.',
+      ),
+      'gen' => array(
+        'type' => 'varchar',
+        'not null' => TRUE,
+        'length' => 30,
+        'default' => '',
+        'description' => 'The users Gen.',
+      ),
+      'nationality' => array(
+        'type' => 'varchar',
+        'not null' => TRUE,
+        'length' => 30,
+        'default' => '',
+        'description' => 'The users Nationality.',
       ),
     ),
     'primary key' => array('uid'),
   );
   return $schema;
 }
-
 /*
 *  Implement hook_update_N()
 */
-
-function menu_form_update_7009() {
+function menu_form_update_7011() {
   drupal_install_schema('menu_form');
+}
+function menu_form_update_7014() {
+  $fields = array(
+    'type' => 'varchar',
+    'not null' => TRUE,
+    'length' => 30,
+    'default' => '',
+    'description' => 'The users Language.',
+  );
+  db_add_field('visitor_info', 'Language', $fields);
+}
+function menu_form_update_7015() {
+  $fields = array(
+    'type' => 'varchar',
+    'not null' => TRUE,
+    'length' => 30,
+    'default' => '',
+    'description' => 'The users gen.',
+  );
+  db_add_field('visitor_info', 'gen', $fields);
+ }
+function menu_form_update_7016() {
+  $fields = array(
+    'type' => 'varchar',
+    'not null' => TRUE,
+    'length' => 30,
+    'default' => '',
+    'description' => 'The users Nationality.',
+  );
+  db_add_field('visitor_info', 'nationality', $fields);
 }
