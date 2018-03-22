@@ -34,14 +34,14 @@
 function form_data_submission() {
 	// $results = db_query("SELECT * FROM {visitor_info}");
 
-	$query = db_select('visitor_info', 'fd');
+	$query = db_select('user_info', 'fd');
 	$query
-		->fields('fd', array('uid', 'fname', 'lname', 'uemail', 'cdate', 'dob', 'Language', 'gen', 'nationality'))
+		->fields('fd', array('uid', 'fname', 'lname', 'uemail', 'Language', 'gen', 'nationality', 'cdate', 'dob'))
 		->range(0, 50)
 		->orderBy('fd.uid');
 	$results = $query->execute();
 
-	$header = array(t('ID'), t('First Name'), t('Last Name'), t('Email'), t('Submited Date'), t('Date Of Birth'), t('Language'), t('Gen'), t('Nationality'));
+	$header = array(t('ID'), t('First Name'), t('Last Name'), t('Email'), t('Language'), t('Gen'), t('Nationality'), t('Submited Date'), t('Date Of Birth'));
 	$row = array();
 
 	foreach ($results as $result) {
@@ -52,11 +52,11 @@ function form_data_submission() {
 			$result->fname,
 			$result->lname,
 			$result->uemail,
-			$timestampcdate,
-			$timestampdob,
 			$result->Language,
 			$result->gen,
-			$result->nationality,		
+			$result->nationality,
+			$timestampcdate,
+			$timestampdob,
 		);
 	}
 	return theme('table', array('header' => $header, 'rows' => $row));

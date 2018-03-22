@@ -1692,3 +1692,6 @@ div.total-p {
   font-size: 20px;
   border-radius: 0;
 }
+.page-form-submission .table-responsive {
+  margin-top: 130px;
+}
